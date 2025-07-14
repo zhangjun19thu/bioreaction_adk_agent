@@ -1,0 +1,2741 @@
+﻿literature_id,reaction_id,factor_name
+PMID32033404,reaction_1,Copper
+PMID32033404,reaction_2,Copper
+PMID32036315,reaction_1,Fe(II)
+PMID32036315,reaction_2,Fe(II)
+PMID32036315,reaction_3,Fe(II)
+PMID32036315,reaction_4,Fe(II)
+PMID32036315,reaction_5,Fe(II)
+PMID32041093,reaction_1,Glucose-6-phosphate
+PMID32042199,reaction_1,NAD(P)H
+PMID32042199,reaction_1,NAD(P)+
+PMID32042199,reaction_2,MgCl2
+PMID32044025,reaction_1,"molybdopterin cytosine dinucleotide (MCD, required cofactor)"
+PMID32044025,reaction_1,GroES-EL
+PMID32044030,reaction_1,formate dehydrogenase (for NADH regeneration)
+PMID32044030,reaction_1,glucose dehydrogenase (for NADPH regeneration)
+PMID32051560,reaction_1,Fe(II)
+PMID32051560,reaction_1,Ascorbic acid
+PMID32051560,reaction_2,Fe(II)
+PMID32051560,reaction_2,Ascorbic acid
+PMID32051560,reaction_3,Fe(II)
+PMID32051560,reaction_3,Ascorbic acid
+PMID32051560,reaction_4,Fe(II)
+PMID32051560,reaction_4,Ascorbic acid
+PMID32051560,reaction_5,Fe(II)
+PMID32051560,reaction_5,Ascorbic acid
+PMID32051772,reaction_1,Phenazine methylsulfate (PMS)
+PMID32051772,reaction_1,sodium dithionite
+PMID32051772,reaction_2,Phenazine methylsulfate (PMS)
+PMID32051772,reaction_2,sodium dithionite
+PMID32051772,reaction_3,Phenazine methylsulfate (PMS)
+PMID32051772,reaction_3,sodium dithionite
+PMID32051772,reaction_5,Axcyt c551
+PMID32051772,reaction_6,RpNiR cyt c
+PMID32054839,reaction_1,AmCHIL
+PMID32054839,reaction_2,PpCHIL
+PMID32054839,reaction_3,SmCHIL
+PMID32054839,reaction_4,GbCHIL
+PMID32054839,reaction_5,OsCHIL
+PMID32054839,reaction_6,HmCHIL
+PMID32054839,reaction_7,VvCHIL
+PMID32054839,reaction_10,GmCHIL
+PMID32054864,reaction_1,Lactosylceramide
+PMID32054864,reaction_1,Mn2+
+PMID32055924,reaction_1,NADPH:cytochrome P450 reductase from Physcomitrella patens
+PMID32055924,reaction_2,NADPH:cytochrome P450 reductase from Physcomitrella patens
+PMID32056499,reaction_1,CuSO4
+PMID32056499,reaction_2,CuSO4
+PMID32056499,reaction_3,CuSO4
+PMID32056499,reaction_4,CuSO4
+PMID32056499,reaction_5,CuSO4
+PMID32059844,reaction_1,Mn2+
+PMID32060291,reaction_1,β-carotene
+PMID32060291,reaction_1,dipalmitoylphosphatidylglycerol (LHG)
+PMID32060291,reaction_1,sulfoquinovosyldiacylglycerol (SQD)
+PMID32060291,reaction_1,digalactosyldiacylglycerol (DGD)
+PMID32060291,reaction_1,"[4Fe-4S] clusters (N6a, N6b, N2)"
+PMID32060291,reaction_1,[2Fe-2S] cluster (in Ferredoxin)
+PMID32060650,reaction_1,Phenazine ethosulfate (PES)
+PMID32060650,reaction_1,15 mM NH4Cl
+PMID32060650,reaction_2,Phenazine methosulfate (PMS)
+PMID32060650,reaction_2,15 mM NH4Cl
+PMID32060650,reaction_3,15 mM NH4Cl
+PMID32060650,reaction_4,20 µM Eu(III)
+PMID32060694,reaction_1,FMN
+PMID32060694,reaction_2,FMN
+PMID32060694,reaction_3,FMN
+PMID32060694,reaction_4,FMN
+PMID32060694,reaction_5,FMN
+PMID32060694,reaction_6,FMN
+PMID32060694,reaction_7,FMN
+PMID32060694,reaction_8,FMN
+PMID32060694,reaction_9,FMN
+PMID32060694,reaction_10,FMN
+PMID32060694,reaction_11,FMN
+PMID32060694,reaction_12,FMN
+PMID32060694,reaction_13,FMN
+PMID32060694,reaction_14,FMN
+PMID32060694,reaction_15,FMN
+PMID32060694,reaction_16,FMN
+PMID32060694,reaction_17,FMN
+PMID32060694,reaction_18,FMN
+PMID32074393,reaction_1_SfaA,Fe(II)
+PMID32074393,reaction_2_ScoE,Fe(II)
+PMID32074393,reaction_3_Sav607,Fe(II)
+PMID32080177,reaction_1,MnCl2
+PMID32085442,reaction_1,ACBP1
+PMID32085442,reaction_1,ACBP2
+PMID32085896,reaction_1,Mg2+
+PMID32085896,reaction_1,Mn2+
+PMID32085896,reaction_2,Mg2+
+PMID32085896,reaction_2,Mn2+
+PMID32085896,reaction_3,Mg2+
+PMID32085896,reaction_3,Mn2+
+PMID32085896,reaction_4,Mg2+
+PMID32085896,reaction_4,Mn2+
+PMID32085896,reaction_5,Mg2+
+PMID32085896,reaction_5,Mn2+
+PMID32085896,reaction_6,Mg2+
+PMID32085896,reaction_6,Mn2+
+PMID32086045,reaction_1,Pyridoxal 5'-phosphate (PLP)
+PMID32090335,reaction_1,Horseradish peroxidase
+PMID32092071,reaction_1,Factor 430
+PMID32094184,reaction_1,Trinuclear copper center (3 Cu ions)
+PMID32094184,reaction_2,Trinuclear copper center (3 Cu ions)
+PMID32094184,reaction_3,Trinuclear copper center (3 Cu ions)
+PMID32098824,reaction_2,"Persulfide dioxygenase (PDO, gene SYNPCC7002_A2866)"
+PMID32098824,reaction_2,Glutathione (GSH)
+PMID32101345,reaction_1,Mg2+
+PMID32101345,reaction_2,Mg2+
+PMID32102842,reaction_1,Mg2+
+PMID32102842,reaction_2,Mg2+
+PMID32103318,reaction_2,Mg2+
+PMID32103318,reaction_2,Polyphosphate kinase
+PMID32103318,reaction_3,Mg2+
+PMID32105687,reaction_1,pyruvate kinase
+PMID32105687,reaction_1,lactate dehydrogenase
+PMID32105687,reaction_1,MgSO4
+PMID32105687,reaction_2,pyruvate kinase
+PMID32105687,reaction_2,lactate dehydrogenase
+PMID32105687,reaction_2,MgSO4
+PMID32105687,reaction_3,pyruvate kinase
+PMID32105687,reaction_3,lactate dehydrogenase
+PMID32105687,reaction_3,MgSO4
+PMID32105687,reaction_4,pyruvate kinase
+PMID32105687,reaction_4,lactate dehydrogenase
+PMID32105687,reaction_4,MgSO4
+PMID32107984,reaction_1,Fe ion
+PMID32113843,reaction_1,pyridoxal-5'-phosphate (PLP)
+PMID32114907,reaction_2,Cu2+
+PMID32114907,reaction_8,molybdopterin cytosine dinucleotide cofactor
+PMID32115644,reaction_1,p450 oxoreductase (POR)
+PMID32115688,reaction_1,Mitochondrial trifunctional protein (MTP)
+PMID32115688,reaction_1,long-chain enoyl-CoA hydratase
+PMID32115688,reaction_1,long-chain 3-ketoacyl-CoA thiolase
+PMID32117944,reaction_1,Mg2+
+PMID32117944,reaction_2,Mg2+
+PMID32117944,reaction_3,Mg2+
+PMID32117944,reaction_4,Mg2+
+PMID32125480,reaction_1,Wild-type NovQ activity is independent of metal ions. Mutants E281Q and E281M exhibited strong requirement for Mg2+ and Mn2+.
+PMID32130469,reaction_1,FeCl2 (0.6 mM)
+PMID32130469,reaction_1,"glycerol (10%, v/v)"
+PMID32130469,reaction_2,Ferulic acid decarboxylase (FDC) from Bacillus pumilus ATCC 14884
+PMID32130469,reaction_2,FeCl2 (0.6 mM)
+PMID32130469,reaction_2,"glycerol (10%, v/v)"
+PMID32131594,reaction_1,Fe(II)
+PMID32131594,reaction_2,Fe(II)
+PMID32131594,reaction_3,Fe(II)
+PMID32131594,reaction_4,Fe(II)
+PMID32133382,reaction_1,Thioredoxin (from E. coli)
+PMID32133382,reaction_1,Thioredoxin reductase (from E. coli)
+PMID32140842,reaction_1,PLP
+PMID32140842,reaction_1,Zn2+
+PMID32140842,reaction_2,PLP
+PMID32140842,reaction_3,PLP
+PMID32140842,reaction_4,PLP
+PMID32140842,reaction_5,PLP
+PMID32140842,reaction_6,PLP
+PMID32140842,reaction_7,PLP
+PMID32141742,reaction_1,NADPH
+PMID32141742,reaction_2,NADPH
+PMID32144268,reaction_1,DJ-1
+PMID32144268,reaction_1,AHCYL1
+PMID32144268,reaction_1,NAD+
+PMID32144268,reaction_1,NADH
+PMID32145238,reaction_1,Glucono delta-lactone (GDL)
+PMID32145238,reaction_2,Glucono delta-lactone (GDL)
+PMID32146179,reaction_1,CaCl2
+PMID32146179,reaction_1,Triton X-100
+PMID32146179,reaction_1,muramidase
+PMID32146811,crude_1,NADP/NADPH
+PMID32146811,crude_2,NADP/NADPH
+PMID32146811,crude_3,NADP/NADPH
+PMID32146811,crude_4,NADP/NADPH
+PMID32146811,crude_5,NADP/NADPH
+PMID32146811,crude_6,NADP/NADPH
+PMID32146811,crude_7,NADP/NADPH
+PMID32146811,crude_8,NADP/NADPH
+PMID32146811,crude_9,NADP/NADPH
+PMID32146811,crude_10,NADP/NADPH
+PMID32146811,crude_11,NADP/NADPH
+PMID32146811,crude_12,NADP/NADPH
+PMID32146811,crude_13,NADP/NADPH
+PMID32146811,crude_14,NADP/NADPH
+PMID32146811,crude_15,NADP/NADPH
+PMID32146811,crude_16,NADP/NADPH
+PMID32146811,crude_17,NADP/NADPH
+PMID32146811,crude_18,NADP/NADPH
+PMID32146811,crude_19,NADP/NADPH
+PMID32146811,crude_20,NADP/NADPH
+PMID32146811,crude_21,NADP/NADPH
+PMID32146811,crude_22,NADP/NADPH
+PMID32146811,crude_23,NADP/NADPH
+PMID32146811,crude_24,NADP/NADPH
+PMID32146811,crude_25,NADP/NADPH
+PMID32146811,crude_26,NADP/NADPH
+PMID32146811,crude_27,NADP/NADPH
+PMID32146811,crude_28,NADP/NADPH
+PMID32146811,crude_29,NADP/NADPH
+PMID32146811,crude_30,NADP/NADPH
+PMID32146811,crude_31,NADP/NADPH
+PMID32146811,crude_32,NADP/NADPH
+PMID32146811,bddet2_1,β-NADP
+PMID32146811,bddet2_2,β-NADP
+PMID32146811,bdcyp90b1_1,NADPH-Cyt P450 reductase
+PMID32146811,bdcyp90b1_1,NADPH
+PMID32146811,bdcyp90b1_2,NADPH-Cyt P450 reductase
+PMID32146811,bdcyp90b1_2,NADPH
+PMID32146811,bdcyp90a1_1,NADPH-Cyt P450 reductase
+PMID32146811,bdcyp90a1_1,NADPH
+PMID32146811,bdcyp90a1_2,NADPH-Cyt P450 reductase
+PMID32146811,bdcyp90a1_2,NADPH
+PMID32146811,bdcyp90a1_3,NADPH-Cyt P450 reductase
+PMID32146811,bdcyp90a1_3,NADPH
+PMID32146811,bdcyp90d2_1,NADPH-Cyt P450 reductase
+PMID32146811,bdcyp90d2_1,NADPH
+PMID32146811,bdcyp90d2_2,NADPH-Cyt P450 reductase
+PMID32146811,bdcyp90d2_2,NADPH
+PMID32146811,bdcyp90d2_3,NADPH-Cyt P450 reductase
+PMID32146811,bdcyp90d2_3,NADPH
+PMID32146811,bdcyp85a1_ecoli_1,NADPH-Cyt P450 reductase
+PMID32146811,bdcyp85a1_ecoli_1,NADPH
+PMID32146811,bdcyp85a1_ecoli_2,NADPH-Cyt P450 reductase
+PMID32146811,bdcyp85a1_ecoli_2,NADPH
+PMID32146811,bdcyp85a1_ecoli_3,NADPH-Cyt P450 reductase
+PMID32146811,bdcyp85a1_ecoli_3,NADPH
+PMID32146811,bdcyp85a1_ecoli_4,NADPH-Cyt P450 reductase
+PMID32146811,bdcyp85a1_ecoli_4,NADPH
+PMID32149287,reaction_3,9-deazaguanine
+PMID32153057,reaction_1,hexokinase
+PMID32153057,reaction_1,glucose-6-phosphate dehydrogenase
+PMID32155529,reaction_1_in_vitro,Ascorbate
+PMID32155529,reaction_1_in_vitro,Fe(II)
+PMID32158501,reaction_2,NcCDHIIA (Cellobiose dehydrogenase IIA from N. crassa)
+PMID32158501,reaction_3,NcCDHIIA (Cellobiose dehydrogenase IIA from N. crassa)
+PMID32158501,reaction_3,Glucose oxidase (from Aspergillus niger)
+PMID32158501,reaction_5,NcCDHIIA (Cellobiose dehydrogenase IIA from N. crassa)
+PMID32159929,reaction_1_cyt_bo3,Dithiothreitol (DTT)
+PMID32159929,reaction_2_cyt_bdI,Dithiothreitol (DTT)
+PMID32160528,reaction_1,γ-subunit (Tma17p)
+PMID32162142,reaction_1,azotetrazolium (chromogenic agent)
+PMID32168758,reaction_1,Lactate dehydrogenase
+PMID32168758,reaction_2,Lactate dehydrogenase
+PMID32168758,reaction_3,Lactate dehydrogenase
+PMID32168758,reaction_4,Lactate dehydrogenase
+PMID32168758,reaction_5,Lactate dehydrogenase
+PMID32169960,reaction_1,Mn2+
+PMID32169960,reaction_1,Mg2+
+PMID32169960,reaction_2,Mn2+
+PMID32169960,reaction_2,Mg2+
+PMID32169960,reaction_3,Mn2+
+PMID32169960,reaction_3,Mg2+
+PMID32169960,reaction_4,Mn2+
+PMID32169960,reaction_4,Mg2+
+PMID32169960,reaction_5,Mn2+
+PMID32169960,reaction_5,Mg2+
+PMID32169960,reaction_6,Mn2+
+PMID32169960,reaction_6,Mg2+
+PMID32170014,reaction_1,MARCH6 (E3 ubiquitin ligase)
+PMID32171154,reaction_1,Mg2+
+PMID32171154,reaction_1,NADPH
+PMID32171656,reaction_1,Zn2+
+PMID32171656,reaction_2,Zn2+
+PMID32171656,reaction_3,Zn2+
+PMID32172349,reaction_1,Calcium chloride
+PMID32178974,reaction_1,rat NADPH cytochrome P450 oxidoreductase
+PMID32180316,reaction_1,MgCl2
+PMID32180316,reaction_2,MgCl2
+PMID32180325,reaction_1,sodium dithionite (reductant)
+PMID32180325,reaction_2,sodium dithionite (reductant)
+PMID32181246,reaction_2,glutathione reductase
+PMID32181246,reaction_2,NADPH
+PMID32181246,reaction_2,GSH
+PMID32182320,reaction_1,Fe(II) (natural cofactor)
+PMID32182320,reaction_1,Ni(II) (surrogate for crystallization)
+PMID32182320,reaction_1,Sr(II) (stabilizing agent for crystallization)
+PMID32182513,reaction_1,CaCl2
+PMID32182513,reaction_2,CaCl2
+PMID32182513,reaction_3,CaCl2
+PMID32182513,reaction_4,CaCl2
+PMID32182513,reaction_5,MgSO4
+PMID32182513,reaction_6,MgSO4
+PMID32182756,reaction_1,Queuine-tRNA ribosyltransferase domain containing 1 (QTRT2)
+PMID32184398,reaction_1,Mg2+
+PMID32184398,reaction_2,Mg2+
+PMID32184398,reaction_3,Mg2+
+PMID32188856,reaction_1,Fe2+
+PMID32188856,reaction_2,Fe2+
+PMID32190117,reaction_2,"{'name': 'Alditol oxidase', 'synonyms': ['AldO'], 'organism': 'Streptomyces coelicolor A3(2)', 'genbank_id': 'NC_003888.3', 'expression_system_host': 'Escherichia coli BL21(DE3)', 'expression_details': {'vector_plasmid': 'pET28b', 'induction_conditions': '0.2 mM IPTG, 24h at 18°C'}}"
+PMID32190117,reaction_10,"{'name': 'Lipase from Candida rugosa', 'synonyms': ['CRL'], 'organism': 'Candida rugosa', 'details': 'Commercial enzyme'}"
+PMID32190117,reaction_10,"{'name': 'Alditol oxidase', 'synonyms': ['AldO'], 'organism': 'Streptomyces coelicolor A3(2)', 'genbank_id': 'NC_003888.3'}"
+PMID32190117,reaction_11,"{'name': 'Lipase from Candida rugosa', 'synonyms': ['CRL'], 'organism': 'Candida rugosa'}"
+PMID32190117,reaction_11,"{'name': 'Alditol oxidase', 'synonyms': ['AldO'], 'organism': 'Streptomyces coelicolor A3(2)'}"
+PMID32190117,reaction_12,"{'name': 'Lipase from Candida rugosa', 'synonyms': ['CRL'], 'organism': 'Candida rugosa'}"
+PMID32190117,reaction_12,"{'name': 'Alditol oxidase', 'synonyms': ['AldO'], 'organism': 'Streptomyces coelicolor A3(2)'}"
+PMID32190117,reaction_13,"{'name': 'Lipase from Candida rugosa', 'synonyms': ['CRL'], 'organism': 'Candida rugosa'}"
+PMID32190117,reaction_13,"{'name': 'Alditol oxidase', 'synonyms': ['AldO'], 'organism': 'Streptomyces coelicolor A3(2)'}"
+PMID32190117,reaction_14,"{'name': 'Lipase from Candida rugosa', 'synonyms': ['CRL'], 'organism': 'Candida rugosa'}"
+PMID32190117,reaction_14,"{'name': 'Alditol oxidase', 'synonyms': ['AldO'], 'organism': 'Streptomyces coelicolor A3(2)'}"
+PMID32190117,reaction_15,"{'name': 'Lipase from Aspergillus oryzae', 'synonyms': ['AOL'], 'organism': 'Aspergillus oryzae', 'details': 'Commercial enzyme'}"
+PMID32190117,reaction_15,"{'name': 'Alditol oxidase', 'synonyms': ['AldO'], 'organism': 'Streptomyces coelicolor A3(2)'}"
+PMID32190117,reaction_16,"{'name': 'Lipase from Aspergillus oryzae', 'synonyms': ['AOL'], 'organism': 'Aspergillus oryzae'}"
+PMID32190117,reaction_16,"{'name': 'Alditol oxidase', 'synonyms': ['AldO'], 'organism': 'Streptomyces coelicolor A3(2)'}"
+PMID32190117,reaction_17,"{'name': 'Lipase from Candida rugosa', 'synonyms': ['CRL'], 'organism': 'Candida rugosa'}"
+PMID32190117,reaction_17,"{'name': 'Alditol oxidase', 'synonyms': ['AldO'], 'organism': 'Streptomyces coelicolor A3(2)'}"
+PMID32190117,reaction_18,"{'name': 'Lipase from Candida rugosa', 'synonyms': ['CRL'], 'organism': 'Candida rugosa'}"
+PMID32190117,reaction_18,"{'name': 'Alditol oxidase', 'synonyms': ['AldO'], 'organism': 'Streptomyces coelicolor A3(2)'}"
+PMID32190117,reaction_19,"{'name': 'Lipase from Candida rugosa', 'synonyms': ['CRL'], 'organism': 'Candida rugosa'}"
+PMID32190117,reaction_19,"{'name': 'Alditol oxidase', 'synonyms': ['AldO'], 'organism': 'Streptomyces coelicolor A3(2)'}"
+PMID32190117,reaction_20,"{'name': 'Lipase from Candida rugosa', 'synonyms': ['CRL'], 'organism': 'Candida rugosa'}"
+PMID32190117,reaction_20,"{'name': 'Alditol oxidase', 'synonyms': ['AldO'], 'organism': 'Streptomyces coelicolor A3(2)'}"
+PMID32190117,reaction_21,"{'name': 'Lipase from Candida rugosa', 'synonyms': ['CRL'], 'organism': 'Candida rugosa'}"
+PMID32190117,reaction_21,"{'name': 'Alditol oxidase', 'synonyms': ['AldO'], 'organism': 'Streptomyces coelicolor A3(2)'}"
+PMID32190117,reaction_22,"{'name': 'Lipase from Aspergillus oryzae', 'synonyms': ['AOL'], 'organism': 'Aspergillus oryzae'}"
+PMID32190117,reaction_22,"{'name': 'Alditol oxidase', 'synonyms': ['AldO'], 'organism': 'Streptomyces coelicolor A3(2)'}"
+PMID32190117,reaction_23,"{'name': 'Lipase from Aspergillus oryzae', 'synonyms': ['AOL'], 'organism': 'Aspergillus oryzae'}"
+PMID32190117,reaction_23,"{'name': 'Alditol oxidase', 'synonyms': ['AldO'], 'organism': 'Streptomyces coelicolor A3(2)'}"
+PMID32190117,reaction_24,"{'name': 'Lipase from Aspergillus oryzae', 'synonyms': ['AOL'], 'organism': 'Aspergillus oryzae'}"
+PMID32190117,reaction_24,"{'name': 'Alditol oxidase', 'synonyms': ['AldO'], 'organism': 'Streptomyces coelicolor A3(2)'}"
+PMID32190117,reaction_25,"{'name': 'Lipase from Aspergillus oryzae', 'synonyms': ['AOL'], 'organism': 'Aspergillus oryzae'}"
+PMID32190117,reaction_25,"{'name': 'Alditol oxidase', 'synonyms': ['AldO'], 'organism': 'Streptomyces coelicolor A3(2)'}"
+PMID32190117,reaction_26,"{'name': 'Lipase from Aspergillus oryzae', 'synonyms': ['AOL'], 'organism': 'Aspergillus oryzae'}"
+PMID32190117,reaction_26,"{'name': 'Alditol oxidase', 'synonyms': ['AldO'], 'organism': 'Streptomyces coelicolor A3(2)'}"
+PMID32196091,reaction_1,human ferredoxin 1 (FdX)
+PMID32196091,reaction_1,human ferredoxin reductase (FdxR)
+PMID32196091,reaction_1,glucose-6-phosphate
+PMID32196091,reaction_1,glucose-6-phosphate dehydrogenase
+PMID32196091,reaction_1,NADPH
+PMID32196091,reaction_2,human ferredoxin 1 (FdX)
+PMID32196091,reaction_2,human ferredoxin reductase (FdxR)
+PMID32196091,reaction_2,glucose-6-phosphate
+PMID32196091,reaction_2,glucose-6-phosphate dehydrogenase
+PMID32196091,reaction_2,NADPH
+PMID32196091,reaction_3,human ferredoxin 1 (FdX)
+PMID32196091,reaction_3,human ferredoxin reductase (FdxR)
+PMID32196091,reaction_3,glucose-6-phosphate
+PMID32196091,reaction_3,glucose-6-phosphate dehydrogenase
+PMID32196091,reaction_3,NADPH
+PMID32196942,reaction_1,Mg2+
+PMID32196942,reaction_1,glyceraldehyde 3-phosphate dehydrogenase (for assay)
+PMID32196942,reaction_1,NADH (for assay)
+PMID32196942,reaction_2,Mg2+
+PMID32196942,reaction_2,glyceraldehyde 3-phosphate dehydrogenase (for assay)
+PMID32196942,reaction_2,NADH (for assay)
+PMID32196942,reaction_3,Mg2+
+PMID32196942,reaction_3,glyceraldehyde 3-phosphate dehydrogenase (for assay)
+PMID32196942,reaction_3,NADH (for assay)
+PMID32198047,reaction_1,Calmodulin
+PMID32198047,reaction_1,Ca2+
+PMID32198047,reaction_1,Mg2+
+PMID32198047,reaction_2,Calmodulin
+PMID32198047,reaction_2,Ca2+
+PMID32198047,reaction_2,Mg2+
+PMID32198779,reaction_1,Mg2+
+PMID32198779,reaction_2,Mg2+
+PMID32201979,reaction_1,NADPH
+PMID32201979,reaction_2,NADPH
+PMID32201979,reaction_3,NADPH
+PMID32201979,reaction_4,NADPH
+PMID32203655,reaction_1,NH3·BH3
+PMID32203655,reaction_1,FAD
+PMID32203655,reaction_3,NH3·BH3
+PMID32203655,reaction_4,NH3·BH3
+PMID32203655,reaction_5,NH3·BH3
+PMID32203655,reaction_6,NH3·BH3
+PMID32203655,reaction_7,NH3·BH3
+PMID32203655,reaction_8,NH3·BH3
+PMID32203655,reaction_9,NH3·BH3
+PMID32203655,reaction_10,NH3·BH3
+PMID32203655,reaction_11,NH3·BH3
+PMID32203655,reaction_12,NH3·BH3
+PMID32203655,reaction_13,NH3·BH3
+PMID32203655,reaction_14,NH3·BH3
+PMID32203655,reaction_15,NH3·BH3
+PMID32203655,reaction_16,NH3·BH3
+PMID32203655,reaction_17,NH3·BH3
+PMID32203655,reaction_18,NH3·BH3
+PMID32203655,reaction_19,NH3·BH3
+PMID32205453,reaction_2,ascorbate oxidase
+PMID32205454,reaction_1,Mg2+
+PMID32205454,reaction_2,Mg2+
+PMID32205454,reaction_3,Mg2+
+PMID32205454,reaction_4,Mg2+
+PMID32205454,reaction_5,Mg2+
+PMID32205454,reaction_6,Mg2+
+PMID32205454,reaction_7,Mg2+
+PMID32205454,reaction_8,Mg2+
+PMID32206501,reaction_1,Fe(II)
+PMID32209662,reaction_1,NADPH
+PMID32209662,reaction_1,Catalase
+PMID32220614,reaction_1,isc-operon (iscSUA-hscBA-fdx-iscX)
+PMID32220614,reaction_1,suf-operon (sufABCDSE)
+PMID32220614,reaction_2,truncated lipoylated pyruvate dehydrogenase subunit (encoded by aceF)
+PMID32222467,reaction_1,DTT
+PMID32222467,reaction_2,DTT
+PMID32226807,reaction_1_aminopyrine_demethylation,"NADPH-regenerating system (1.3 mM β-NADPNa2, 3.3 mM glucose 6-phosphate, 0.4 U/ml glucose 6-phosphate dehydrogenase)"
+PMID32226807,reaction_A1_metabolism_RLM,NADPH-regenerating system
+PMID32226807,reaction_A1_metabolism_HLM,NADPH-regenerating system
+PMID32226807,reaction_A3_metabolism_RLM,NADPH-regenerating system
+PMID32226807,reaction_A3_metabolism_HLM,NADPH-regenerating system
+PMID32226807,reaction_A4_metabolism_RLM,NADPH-regenerating system
+PMID32226807,reaction_A4_metabolism_HLM,NADPH-regenerating system
+PMID32226807,reaction_A5_metabolism_RLM,NADPH-regenerating system
+PMID32226807,reaction_A5_metabolism_HLM,NADPH-regenerating system
+PMID32226807,reaction_A6_metabolism_RLM,NADPH-regenerating system
+PMID32226807,reaction_A6_metabolism_HLM,NADPH-regenerating system
+PMID32226807,reaction_E1_metabolism_RLM,NADPH-regenerating system
+PMID32226807,reaction_E1_metabolism_HLM,NADPH-regenerating system
+PMID32226807,reaction_E2_metabolism_RLM,NADPH-regenerating system
+PMID32226807,reaction_E3_metabolism_RLM,NADPH-regenerating system
+PMID32226807,reaction_E3_metabolism_HLM,NADPH-regenerating system
+PMID32226807,reaction_E4_metabolism_RLM,NADPH-regenerating system
+PMID32226807,reaction_E4_metabolism_HLM,NADPH-regenerating system
+PMID32226807,reaction_E5_metabolism_RLM,NADPH-regenerating system
+PMID32226807,reaction_E5_metabolism_HLM,NADPH-regenerating system
+PMID32226807,reaction_C1_metabolism_RLM,NADPH-regenerating system
+PMID32226807,reaction_C1_metabolism_HLM,NADPH-regenerating system
+PMID32226807,reaction_T1_metabolism_RLM,NADPH-regenerating system
+PMID32226807,reaction_T1_metabolism_HLM,NADPH-regenerating system
+PMID32229210,reaction_1,Mg2+
+PMID32229210,reaction_2,Mg2+
+PMID32229210,reaction_3,Mg2+
+PMID32229210,reaction_4,Mg2+
+PMID32229210,reaction_5,Mg2+
+PMID32229210,reaction_6,Mg2+
+PMID32229210,reaction_7,Mg2+
+PMID32229210,reaction_8,Mg2+
+PMID32230972,reaction_1,Mn2+
+PMID32230972,reaction_2,Mn2+
+PMID32230972,reaction_3,Mn2+
+PMID32230972,reaction_4,Mn2+
+PMID32230972,reaction_6,Mn2+
+PMID32230972,reaction_7,Mn2+
+PMID32230972,reaction_8,Mn2+
+PMID32230972,reaction_9,Mn2+
+PMID32233056,reaction_1,Fe(II)
+PMID32233056,reaction_1,ascorbic acid
+PMID32233071,reaction_1,FAD (endogenous)
+PMID32233071,reaction_1,Aldehyde dehydrogenase (native P. putida S12 enzyme)
+PMID32234783,reaction_1,light
+PMID32234783,reaction_2,light
+PMID32235505,reaction_1,NAD+
+PMID32235505,reaction_2,NAD+
+PMID32246282,reaction_1,Heme b
+PMID32246945,reaction_1,NADPH-dependent cytochrome P450 reductase (CPR)
+PMID32246945,reaction_1,cytochrome b5
+PMID32246945,reaction_1,GroES/EL chaperones
+PMID32247165,reaction_1_sGDH,PQQ
+PMID32247165,reaction_1_sGDH,Ca2+
+PMID32247165,reaction_2_mGDH,PQQ
+PMID32247165,reaction_2_mGDH,Mg2+
+PMID32247165,reaction_2_mGDH,Ca2+
+PMID32247276,reaction_5,Phosphate
+PMID32247276,reaction_7,Phosphate
+PMID32247276,reaction_9,Phosphate
+PMID32248970,reaction_1,Type 1 Copper
+PMID32248970,reaction_1,Type 2 Copper
+PMID32251275,reaction_1,Mg2+
+PMID32251275,reaction_1,K+
+PMID32251275,reaction_2,Aldehyde-deformylating oxygenase (ADO)
+PMID32251275,reaction_2,Ferredoxin
+PMID32251275,reaction_2,Fd-NADP+ oxidoreductase (FNR)
+PMID32251275,reaction_2,Mg2+
+PMID32251275,reaction_2,K+
+PMID32252458,reaction_1,NADPH production system
+PMID32255260,reaction_1,sodium ascorbate
+PMID32255260,reaction_1,phenazine methosulfate (PMS)
+PMID32255260,reaction_2,sodium ascorbate
+PMID32255260,reaction_2,phenazine methosulfate (PMS)
+PMID32255260,reaction_3,sodium ascorbate
+PMID32255260,reaction_3,phenazine methosulfate (PMS)
+PMID32255260,reaction_4,sodium ascorbate
+PMID32255260,reaction_4,phenazine methosulfate (PMS)
+PMID32255260,reaction_5,sodium ascorbate
+PMID32255260,reaction_5,phenazine methosulfate (PMS)
+PMID32255260,reaction_6,sodium ascorbate
+PMID32255260,reaction_6,phenazine methosulfate (PMS)
+PMID32255260,reaction_7,sodium ascorbate
+PMID32255260,reaction_7,phenazine methosulfate (PMS)
+PMID32255505,reaction_2,"beta-glucosidase (BGL, EC 3.2.1.21)"
+PMID32257583,reaction_1,non-heme iron
+PMID32257583,reaction_2,non-heme iron
+PMID32258011,reaction_1,Sorbosone dehydrogenase (SNDH) from G. oxydans WSH-004
+PMID32269094,reaction_1,Mg2+
+PMID32270839,reaction_1,non-heme iron
+PMID32275065,reaction_1,IGMT1
+PMID32275065,reaction_1,IGMT2
+PMID32275825,reaction_1,Pyrophosphatase
+PMID32275825,reaction_2,Pyrophosphatase
+PMID32275991,reaction_1,pyridoxal 5’-phosphate
+PMID32275991,reaction_2,Mg2+
+PMID32277030,reaction_1,Antithrombin (for functional assay)
+PMID32281473,reaction_1,NAD(H)
+PMID32281473,reaction_1,Zinc
+PMID32281473,reaction_2,NAD(H)
+PMID32281473,reaction_2,Zinc
+PMID32281473,reaction_3,NAD(H)
+PMID32281473,reaction_3,Zinc
+PMID32283297,reaction_1,FAD
+PMID32283297,reaction_1,CoREST
+PMID32296684,reaction_1,Formate dehydrogenase (FDH)
+PMID32301564,reaction_1,haem
+PMID32303871,reaction_1,DszD
+PMID32303871,reaction_1,NADH
+PMID32303871,reaction_1,FMN
+PMID32305411,reaction_1,Mo-bisPyranopterin Guanosine Dinucleotide cofactor
+PMID32305411,reaction_1,FeS clusters
+PMID32305411,reaction_1,b-type hemes (bD and bP)
+PMID32308735,reaction_1,Flavin adenine dinucleotide (FAD)
+PMID32308735,reaction_2,Flavin adenine dinucleotide (FAD)
+PMID32308735,reaction_3,Flavin adenine dinucleotide (FAD)
+PMID32310661,reaction_1,covalently bound 8α-N(3)-histidyl FAD
+PMID32314063,reaction_1,Hexaammineruthenium(III) chloride
+PMID32314063,reaction_1,Bovine serum albumin (BSA)
+PMID32314063,reaction_1,Glutaraldehyde
+PMID32314063,reaction_1,Ti3C2Tx MXene
+PMID32315721,reaction_1,NADPH
+PMID32315721,reaction_2,NADPH
+PMID32315721,reaction_3,NADPH
+PMID32315721,reaction_4,NADPH
+PMID32315721,reaction_5,NADPH
+PMID32315721,reaction_6,NADPH
+PMID32315721,reaction_7,NADPH
+PMID32315721,reaction_8,NADPH
+PMID32315721,reaction_9,NADPH
+PMID32315721,reaction_10,NADPH
+PMID32315721,reaction_11,NADPH
+PMID32315721,reaction_12,NADPH
+PMID32315721,reaction_13,NADPH
+PMID32315721,reaction_14,NADPH
+PMID32315721,reaction_15,NADPH
+PMID32315721,reaction_16,NADPH
+PMID32315721,reaction_17,NADPH
+PMID32315721,reaction_18,NADPH
+PMID32315721,reaction_19,NADPH
+PMID32315721,reaction_20,NADPH
+PMID32315721,reaction_21,NADPH
+PMID32315721,reaction_22,NADPH
+PMID32315721,reaction_23,NADPH
+PMID32315721,reaction_24,NADPH
+PMID32315721,reaction_25,NADPH
+PMID32315721,reaction_26,NADPH
+PMID32315721,reaction_27,NADPH
+PMID32315721,reaction_28,NADPH
+PMID32316603,reaction_1,Divalent metal ion
+PMID32316603,reaction_2,Divalent metal ion
+PMID32316603,reaction_3,Divalent metal ion
+PMID32316603,reaction_4,Divalent metal ion
+PMID32316603,reaction_5,Divalent metal ion
+PMID32316603,reaction_6,Divalent metal ion
+PMID32322725,reaction_1,MgCl2
+PMID32322725,reaction_1,Alcohol dehydrogenase (ADH)
+PMID32322725,reaction_2,MgCl2
+PMID32322725,reaction_3,MgCl2
+PMID32324773,reaction_1,Endogenous Arabidopsis NRT3/NAR2 proteins
+PMID32324965,reaction_2,BmGDHM6
+PMID32324965,reaction_2,D-glucose
+PMID32324965,reaction_2,NADP+
+PMID32324965,reaction_3,BmGDHM6
+PMID32324965,reaction_3,D-glucose
+PMID32324965,reaction_3,NADP+
+PMID32325762,reaction_2,Plastoquinone
+PMID32326167,reaction_1,"Amorpha-4,11-diene monooxygenase (CYP71AV1) from Artemisia annua"
+PMID32326167,reaction_1,Artemisinic aldehyde ∆11(13) reductase (DBR2) from Artemisia annua
+PMID32326167,reaction_1,Cytochrome P450 reductase (CPR) from Artemisia annua
+PMID32326167,reaction_1,Truncated 3-hydroxy-3-methylglutaryl-coenzyme A reductase (tHMGR) from Saccharomyces cerevisiae
+PMID32327655,reaction_1,Pyridoxal phosphate
+PMID32327655,reaction_2,Pyridoxal phosphate
+PMID32327655,reaction_4,Pyridoxal phosphate
+PMID32327655,reaction_4,L-lactate dehydrogenase
+PMID32327655,reaction_4,NADH
+PMID32327655,reaction_5,Pyridoxal phosphate
+PMID32327655,reaction_5,L-lactate dehydrogenase
+PMID32327655,reaction_5,NADH
+PMID32327655,reaction_6,Pyridoxal phosphate
+PMID32327655,reaction_6,L-lactate dehydrogenase
+PMID32327655,reaction_6,NADH
+PMID32327655,reaction_7,Pyridoxal phosphate
+PMID32327655,reaction_7,L-lactate dehydrogenase
+PMID32327655,reaction_7,NADH
+PMID32327655,reaction_8,Pyridoxal phosphate
+PMID32327655,reaction_8,L-lactate dehydrogenase
+PMID32327655,reaction_8,NADH
+PMID32327655,reaction_9,Pyridoxal phosphate
+PMID32327655,reaction_9,L-lactate dehydrogenase
+PMID32327655,reaction_9,NADH
+PMID32330361,reaction_1,Fe(II)
+PMID32330361,reaction_1,L-ascorbic acid
+PMID32330624,reaction_5,ATP
+PMID32330624,reaction_5,L-Serine
+PMID32330624,reaction_6,Selenocysteine synthase (EcSelA)
+PMID32330624,reaction_7,Selenocysteine synthase (EcSelA)
+PMID32330646,reaction_2,NBT (Nitroblue tetrazolium)
+PMID32331716,reaction_1,Heme
+PMID32331716,reaction_2,Heme
+PMID32331716,reaction_3,Heme
+PMID32331722,reaction_1_La-XoxF,PQQ
+PMID32331722,reaction_1_La-XoxF,La³⁺
+PMID32331722,reaction_2_Nd-XoxF,PQQ
+PMID32331722,reaction_2_Nd-XoxF,Nd³⁺
+PMID32331723,reaction_1,Flavin adenine dinucleotide (FAD)
+PMID32331723,reaction_2,KatE catalase (co-expressed)
+PMID32334266,reaction_1,MgCl2
+PMID32334266,reaction_2,MgCl2
+PMID32334266,reaction_3,2-Deoxy-D-glucose
+PMID32335368,reaction_1,Molybdenum
+PMID32335368,reaction_2,Molybdenum
+PMID32335504,reaction_2,LptC (regulatory subunit)
+PMID32343709,reaction_1,MgCl2
+PMID32343709,reaction_2,MgCl2
+PMID32344088,reaction_1,Sucrose synthase (SuSyAc) from Acidithiobacillus caldus
+PMID32344088,reaction_1,UDP
+PMID32344088,reaction_1,UDP-glucose
+PMID32344088,reaction_3,pyruvate kinase
+PMID32344088,reaction_3,lactate dehydrogenase
+PMID32344088,reaction_3,phospho-enol pyruvate
+PMID32344088,reaction_3,NADH
+PMID32345643,reaction_1,Pyridoxal phosphate (PLP)
+PMID32345643,reaction_1,SspD
+PMID32352790,reaction_1,Copper ion
+PMID32352790,reaction_2,Copper ion
+PMID32353513,reaction_1,MgCl2
+PMID32353513,reaction_1,MnCl2
+PMID32353513,reaction_2,MgCl2
+PMID32353513,reaction_2,MnCl2
+PMID32353513,reaction_3,MgCl2
+PMID32353513,reaction_3,MnCl2
+PMID32361114,reaction_1,endogenous chloroplast electron transport chain (ETC) proteins
+PMID32364738,reaction_1,Mg2+
+PMID32364738,reaction_2,Mg2+
+PMID32367441,reaction_17,EHNA (adenosine deaminase inhibitor)
+PMID32367441,reaction_17,5-iodotubericidin (adenosine kinase inhibitor)
+PMID32367441,reaction_17,NBTI (adenosine uptake inhibitor)
+PMID32367573,reaction_1,Mg2+
+PMID32367573,reaction_1,ATP
+PMID32367573,reaction_2,Mg2+
+PMID32367573,reaction_2,ATP
+PMID32367573,reaction_3,Mg2+
+PMID32367573,reaction_3,ATP
+PMID32367573,reaction_4,Mg2+
+PMID32367573,reaction_4,ATP
+PMID32367573,reaction_5,Mg2+
+PMID32367573,reaction_5,ATP
+PMID32367573,reaction_6,Mg2+
+PMID32367573,reaction_6,ATP
+PMID32367573,reaction_7,Mg2+
+PMID32367573,reaction_7,ATP
+PMID32367573,reaction_8,Mg2+
+PMID32367573,reaction_8,ATP
+PMID32379966,reaction_1,heme b558
+PMID32379966,reaction_1,heme b595
+PMID32379966,reaction_1,heme d
+PMID32382450,reaction_2,Lytic polysaccharide monooxygenase 9C (NcLPMO9C) from Neurospora crassa
+PMID32382667,reaction_1,Mg2+
+PMID32386575,reaction_1,Acyl carrier protein (E. coli ACP co-purified from expression host; M. smegmatis AcpM identified from M. smegmatis expression system)
+PMID32386575,reaction_1,Ca2+
+PMID32388928,reaction_1,Xylose transporter (Ec-XylE)
+PMID32388928,reaction_2,Xylose isomerase (Ec-XI)
+PMID32388928,reaction_2,Xylose transporter (Ec-XylE)
+PMID32391185,reaction_1,H2O2
+PMID32391185,reaction_2,H2O2
+PMID32391185,reaction_2,Peracetic acid
+PMID32391185,reaction_3,H2O2
+PMID32391470,reaction_6,FMN
+PMID32391470,reaction_6,(NH4)Fe(SO4)2
+PMID32391470,reaction_6,DTT
+PMID32393857,reaction_1,TonB-ExbB-ExbD complex
+PMID32393857,reaction_6,TonB-ExbB-ExbD complex
+PMID32393857,reaction_6,Gingipains (for generating peptides from BSA in vivo)
+PMID32393899,reaction_1,FLAP
+PMID32393899,reaction_1,Ca2+
+PMID32396821,reaction_1,FAD
+PMID32396821,reaction_2,FAD
+PMID32397467,reaction_5,myokinase
+PMID32397467,reaction_5,pyruvate kinase
+PMID32397467,reaction_5,phosphoenolpyruvate
+PMID32398013,reaction_1,crtE
+PMID32398013,reaction_1,crtI
+PMID32398013,reaction_1,crtYB
+PMID32399854,reaction_1,Copper
+PMID32405654,reaction_1,MgCl2
+PMID32405654,reaction_1,DTT
+PMID32405654,reaction_6,MgCl2
+PMID32405654,reaction_6,DTT
+PMID32409606,reaction_5,Endogenous N. benthamiana enzymes
+PMID32409656,reaction_1,Mg2+
+PMID32409656,reaction_2,Mg2+
+PMID32409656,reaction_3,Mg2+
+PMID32416191,reaction_1,MgCl2
+PMID32417540,reaction_5,phaJ1Pa
+PMID32417540,reaction_6,phaJ1Pa
+PMID32417540,reaction_7,phaJ1Pa
+PMID32417540,reaction_10,phaJ1Pa
+PMID32417540,reaction_11,phaJ1Pa
+PMID32417540,reaction_12,phaJ1Pa
+PMID32417540,reaction_13,phaJ1Pa
+PMID32417540,reaction_14,phaJ1Pa
+PMID32417540,reaction_15,phaJ1Pa
+PMID32423667,reaction_1,Pyridoxal 5′-phosphate (PLP)
+PMID32423667,reaction_2,Pyridoxal 5′-phosphate (PLP)
+PMID32423667,reaction_3,Pyridoxal 5′-phosphate (PLP)
+PMID32423667,reaction_4,Pyridoxal 5′-phosphate (PLP)
+PMID32423667,reaction_5,Pyridoxal 5′-phosphate (PLP)
+PMID32423674,reaction_1,Horseradish peroxidase (POx)
+PMID32423674,reaction_1,o-dianisidine dihydrochloride
+PMID32432915,reaction_1,ferrous sulfate (Fe2+)
+PMID32432915,reaction_1,ascorbate
+PMID32432915,reaction_1,catalase
+PMID32442521,reaction_1,pyridoxal-5′-phosphate
+PMID32456285,reaction_1,MsrA
+PMID32456285,reaction_1,Zn2+
+PMID32457294,reaction_1_neddylation,NEDD8 E1 (UBA3)
+PMID32457294,reaction_1_neddylation,NEDD8 E2 (UBE2M)
+PMID32457294,reaction_1_neddylation,Ku70
+PMID32457294,reaction_1_neddylation,Ku80
+PMID32459092,reaction_1,HT-DNA (activator)
+PMID32459092,reaction_1,E.coli pyrophosphatase (assay coupling enzyme)
+PMID32459374,reaction_1_CaCYP51,Homo sapiens cytochrome P450 reductase (HsCPR)
+PMID32459374,reaction_2_HsCYP51,Homo sapiens cytochrome P450 reductase (HsCPR)
+PMID32464091,reaction_1,t3CLC (Clamp Loader Complex with 3 tau subunits)
+PMID32464091,reaction_2,DnaGC (C-terminal domain of DnaG primase)
+PMID32464091,reaction_2,t3CLC
+PMID32464091,reaction_3,DnaB helicase
+PMID32464091,reaction_3,DnaG primase
+PMID32464091,reaction_3,DnaC loader
+PMID32464091,reaction_3,SSB
+PMID32464091,reaction_3,beta2 clamp
+PMID32464091,reaction_4,DnaB helicase
+PMID32464091,reaction_4,DnaC loader
+PMID32464091,reaction_4,t3dd0
+PMID32464091,reaction_4,DnaGC
+PMID32464091,reaction_5,DnaB-GC (cross-linked construct)
+PMID32464091,reaction_5,DnaC loader
+PMID32464091,reaction_5,t3dd0
+PMID32464091,reaction_6,DnaB helicase
+PMID32464091,reaction_6,DnaG primase
+PMID32464091,reaction_6,SSB
+PMID32464091,reaction_6,beta2 clamp
+PMID32469443,reaction_1,Mg2+
+PMID32470517,reaction_1,Mg2+
+PMID32470517,reaction_2,Mg2+
+PMID32471859,reaction_1,Mg2+
+PMID32472090,reaction_1,Glucose dehydrogenase
+PMID32472090,reaction_1,Glucose
+PMID32472101,reaction_1,ribo-Q1 (orthogonal ribosome)
+PMID32472101,reaction_2,ribo-Q1 (orthogonal ribosome)
+PMID32472101,reaction_3,ribo-Q1 (orthogonal ribosome)
+PMID32472168,reaction_1,MgCl2
+PMID32472168,reaction_2,MgCl2
+PMID32472168,reaction_3,MgCl2
+PMID32472168,reaction_4,MgCl2
+PMID32483918,reaction_1,MnCl2
+PMID32483918,reaction_2,MnCl2
+PMID32483918,reaction_3,MnCl2
+PMID32483918,reaction_4,MnCl2
+PMID32483918,reaction_5,MnCl2
+PMID32483918,reaction_6,MnCl2
+PMID32483918,reaction_7,MnCl2
+PMID32483918,reaction_8,MnCl2
+PMID32483918,reaction_9,MnCl2
+PMID32483918,reaction_10,MnCl2
+PMID32485238,reaction_1,Mg2+
+PMID32485238,reaction_1,K+
+PMID32485238,reaction_2,Mg2+
+PMID32485238,reaction_2,K+
+PMID32487758,reaction_1,FAD
+PMID32487758,reaction_1,FMN
+PMID32487758,reaction_1,4Fe-4S cluster
+PMID32488442,reaction_2,epoxide hydrolase from Myxococcus xanthus
+PMID32492133,reaction_1,glutathione peroxidase
+PMID32492133,reaction_1,glutathione
+PMID32496216,reaction_1,Mg2+
+PMID32500270,reaction_6,Mn2+
+PMID32500270,reaction_6,Mg2+
+PMID32500270,reaction_7,Mn2+
+PMID32500270,reaction_7,Mg2+
+PMID32500270,reaction_8,Mn2+
+PMID32500270,reaction_8,Mg2+
+PMID32500270,reaction_9,Mn2+
+PMID32500270,reaction_9,Mg2+
+PMID32500270,reaction_10,Mn2+
+PMID32500270,reaction_10,Mg2+
+PMID32504107,reaction_1,Fe(II)
+PMID32504107,reaction_1,ascorbic acid
+PMID32511919,reaction_1,diiron cofactor
+PMID32511919,reaction_2,diiron cofactor
+PMID32513704,reaction_1,FNR–ferredoxin pair
+PMID32513704,reaction_1,NADPH-cytochrome P450 reductase (CPR) ATR2
+PMID32513704,reaction_1,"NADPH regeneration system (glucose 6-phosphate, glucose 6-phosphate dehydrogenase)"
+PMID32517586,reaction_1,structural Zn2+
+PMID32526261,reaction_1,acetyl-CoA acetyltransferase (PhaA from Ralstonia eutropha H16)
+PMID32526261,reaction_1,acetoacetyl-CoA reductase (PhaB from Ralstonia eutropha H16)
+PMID32526261,reaction_2,acetyl-CoA acetyltransferase (PhaA from Ralstonia eutropha H16)
+PMID32526261,reaction_2,acetoacetyl-CoA reductase (PhaB from Ralstonia eutropha H16)
+PMID32526261,reaction_3,acetyl-CoA acetyltransferase (PhaA from Ralstonia eutropha H16)
+PMID32526261,reaction_3,acetoacetyl-CoA reductase (PhaB from Ralstonia eutropha H16)
+PMID32531208,reaction_1,MgCl2
+PMID32531315,reaction_1,Fe3+
+PMID32531362,reaction_1,Thioredoxin Trx2C34S
+PMID32534087,reaction_1,mercaptoethanol (slight activation)
+PMID32534087,reaction_1,dithiothreitol (slight activation)
+PMID32534087,reaction_3,Glucose dehydrogenase (from Bacillus subtilis)
+PMID32540188,reaction_1,magnesium chloride
+PMID32540188,reaction_1,inorganic pyrophosphatase
+PMID32540485,reaction_1,Flavine adenine dinucleotide
+PMID32541034,reaction_1,tRNAAsp
+PMID32541034,reaction_2,tRNAAsp
+PMID32544743,reaction_1,manganese chloride
+PMID32546622,reaction_1,Mg2+
+PMID32546622,reaction_1,Phosphatidylserine
+PMID32546622,reaction_2,Mg2+
+PMID32546622,reaction_2,Phosphatidylserine
+PMID32546622,reaction_3,Mg2+
+PMID32546622,reaction_3,Phosphatidylserine
+PMID32546622,reaction_4,Mg2+
+PMID32546622,reaction_4,Phosphatidylserine
+PMID32546622,reaction_5,Mg2+
+PMID32546622,reaction_5,Phosphatidylserine
+PMID32553892,reaction_1,FAD
+PMID32553892,reaction_2,FAD
+PMID32553892,reaction_3,FAD
+PMID32553892,reaction_4,FAD
+PMID32553892,reaction_5,FAD
+PMID32553892,reaction_6,FAD
+PMID32557118,reaction_1,Alcohol dehydrogenase from Streptomyces coelicolor A3 (ScADH)
+PMID32565080,reaction_1,di-iron core
+PMID32569353,reaction_1,FAD
+PMID32569353,reaction_2,FAD
+PMID32569353,reaction_3,FAD
+PMID32569353,reaction_4,FAD
+PMID32569353,reaction_5,FAD
+PMID32569353,reaction_6,FAD
+PMID32569353,reaction_7,pyridoxal 5′-phosphoric acid (PLP)
+PMID32569553,reaction_1,Mg2+
+PMID32569553,reaction_2,Mg2+
+PMID32569553,reaction_3,Mg2+
+PMID32569553,reaction_4,Mg2+
+PMID32569553,reaction_5,Mg2+
+PMID32569553,reaction_6,Mg2+
+PMID32569553,reaction_7,Mg2+
+PMID32569553,reaction_8,Mg2+
+PMID32569553,reaction_9,Mg2+
+PMID32569553,reaction_10,Mg2+
+PMID32569553,reaction_11,Mg2+
+PMID32569553,reaction_12,Mg2+
+PMID32569553,reaction_13,Mg2+
+PMID32571930,reaction_1,HpsH (activating enzyme)
+PMID32571930,reaction_1,S-adenosylmethionine
+PMID32571930,reaction_1,Ti(III) citrate
+PMID32571930,reaction_1,E. coli glycerol dehydrogenase (GldA)
+PMID32571930,reaction_1,NADH
+PMID32571930,reaction_2,HpsH (activating enzyme)
+PMID32571930,reaction_2,S-adenosylmethionine
+PMID32571930,reaction_2,Ti(III) citrate
+PMID32571930,reaction_2,Saccharomyces cerevisiae alcohol dehydrogenase (ADH1)
+PMID32571930,reaction_2,NADH
+PMID32571930,reaction_3,HpfH (activating enzyme)
+PMID32571930,reaction_3,S-adenosylmethionine
+PMID32571930,reaction_3,Ti(III) citrate
+PMID32571930,reaction_3,sulfopropionaldehyde reductase (HpfD)
+PMID32571930,reaction_3,NADH
+PMID32579353,reaction_1,Silver nanocluster (AgNCs-PMAA)
+PMID32579353,reaction_1,TiO2
+PMID32579353,reaction_1,g-C3N4
+PMID32579353,reaction_1,triethanolamine (TEOA)
+PMID32579353,reaction_2,Silver nanocluster (AgNCs-PMAA)
+PMID32579353,reaction_2,TiO2 electrode
+PMID32579353,reaction_4,Silver nanocluster (AgNCs-PMAA)
+PMID32579353,reaction_4,ITO electrode
+PMID32580556,reaction_1,Mg2+
+PMID32580556,reaction_2,Mg2+
+PMID32580556,reaction_3,Mg2+
+PMID32581130,reaction_1,cytoplasmic DNA
+PMID32581130,reaction_1,RNA:DNA hybrids
+PMID32581130,reaction_1,micronuclei
+PMID32584503,reaction_1,ferredoxin
+PMID32591507,reaction_2,pyridoxal phosphate
+PMID32596832,reaction_1,CMP-sialate synthase (CSS) from Neisseria meningitidis
+PMID32596832,reaction_1,inorganic pyrophosphatase
+PMID32596832,reaction_1,alkaline phosphatase
+PMID32601391,reaction_1,Pyridoxal 5'-phosphate
+PMID32601391,reaction_1,Heme
+PMID32601391,reaction_3,Pyridoxal 5'-phosphate
+PMID32601857,reaction_4,ABTS (mediator)
+PMID32608439,reaction_1,NADH
+PMID32608439,reaction_2,NADH
+PMID32608439,reaction_3,NADH
+PMID32615907,reaction_1,glutamate dehydrogenase
+PMID32615907,reaction_1,3-acetylpyridine adenine dinucleotide (APAD)
+PMID32615907,reaction_2,glutamate dehydrogenase
+PMID32615907,reaction_2,3-acetylpyridine adenine dinucleotide (APAD)
+PMID32617841,reaction_1,Mmp1 T7-like RNA polymerase
+PMID32626311,reaction_1,Calcium
+PMID32631052,reaction_1,diferric-tyrosyl radical cofactor
+PMID32631052,reaction_1,TTP
+PMID32631052,reaction_1,Mg2+
+PMID32634742,reaction_1,"2,3-diphosphoglycerate"
+PMID32634742,reaction_1,lactate dehydrogenase (assay component)
+PMID32634742,reaction_1,pyruvate kinase (assay component)
+PMID32634742,reaction_1,enolase (assay component)
+PMID32636308,reaction_1,DTT
+PMID32636308,reaction_1,GSH
+PMID32636308,reaction_2,DTT
+PMID32636308,reaction_2,GSH
+PMID32638277,reaction_1,Cu2+
+PMID32638277,reaction_1,Zn2+
+PMID32639976,reaction_1,NAD+
+PMID32639976,reaction_2,NADH
+PMID32640001,reaction_1,Cu(II)
+PMID32640001,reaction_1,Ascorbic acid (1 mM)
+PMID32640001,reaction_1,"Myriococcum thermophilum cellobiose dehydrogenase (MtCDH) (1 µM, alternative electron donor)"
+PMID32640001,reaction_2,Cu(II)
+PMID32640001,reaction_2,Ascorbic acid (1 mM)
+PMID32640001,reaction_2,"Myriococcum thermophilum cellobiose dehydrogenase (MtCDH) (1 µM, alternative electron donor)"
+PMID32640001,reaction_3,Cu(II)
+PMID32640001,reaction_3,Ascorbic acid (1 mM)
+PMID32640001,reaction_4,Cu(II)
+PMID32640001,reaction_4,Ascorbic acid (1 mM)
+PMID32640001,reaction_5,Cu(II)
+PMID32640001,reaction_5,Ascorbic acid (1 mM)
+PMID32640001,reaction_6,Cu(II)
+PMID32640001,reaction_6,Ascorbic acid (1 mM)
+PMID32643933,reaction_1,PqqD
+PMID32643933,reaction_1,ferredoxin
+PMID32643933,reaction_1,ferredoxin-NADP+ reductase
+PMID32643933,reaction_1,NADPH
+PMID32645255,reaction_1,FAD
+PMID32645255,reaction_1,NAD+
+PMID32645255,reaction_1,NaBr
+PMID32645255,reaction_1,PrnF (flavin reductase)
+PMID32645255,reaction_1,RR-ADH (alcohol dehydrogenase)
+PMID32645255,reaction_1,iso-propanol
+PMID32645255,reaction_2,FAD
+PMID32645255,reaction_2,NAD+
+PMID32645255,reaction_2,NaBr
+PMID32645255,reaction_2,PrnF (flavin reductase)
+PMID32645255,reaction_2,RR-ADH (alcohol dehydrogenase)
+PMID32645255,reaction_2,iso-propanol
+PMID32645255,reaction_3,FAD
+PMID32645255,reaction_3,NAD+
+PMID32645255,reaction_3,NaBr
+PMID32645255,reaction_3,PrnF (flavin reductase)
+PMID32645255,reaction_3,RR-ADH (alcohol dehydrogenase)
+PMID32645255,reaction_3,iso-propanol
+PMID32645255,reaction_4,FAD
+PMID32645255,reaction_4,NAD+
+PMID32645255,reaction_4,NaBr
+PMID32645255,reaction_4,PrnF (flavin reductase)
+PMID32645255,reaction_4,RR-ADH (alcohol dehydrogenase)
+PMID32645255,reaction_4,iso-propanol
+PMID32645255,reaction_5,FAD
+PMID32645255,reaction_5,NAD+
+PMID32645255,reaction_5,NaBr
+PMID32645255,reaction_5,PrnF (flavin reductase)
+PMID32645255,reaction_5,RR-ADH (alcohol dehydrogenase)
+PMID32645255,reaction_5,iso-propanol
+PMID32645255,reaction_6,FAD
+PMID32645255,reaction_6,NAD+
+PMID32645255,reaction_6,NaBr
+PMID32645255,reaction_6,PrnF (flavin reductase)
+PMID32645255,reaction_6,RR-ADH (alcohol dehydrogenase)
+PMID32645255,reaction_6,iso-propanol
+PMID32645255,reaction_7,FAD
+PMID32645255,reaction_7,NAD+
+PMID32645255,reaction_7,NaBr
+PMID32645255,reaction_7,PrnF (flavin reductase)
+PMID32645255,reaction_7,RR-ADH (alcohol dehydrogenase)
+PMID32645255,reaction_7,iso-propanol
+PMID32645255,reaction_8,FAD
+PMID32645255,reaction_8,NAD+
+PMID32645255,reaction_8,NaBr
+PMID32645255,reaction_8,PrnF (flavin reductase)
+PMID32645255,reaction_8,RR-ADH (alcohol dehydrogenase)
+PMID32645255,reaction_8,iso-propanol
+PMID32645255,reaction_9,FAD
+PMID32645255,reaction_9,NAD+
+PMID32645255,reaction_9,NaBr
+PMID32645255,reaction_9,PrnF (flavin reductase)
+PMID32645255,reaction_9,RR-ADH (alcohol dehydrogenase)
+PMID32645255,reaction_9,iso-propanol
+PMID32645255,reaction_10,FAD
+PMID32645255,reaction_10,NAD+
+PMID32645255,reaction_10,NaBr
+PMID32645255,reaction_10,PrnF (flavin reductase)
+PMID32645255,reaction_10,RR-ADH (alcohol dehydrogenase)
+PMID32645255,reaction_10,iso-propanol
+PMID32645255,reaction_11,FAD
+PMID32645255,reaction_11,NAD+
+PMID32645255,reaction_11,NaBr
+PMID32645255,reaction_11,PrnF (flavin reductase)
+PMID32645255,reaction_11,RR-ADH (alcohol dehydrogenase)
+PMID32645255,reaction_11,iso-propanol
+PMID32645255,reaction_12,FAD
+PMID32645255,reaction_12,NAD+
+PMID32645255,reaction_12,NaBr
+PMID32645255,reaction_12,PrnF (flavin reductase)
+PMID32645255,reaction_12,RR-ADH (alcohol dehydrogenase)
+PMID32645255,reaction_12,iso-propanol
+PMID32645255,reaction_13,FAD
+PMID32645255,reaction_13,NAD+
+PMID32645255,reaction_13,NaBr
+PMID32645255,reaction_13,PrnF (flavin reductase)
+PMID32645255,reaction_13,RR-ADH (alcohol dehydrogenase)
+PMID32645255,reaction_13,iso-propanol
+PMID32645255,reaction_14,FAD
+PMID32645255,reaction_14,NAD+
+PMID32645255,reaction_14,NaBr
+PMID32645255,reaction_14,PrnF (flavin reductase)
+PMID32645255,reaction_14,RR-ADH (alcohol dehydrogenase)
+PMID32645255,reaction_14,iso-propanol
+PMID32645255,reaction_15,FAD
+PMID32645255,reaction_15,NAD+
+PMID32645255,reaction_15,NaBr
+PMID32645255,reaction_15,PrnF (flavin reductase)
+PMID32645255,reaction_15,RR-ADH (alcohol dehydrogenase)
+PMID32645255,reaction_15,iso-propanol
+PMID32645255,reaction_16,FAD
+PMID32645255,reaction_16,NAD+
+PMID32645255,reaction_16,NaBr
+PMID32645255,reaction_16,PrnF (flavin reductase)
+PMID32645255,reaction_16,RR-ADH (alcohol dehydrogenase)
+PMID32645255,reaction_16,iso-propanol
+PMID32645255,reaction_17,FAD
+PMID32645255,reaction_17,NAD+
+PMID32645255,reaction_17,NaBr
+PMID32645255,reaction_17,PrnF (flavin reductase)
+PMID32645255,reaction_17,RR-ADH (alcohol dehydrogenase)
+PMID32645255,reaction_17,iso-propanol
+PMID32645255,reaction_18,FAD
+PMID32645255,reaction_18,NAD+
+PMID32645255,reaction_18,NaBr
+PMID32645255,reaction_18,PrnF (flavin reductase)
+PMID32645255,reaction_18,RR-ADH (alcohol dehydrogenase)
+PMID32645255,reaction_18,iso-propanol
+PMID32645255,reaction_19,FAD
+PMID32645255,reaction_19,NAD+
+PMID32645255,reaction_19,NaBr
+PMID32645255,reaction_19,PrnF (flavin reductase)
+PMID32645255,reaction_19,RR-ADH (alcohol dehydrogenase)
+PMID32645255,reaction_19,iso-propanol
+PMID32645646,reaction_1,fatty acid free bovine serum albumin
+PMID32645646,reaction_1,KCN
+PMID32650010,reaction_1,Fe(II)
+PMID32650010,reaction_1,N-oxalylglycine
+PMID32651359,reaction_1,MgCl2
+PMID32651359,reaction_2,MgCl2
+PMID32651359,reaction_3,MgCl2
+PMID32651359,reaction_4,MgCl2
+PMID32651359,reaction_5,MgCl2
+PMID32651359,reaction_5,CaCl2
+PMID32653619,reaction_1,FAD
+PMID32653619,reaction_2,FAD
+PMID32653619,reaction_3,FAD
+PMID32653619,reaction_4,FAD
+PMID32653636,reaction_1,Bovine catalase
+PMID32658470,reaction_1,MgCl2
+PMID32658470,reaction_1,RiboLock RNase inhibitor
+PMID32658470,reaction_2,MgCl2
+PMID32658470,reaction_2,RiboLock RNase inhibitor
+PMID32658470,reaction_3,MgCl2
+PMID32658470,reaction_3,RiboLock RNase inhibitor
+PMID32658470,reaction_4,MgCl2
+PMID32658470,reaction_4,RiboLock RNase inhibitor
+PMID32658470,reaction_5,MgCl2
+PMID32658470,reaction_5,RiboLock RNase inhibitor
+PMID32658470,reaction_6,MgCl2
+PMID32658470,reaction_6,RiboLock RNase inhibitor
+PMID32658470,reaction_7,MgCl2
+PMID32658470,reaction_7,RiboLock RNase inhibitor
+PMID32658470,reaction_8,MgCl2
+PMID32658470,reaction_8,RiboLock RNase inhibitor
+PMID32658470,reaction_9,sgRNA 2
+PMID32658470,reaction_9,sgRNA 2Az
+PMID32658470,reaction_9,sgRNA 2Cy3
+PMID32658470,reaction_9,MgCl2
+PMID32659673,reaction_1,FAD
+PMID32659673,reaction_2,FAD
+PMID32659673,reaction_3,FAD
+PMID32659673,reaction_4,FAD
+PMID32659673,reaction_5,FAD
+PMID32661062,reaction_1,2-oxoglutarate
+PMID32661062,reaction_1,ascorbate
+PMID32661062,reaction_1,FeSO4
+PMID32661062,reaction_1,catalase
+PMID32661062,reaction_2,2-oxoglutarate
+PMID32661062,reaction_2,ascorbate
+PMID32661062,reaction_2,FeSO4
+PMID32661062,reaction_2,catalase
+PMID32661062,reaction_3,2-oxoglutarate
+PMID32661062,reaction_3,ascorbate
+PMID32661062,reaction_3,FeSO4
+PMID32661062,reaction_3,catalase
+PMID32661062,reaction_4,2-oxoglutarate
+PMID32661062,reaction_4,ascorbate
+PMID32661062,reaction_4,FeSO4
+PMID32661062,reaction_4,catalase
+PMID32661062,reaction_5,2-oxoglutarate
+PMID32661062,reaction_5,ascorbate
+PMID32661062,reaction_5,FeSO4
+PMID32661062,reaction_5,catalase
+PMID32661062,reaction_6,2-oxoglutarate
+PMID32661062,reaction_6,ascorbate
+PMID32661062,reaction_6,FeSO4
+PMID32661062,reaction_6,catalase
+PMID32661062,reaction_7,2-oxoglutarate
+PMID32661062,reaction_7,ascorbate
+PMID32661062,reaction_7,FeSO4
+PMID32661062,reaction_7,catalase
+PMID32661062,reaction_8,2-oxoglutarate
+PMID32661062,reaction_8,ascorbate
+PMID32661062,reaction_8,FeSO4
+PMID32661062,reaction_8,catalase
+PMID32661062,reaction_9,2-oxoglutarate
+PMID32661062,reaction_9,ascorbate
+PMID32661062,reaction_9,FeSO4
+PMID32661062,reaction_9,catalase
+PMID32661062,reaction_10,2-oxoglutarate
+PMID32661062,reaction_10,ascorbate
+PMID32661062,reaction_10,FeSO4
+PMID32661062,reaction_10,catalase
+PMID32661062,reaction_11,2-oxoglutarate
+PMID32661062,reaction_11,ascorbate
+PMID32661062,reaction_11,FeSO4
+PMID32661062,reaction_11,catalase
+PMID32661062,reaction_12,2-oxoglutarate
+PMID32661062,reaction_12,ascorbate
+PMID32661062,reaction_12,FeSO4
+PMID32661062,reaction_12,catalase
+PMID32661062,reaction_13,2-oxoglutarate
+PMID32661062,reaction_13,ascorbate
+PMID32661062,reaction_13,FeSO4
+PMID32661062,reaction_13,catalase
+PMID32661062,reaction_14,2-oxoglutarate
+PMID32661062,reaction_14,ascorbate
+PMID32661062,reaction_14,FeSO4
+PMID32661062,reaction_14,catalase
+PMID32661062,reaction_15,2-oxoglutarate
+PMID32661062,reaction_15,ascorbate
+PMID32661062,reaction_15,FeSO4
+PMID32661062,reaction_15,catalase
+PMID32661062,reaction_16,2-oxoglutarate
+PMID32661062,reaction_16,ascorbate
+PMID32661062,reaction_16,FeSO4
+PMID32661062,reaction_16,catalase
+PMID32661062,reaction_17,2-oxoglutarate
+PMID32661062,reaction_17,ascorbate
+PMID32661062,reaction_17,FeSO4
+PMID32661062,reaction_17,catalase
+PMID32661581,reaction_1,Cu2+
+PMID32661581,reaction_1,Zn2+
+PMID32661581,reaction_2,Cu2+
+PMID32661581,reaction_2,Zn2+
+PMID32663477,reaction_3,CODH/ACS from A. woodii
+PMID32663477,reaction_3,Ferredoxin from C. pasteurianum
+PMID32668380,reaction_1,ATP
+PMID32668380,reaction_1,CaCl2
+PMID32668380,reaction_2,Ca2+-ionophore A23187
+PMID32668380,reaction_2,CaCl2
+PMID32668380,reaction_3,Ca2+-ionophore A23187
+PMID32668380,reaction_3,CaCl2
+PMID32671046,reaction_1,Mg2+
+PMID32671046,reaction_2,Mg2+
+PMID32671046,reaction_3,Mg2+
+PMID32671046,reaction_4,Mg2+
+PMID32681807,reaction_1,Membrane Scaffold Protein (for Nanodiscs)
+PMID32681807,reaction_2,Membrane Scaffold Protein (for Nanodiscs)
+PMID32682073,reaction_1,TcTR
+PMID32682073,reaction_1,T(SH)2
+PMID32682073,reaction_1,NADPH
+PMID32682073,reaction_2,TcTR
+PMID32682073,reaction_2,T(SH)2
+PMID32682073,reaction_2,NADPH
+PMID32682073,reaction_3,TcTR
+PMID32682073,reaction_3,T(SH)2
+PMID32682073,reaction_3,NADPH
+PMID32682073,reaction_4,TcTR
+PMID32682073,reaction_4,T(SH)2
+PMID32682073,reaction_4,NADPH
+PMID32682073,reaction_5,BbTRXR
+PMID32682073,reaction_5,NADPH
+PMID32682073,reaction_6,BbTRXR
+PMID32682073,reaction_6,NADPH
+PMID32683863,reaction_1,MMOB (regulatory protein)
+PMID32683863,reaction_1,Diiron cluster
+PMID32685828,reaction_1,tRNALys3
+PMID32687799,reaction_1,FAD
+PMID32687799,reaction_2,FAD
+PMID32687799,reaction_3,FAD
+PMID32687799,reaction_3,benzoylalanine
+PMID32687799,reaction_4,FAD
+PMID32687799,reaction_4,meta-nitrobenzoylalanine
+PMID32703443,reaction_1,Mn2+
+PMID32703443,reaction_2,Mn2+
+PMID32703443,reaction_3,Mn2+
+PMID32703443,reaction_4,Mn2+
+PMID32710850,reaction_1,"Enzyme I (EI, P08839)"
+PMID32710850,reaction_1,HPr (P0AA04)
+PMID32710850,reaction_1,IIABMan (P69797)
+PMID32710850,reaction_2,"Enzyme I (EI, P08839)"
+PMID32710850,reaction_2,HPr (P0AA04)
+PMID32710850,reaction_2,IIABMan (P69797)
+PMID32714915,reaction_1_free_enzyme,MgCl2
+PMID32714915,reaction_1_free_enzyme,MnCl2
+PMID32714915,reaction_1_free_enzyme,CoCl2
+PMID32714915,reaction_1_free_enzyme,ZnCl2
+PMID32714915,reaction_2_immobilized_enzyme,MgCl2
+PMID32716961,reaction_9,Proteasome
+PMID32716961,reaction_9,ATP
+PMID32716961,reaction_9,Ubiquitin
+PMID32717856,reaction_1,Mg2+
+PMID32717856,reaction_2,Mg2+
+PMID32717856,reaction_3,Mg2+
+PMID32717856,reaction_4,Mg2+
+PMID32717856,reaction_5,Mg2+
+PMID32717856,reaction_6,Mg2+
+PMID32719456,reaction_1,phosphatidylglycerol (PG)
+PMID32719456,reaction_2,phosphatidylglycerol (PG)
+PMID32719456,reaction_3,phosphatidylglycerol (PG)
+PMID32719456,reaction_4,phosphatidylglycerol (PG)
+PMID32723819,reaction_1,Ascorbic acid
+PMID32723819,reaction_1,Copper
+PMID32723819,reaction_2,Ascorbic acid
+PMID32723819,reaction_2,Copper
+PMID32729393,reaction_1,phenazine methosulfate (PMS)
+PMID32729393,reaction_1,"2,6-dichlorophenolindophenol (DCIP)"
+PMID32729393,reaction_10,P450nov (L188P/F218L)
+PMID32729393,reaction_10,FDXnov
+PMID32729393,reaction_10,FDRnov
+PMID32730563,reaction_1,FAD
+PMID32730563,reaction_2,FAD
+PMID32730563,reaction_3,FAD
+PMID32731629,reaction_1a,Mg2+
+PMID32731629,reaction_1b,Mg2+
+PMID32732027,reaction_1,Mg2+
+PMID32732027,reaction_2,Mg2+
+PMID32732027,reaction_3,Mg2+
+PMID32732027,reaction_4,Mg2+
+PMID32732027,reaction_5,Mg2+
+PMID32732027,reaction_6,Mg2+
+PMID32732027,reaction_7,Mg2+
+PMID32732027,reaction_8,Mg2+
+PMID32732027,reaction_9,Mg2+
+PMID32732027,reaction_10,Mg2+
+PMID32732027,reaction_11,Mg2+
+PMID32732027,reaction_12,Mg2+
+PMID32732027,reaction_13,Mg2+
+PMID32732027,reaction_14,Mg2+
+PMID32732027,reaction_15,Mg2+
+PMID32732027,reaction_16,Mg2+
+PMID32732027,reaction_17,Mg2+
+PMID32732027,reaction_18,Mg2+
+PMID32732027,reaction_19,Mg2+
+PMID32732027,reaction_20,Mg2+
+PMID32732043,reaction_1,Fe2+ (activator)
+PMID32732435,reaction_1,nonheme Fe(II)
+PMID32736636,reaction_3,poly-d-galacturonase
+PMID32736636,reaction_4,pectinases
+PMID32736636,reaction_5,pectinases
+PMID32745463,reaction_1,Mg2+
+PMID32745463,reaction_2,Mg2+
+PMID32745463,reaction_3,Mg2+
+PMID32745463,reaction_4,Mg2+
+PMID32745735,reaction_1,MgCl2
+PMID32748014,reaction_1,MgCl2
+PMID32748014,reaction_1,pyruvate kinase
+PMID32748014,reaction_1,lactate dehydrogenase
+PMID32750321,reaction_1,FAD
+PMID32750321,reaction_2,FAD
+PMID32750321,reaction_3,FAD
+PMID32750477,reaction_1,FAD
+PMID32761262,reaction_1,MgCl2
+PMID32761262,reaction_1,CoCl2
+PMID32761262,reaction_2,MgCl2
+PMID32761262,reaction_3,MgCl2
+PMID32761262,reaction_3,CoCl2
+PMID32761262,reaction_4,MgCl2
+PMID32761262,reaction_6,MgCl2
+PMID32761262,reaction_7,MgCl2
+PMID32761540,reaction_1,NADPH-cytochrome P450 reductase (from Arabidopsis)
+PMID32761540,reaction_2,NADPH-cytochrome P450 reductase (from Arabidopsis)
+PMID32762529,reaction_1,Copper
+PMID32763398,reaction_1,Ascorbic acid
+PMID32763398,reaction_2,Ascorbic acid
+PMID32763398,reaction_3,Ascorbic acid
+PMID32763398,reaction_3,Chitinase B (SmChiB) from Serratia marcescens
+PMID32763398,reaction_4,Ascorbic acid
+PMID32763398,reaction_4,Cellulase cocktail (from Trichoderma reesei ATCC26921)
+PMID32763398,reaction_4,Cellobiase (from Novozymes)
+PMID32763398,reaction_5,Ascorbic acid
+PMID32763398,reaction_5,Cellulase cocktail (from Trichoderma reesei ATCC26921)
+PMID32763398,reaction_5,Cellobiase (from Novozymes)
+PMID32764148,reaction_1,Sac3
+PMID32764148,reaction_1,ArPIKfyve
+PMID32768525,reaction_1,NAD+
+PMID32775880,reaction_1,Pyridoxal 5'-phosphate (PLP)
+PMID32777304,reaction_1,FMN
+PMID32777304,reaction_1,"Fe/S clusters (N1a, N1b, N2, N3, N4, N7, 4FeCys4G, 4FeHisCys3G, 4FeCys4I)"
+PMID32777304,reaction_2,FMN
+PMID32777304,reaction_3,Fe/S clusters
+PMID32786824,reaction_1,GSH
+PMID32786824,reaction_1,Fe(II)
+PMID32786824,reaction_1,glycerol
+PMID32786824,reaction_2,GSH
+PMID32786824,reaction_2,Fe(II)
+PMID32786824,reaction_2,glycerol
+PMID32786824,reaction_3,GSH
+PMID32786824,reaction_3,Fe(II)
+PMID32786824,reaction_3,glycerol
+PMID32786824,reaction_4,GSH
+PMID32786824,reaction_4,Fe(II)
+PMID32786824,reaction_4,glycerol
+PMID32786835,reaction_1,FAD (intrinsic)
+PMID32786835,reaction_1,Phenazine methosulfate (PMS)
+PMID32786835,reaction_1,"2,6-Dichlorophenloindophenol (DCPIP)"
+PMID32786835,reaction_5,FAD (intrinsic)
+PMID32786835,reaction_5,Phenazine methosulfate (PMS)
+PMID32786835,reaction_5,"2,6-Dichlorophenloindophenol (DCPIP)"
+PMID32787249,reaction_1,FAD
+PMID32787249,reaction_2,FAD
+PMID32787249,reaction_3,FAD
+PMID32787249,reaction_4,FAD
+PMID32787249,reaction_5,FAD
+PMID32787249,reaction_6,FAD
+PMID32787249,reaction_7,FAD
+PMID32789939,reaction_16,MVTA
+PMID32789939,reaction_16,PLP
+PMID32789939,reaction_17,MVTA
+PMID32789939,reaction_17,PLP
+PMID32789939,reaction_18,MVTA
+PMID32789939,reaction_18,PLP
+PMID32789939,reaction_19,MVTA
+PMID32789939,reaction_19,PLP
+PMID32789939,reaction_20,MVTA
+PMID32789939,reaction_20,PLP
+PMID32789939,reaction_21,MVTA
+PMID32789939,reaction_21,PLP
+PMID32792488,reaction_1,ABHD11
+PMID32792488,reaction_1,Lipoic acid
+PMID32797038,reaction_1,MgCl2
+PMID32797038,reaction_2,MgCl2
+PMID32803057,reaction_1,Glucose
+PMID32803057,reaction_2,Glucose
+PMID32803057,reaction_2,n-hexadecane
+PMID32805427,reaction_1,MgCl2
+PMID32808246,reaction_1,NADH
+PMID32808246,reaction_1,FAD
+PMID32808246,reaction_1,Glucose (for regeneration)
+PMID32808246,reaction_2,NADH
+PMID32808246,reaction_2,FAD
+PMID32808246,reaction_2,Glucose (for regeneration)
+PMID32808246,reaction_3,NADH
+PMID32808246,reaction_3,FAD
+PMID32808246,reaction_3,Glucose (for regeneration)
+PMID32808246,reaction_4,NADH
+PMID32808246,reaction_4,FAD
+PMID32808246,reaction_4,Glucose (for regeneration)
+PMID32808246,reaction_5,NADH
+PMID32808246,reaction_5,FAD
+PMID32808246,reaction_5,Glucose (for regeneration)
+PMID32808246,reaction_6,NADH
+PMID32808246,reaction_6,FAD
+PMID32808246,reaction_6,Glucose (for regeneration)
+PMID32808246,reaction_7,NADH
+PMID32808246,reaction_7,FAD
+PMID32808246,reaction_7,Glucose (for regeneration)
+PMID32808246,reaction_8,NADH
+PMID32808246,reaction_8,FAD
+PMID32808246,reaction_8,Glucose (for regeneration)
+PMID32808246,reaction_9,NADH
+PMID32808246,reaction_9,FAD
+PMID32808246,reaction_9,Glucose (for regeneration)
+PMID32808246,reaction_10,NADH
+PMID32808246,reaction_10,FAD
+PMID32808246,reaction_10,Glucose (for regeneration)
+PMID32808246,reaction_11,NADH
+PMID32808246,reaction_11,FAD
+PMID32808246,reaction_11,Glucose (for regeneration)
+PMID32808246,reaction_12,NADH
+PMID32808246,reaction_12,FAD
+PMID32808246,reaction_12,Glucose (for regeneration)
+PMID32808246,reaction_13,NADH
+PMID32808246,reaction_13,FAD
+PMID32808246,reaction_13,Glucose (for regeneration)
+PMID32808246,reaction_14,NADH
+PMID32808246,reaction_14,FAD
+PMID32808246,reaction_14,Glucose (for regeneration)
+PMID32808246,reaction_15,NADH
+PMID32808246,reaction_15,FAD
+PMID32808246,reaction_15,Glucose (for regeneration)
+PMID32819558,reaction_1,LY83583 (superoxide inducer)
+PMID32821414,reaction_1,Ca2+
+PMID32822119,reaction_1,"Glucose dehydrogenase (from Exiguobacterium sibiricum, GenBank: ACB59697.1)"
+PMID32822119,reaction_1,Glucose (co-substrate for NADPH regeneration)
+PMID32823946,reaction_1,DesR (response regulator)
+PMID32828830,reaction_1,NADH
+PMID32828830,reaction_2,NADH
+PMID32829175,reaction_1,4-aminobenzoic acid (linker)
+PMID32829175,reaction_1,N-cyclohexyl-N’-(2-morpholinoethyl) carbodiimide methyl-p-toluenesulfonate (activator)
+PMID32829175,reaction_7,poly(ethylene glycol)diglycidyl ether (crosslinker)
+PMID32829175,reaction_7,"[Os(2,2′-bipyridine)2(polyvinylimidazole)10Cl]+/2+ (redox polymer)"
+PMID32830039,reaction_1,"Lanthanides (La3+, Ce3+, Pr3+, Nd3+)"
+PMID32844401,reaction_1,Gas diffusion electrode (for in situ H2O2 generation)
+PMID32846049,reaction_1,SmNOX
+PMID32846049,reaction_2,SmNOX
+PMID32851826,reaction_1,CuA center (intrinsic)
+PMID32851826,reaction_1,CuZ center (intrinsic)
+PMID32851826,reaction_1,reduced methyl viologen (in vitro donor)
+PMID32851826,reaction_1,mitochondrial cytochrome c (non-physiological donor)
+PMID32851826,reaction_1,c-type cytochromes (physiological donor)
+PMID32851826,reaction_1,type 1 copper proteins (physiological donor)
+PMID32851826,reaction_2,CuA center (intrinsic)
+PMID32851826,reaction_2,CuZ center (intrinsic)
+PMID32851826,reaction_3,CuA center (intrinsic)
+PMID32851826,reaction_3,CuZ center (intrinsic)
+PMID32851826,reaction_3,"c-type heme (intrinsic, additional domain)"
+PMID32869209,reaction_1,Cytochrome P450 Reductase (CPR)
+PMID32869209,reaction_1,NADPH regeneration system
+PMID32869209,reaction_2,Cytochrome P450 Reductase (CPR)
+PMID32869209,reaction_2,NADPH regeneration system
+PMID32869209,reaction_3,Cytochrome P450 Reductase (CPR)
+PMID32869209,reaction_3,NADPH regeneration system
+PMID32869209,reaction_4,Cytochrome P450 Reductase (CPR)
+PMID32869209,reaction_4,NADPH regeneration system
+PMID32869209,reaction_5,Cytochrome P450 Reductase (CPR)
+PMID32869209,reaction_5,NADPH regeneration system
+PMID32869209,reaction_6,Cytochrome P450 Reductase (CPR)
+PMID32869209,reaction_6,NADPH regeneration system
+PMID32869209,reaction_7,Cytochrome P450 Reductase (CPR)
+PMID32869209,reaction_7,NADPH regeneration system
+PMID32869209,reaction_8,Cytochrome P450 Reductase (CPR)
+PMID32869209,reaction_8,NADPH regeneration system
+PMID32869889,reaction_1,Copper
+PMID32869889,reaction_8,Copper
+PMID32869889,reaction_15,Copper
+PMID32885332,reaction_1,Mg2+
+PMID32885332,reaction_1,Zn2+
+PMID32885332,reaction_1,Co2+
+PMID32885332,reaction_1,Mn2+
+PMID32885332,reaction_2,Mg2+
+PMID32885332,reaction_2,Mn2+
+PMID32885332,reaction_2,Co2+
+PMID32885332,reaction_3_1,polyphosphate kinase (from Corynebacterium glutamicum)
+PMID32885332,reaction_3_1,"ATP (2 mM, catalytic)"
+PMID32885332,reaction_3_1,MgSO4 (100 mM)
+PMID32885332,reaction_3_2,polyphosphate kinase (from Corynebacterium glutamicum)
+PMID32885332,reaction_3_2,"ATP (2 mM, catalytic)"
+PMID32885332,reaction_3_2,MgSO4 (100 mM)
+PMID32885332,reaction_3_3,polyphosphate kinase (from Corynebacterium glutamicum)
+PMID32885332,reaction_3_3,"ATP (2 mM, catalytic)"
+PMID32885332,reaction_3_3,MgSO4 (100 mM)
+PMID32885332,reaction_3_4,polyphosphate kinase (from Corynebacterium glutamicum)
+PMID32885332,reaction_3_4,"ATP (2 mM, catalytic)"
+PMID32885332,reaction_3_4,MgSO4 (100 mM)
+PMID32885332,reaction_3_5,polyphosphate kinase (from Corynebacterium glutamicum)
+PMID32885332,reaction_3_5,"ATP (2 mM, catalytic)"
+PMID32885332,reaction_3_5,MgSO4 (100 mM)
+PMID32885332,reaction_3_6,polyphosphate kinase (from Corynebacterium glutamicum)
+PMID32885332,reaction_3_6,"ATP (2 mM, catalytic)"
+PMID32885332,reaction_3_6,MgSO4 (100 mM)
+PMID32885332,reaction_3_7,polyphosphate kinase (from Corynebacterium glutamicum)
+PMID32885332,reaction_3_7,"ATP (2 mM, catalytic)"
+PMID32885332,reaction_3_7,MgSO4 (100 mM)
+PMID32885332,reaction_3_8,polyphosphate kinase (from Corynebacterium glutamicum)
+PMID32885332,reaction_3_8,"ATP (2 mM, catalytic)"
+PMID32885332,reaction_3_8,MgSO4 (100 mM)
+PMID32885332,reaction_3_9,polyphosphate kinase (from Corynebacterium glutamicum)
+PMID32885332,reaction_3_9,"ATP (2 mM, catalytic)"
+PMID32885332,reaction_3_9,MgSO4 (100 mM)
+PMID32885332,reaction_3_10,polyphosphate kinase (from Corynebacterium glutamicum)
+PMID32885332,reaction_3_10,"ATP (2 mM, catalytic)"
+PMID32885332,reaction_3_10,MgSO4 (100 mM)
+PMID32885332,reaction_3_11,polyphosphate kinase (from Corynebacterium glutamicum)
+PMID32885332,reaction_3_11,"ATP (2 mM, catalytic)"
+PMID32885332,reaction_3_11,MgSO4 (100 mM)
+PMID32885332,reaction_3_12,polyphosphate kinase (from Corynebacterium glutamicum)
+PMID32885332,reaction_3_12,"ATP (2 mM, catalytic)"
+PMID32885332,reaction_3_12,MgSO4 (100 mM)
+PMID32885332,reaction_3_13,polyphosphate kinase (from Corynebacterium glutamicum)
+PMID32885332,reaction_3_13,"ATP (2 mM, catalytic)"
+PMID32885332,reaction_3_13,MgSO4 (100 mM)
+PMID32885332,reaction_3_14,polyphosphate kinase (from Corynebacterium glutamicum)
+PMID32885332,reaction_3_14,"ATP (2 mM, catalytic)"
+PMID32885332,reaction_3_14,MgSO4 (100 mM)
+PMID32886480,reaction_1,RSV N (Δ12N)
+PMID32886480,reaction_1,RSV M2-1
+PMID32886480,reaction_2,ATP sulfurylase
+PMID32886480,reaction_2,Luciferase
+PMID32894626,reaction_1,FAD
+PMID32900959,reaction_1,Heme (intrinsic cofactor)
+PMID32900959,reaction_1,NADPH (inferred electron donor)
+PMID32900992,reaction_1,Lipid droplets (as a platform for activation during prolonged starvation)
+PMID32905773,reaction_1,Malate-aspartate shuttle
+PMID32911631,reaction_1,Ycf54
+PMID32911631,reaction_1,Ferredoxin (from Spinacia oleracea)
+PMID32911631,reaction_1,Ferredoxin-NADPH oxidoreductase (from Spinacia oleracea)
+PMID32911631,reaction_1,Glucose-6-phosphate dehydrogenase
+PMID32911631,reaction_1,Catalase
+PMID32912682,reaction_1,OdhI
+PMID32912682,reaction_1,Vitreoscilla hemoglobin (VHb)
+PMID32913059,reaction_1,bovine heart cytochrome c
+PMID32913059,reaction_1,phenazine methosulfate (PMS)
+PMID32913059,reaction_2,Lanthanide
+PMID32913059,reaction_2,phenazine ethosulfate (PES)
+PMID32913414,reaction_2,HcbA3C-His
+PMID32913414,reaction_2,FMN
+PMID32913414,reaction_2,glucose
+PMID32913414,reaction_2,glucose dehydrogenase
+PMID32913414,reaction_2,catalase
+PMID32915249,reaction_1,Glutathione (GSH)
+PMID32919113,reaction_1,MgCl2
+PMID32921059,reaction_1,FAD (non-covalently bound intrinsic cofactor)
+PMID32921059,reaction_1,"Horseradish peroxidase (HRP, for coupled assay)"
+PMID32921059,reaction_1,"2,2'-azino-bis(3-ethylbenzthiazoline-6-sulphonic acid) (ABTS, for coupled assay)"
+PMID32928264,reaction_1,"The assay system involves further phosphorylation of BrdU-monophosphate and its incorporation into a DNA strand, implying the presence of other enzymes like thymidylate kinase and DNA polymerase in the reaction mixture for detection purposes."
+PMID32930481,reaction_2,dithiothreitol
+PMID32933017,reaction_4,CDC50A
+PMID32935896,reaction_1,F420
+PMID32935896,reaction_1,FOP
+PMID32935896,reaction_1,F420-dependent glucose-6-phosphate dehydrogenase (FGD)
+PMID32935896,reaction_1,glucose-6-phosphate
+PMID32935896,reaction_1,isopropanol
+PMID32935896,reaction_2,F420
+PMID32935896,reaction_2,FOP
+PMID32935896,reaction_2,F420-dependent glucose-6-phosphate dehydrogenase (FGD)
+PMID32935896,reaction_2,glucose-6-phosphate
+PMID32935896,reaction_2,isopropanol
+PMID32935896,reaction_3,F420
+PMID32935896,reaction_3,FOP
+PMID32935896,reaction_3,F420-dependent glucose-6-phosphate dehydrogenase (FGD)
+PMID32935896,reaction_3,glucose-6-phosphate
+PMID32935896,reaction_3,isopropanol
+PMID32935896,reaction_4,F420
+PMID32935896,reaction_4,FOP
+PMID32935896,reaction_4,F420-dependent glucose-6-phosphate dehydrogenase (FGD)
+PMID32935896,reaction_4,glucose-6-phosphate
+PMID32935896,reaction_4,isopropanol
+PMID32935896,reaction_5,F420
+PMID32935896,reaction_5,FOP
+PMID32935896,reaction_5,F420-dependent glucose-6-phosphate dehydrogenase (FGD)
+PMID32935896,reaction_5,glucose-6-phosphate
+PMID32935896,reaction_5,isopropanol
+PMID32935896,reaction_6,F420
+PMID32935896,reaction_6,FOP
+PMID32935896,reaction_6,F420-dependent glucose-6-phosphate dehydrogenase (FGD)
+PMID32935896,reaction_6,glucose-6-phosphate
+PMID32935896,reaction_6,isopropanol
+PMID32936453,reaction_1,cytochrome P450 reductase (CPR)
+PMID32937119,reaction_1,Mg2+
+PMID32937119,reaction_2,Mn2+
+PMID32938938,reaction_1,Thiamine pyrophosphate (TPP)
+PMID32938938,reaction_1,Mg2+
+PMID32943628,reaction_1,nsp7L8
+PMID32943628,reaction_1,nsp8
+PMID32943628,reaction_2,nsp7L8
+PMID32943628,reaction_2,nsp8
+PMID32943628,reaction_3,nsp7L8
+PMID32943628,reaction_3,nsp8
+PMID32943628,reaction_4,nsp7L8
+PMID32943628,reaction_4,nsp8
+PMID32943628,reaction_5,nsp7L8
+PMID32943628,reaction_5,nsp8
+PMID32943628,reaction_6,nsp7L8
+PMID32943628,reaction_6,nsp8
+PMID32943628,reaction_7,nsp7L8
+PMID32943628,reaction_7,nsp8
+PMID32943628,reaction_8,nsp7L8
+PMID32943628,reaction_8,nsp8
+PMID32946884,reaction_1,glucose for cofactor regeneration
+PMID32951821,reaction_1,FAD (intrinsic)
+PMID32951821,reaction_1,NaBH4
+PMID32951821,reaction_2,FAD (intrinsic)
+PMID32951821,reaction_2,NaBH4
+PMID32951821,reaction_3,FAD (intrinsic)
+PMID32951821,reaction_3,Nitrilase AY487533
+PMID32951821,reaction_4,FAD (intrinsic)
+PMID32951821,reaction_4,Nitrilase AY487533
+PMID32951821,reaction_5,FAD (intrinsic)
+PMID32951821,reaction_5,Nitrilase AY487533
+PMID32961948,reaction_1,"glucose dehydrogenase (from Bacillus megaterium, EC 1.1.1.47)"
+PMID32961948,reaction_1,NADP+
+PMID32961948,reaction_2,"glucose dehydrogenase (from Bacillus megaterium, EC 1.1.1.47)"
+PMID32961948,reaction_2,NADP+
+PMID32961948,reaction_3,"glucose dehydrogenase (from Bacillus megaterium, EC 1.1.1.47)"
+PMID32961948,reaction_3,NADP+
+PMID32962020,reaction_1,non-heme iron
+PMID32962020,reaction_2,non-heme iron
+PMID32962020,reaction_3,non-heme iron
+PMID32966327,reaction_1,Mg2+
+PMID32966327,reaction_2,Mg2+
+PMID32967812,reaction_1,NADH
+PMID32967812,reaction_2,NADH
+PMID32967812,reaction_3,NADH
+PMID32967812,reaction_4,NADH
+PMID32967812,reaction_5,NADPH
+PMID32967812,reaction_6,NADPH
+PMID32971035,reaction_1,Heme
+PMID32971035,reaction_2,Heme
+PMID32971035,reaction_3,Heme
+PMID32971171,reaction_1,Copper
+PMID32971171,reaction_1,Zinc
+PMID32972135,reaction_1,2-oxoglutarate
+PMID32972135,reaction_1,L-ascorbic acid
+PMID32972135,reaction_1,Fe(II)
+PMID32972135,reaction_2,2-oxoglutarate
+PMID32972135,reaction_2,L-ascorbic acid
+PMID32972135,reaction_2,Fe(II)
+PMID32972135,reaction_3,2-oxoglutarate
+PMID32972135,reaction_3,L-ascorbic acid
+PMID32972135,reaction_3,Fe(II)
+PMID32972135,reaction_4,2-oxoglutarate
+PMID32972135,reaction_4,L-ascorbic acid
+PMID32972135,reaction_4,Fe(II)
+PMID32974079,reaction_1,dhaf4611 (corrinoid carrier protein)
+PMID32974079,reaction_1,Cobalamin
+PMID32974079,reaction_1,Zn2+
+PMID32974079,reaction_2,dhaf4611 (corrinoid carrier protein)
+PMID32974079,reaction_2,Cobalamin
+PMID32974079,reaction_2,Zn2+
+PMID32974079,reaction_3,dhaf4611 (corrinoid carrier protein)
+PMID32974079,reaction_3,Cobalamin
+PMID32974079,reaction_3,Zn2+
+PMID32974079,reaction_4,dhaf4611 (corrinoid carrier protein)
+PMID32974079,reaction_4,Cobalamin
+PMID32974079,reaction_4,Zn2+
+PMID32974079,reaction_5,dhaf4611 (corrinoid carrier protein)
+PMID32974079,reaction_5,Cobalamin
+PMID32974079,reaction_5,Zn2+
+PMID32974079,reaction_6,dhaf4611 (corrinoid carrier protein)
+PMID32974079,reaction_6,Cobalamin
+PMID32974079,reaction_6,Zn2+
+PMID32974079,reaction_7,dhaf4611 (corrinoid carrier protein)
+PMID32974079,reaction_7,Cobalamin
+PMID32974079,reaction_7,Zn2+
+PMID32974079,reaction_8,dhaf4611 (corrinoid carrier protein)
+PMID32974079,reaction_8,Cobalamin
+PMID32974079,reaction_8,Zn2+
+PMID32974079,reaction_9,dhaf4611 (corrinoid carrier protein)
+PMID32974079,reaction_9,Cobalamin
+PMID32974079,reaction_9,Zn2+
+PMID32974079,reaction_10,dhaf4611 (corrinoid carrier protein)
+PMID32974079,reaction_10,Cobalamin
+PMID32974079,reaction_10,Zn2+
+PMID32974079,reaction_11,dhaf4611 (corrinoid carrier protein)
+PMID32974079,reaction_11,Cobalamin
+PMID32974079,reaction_11,Zn2+
+PMID32974079,reaction_12,dhaf4611 (corrinoid carrier protein)
+PMID32974079,reaction_12,Cobalamin
+PMID32974079,reaction_12,Zn2+
+PMID32974743,reaction_1,FAD
+PMID32974743,reaction_1,Magnesium
+PMID32974743,reaction_1,Zinc
+PMID32978278,reaction_1,Mg2+
+PMID32978278,reaction_2,Mg2+
+PMID32980349,reaction_1,Bovine Adrenodoxin (Adx)
+PMID32980349,reaction_1,Bovine Adrenodoxin Reductase (AdR)
+PMID32980349,reaction_1,L-α-dilauroyl-sn-glycero-3-phosphocholine
+PMID32980349,reaction_2,Human Adrenodoxin (Adx)
+PMID32980349,reaction_2,Bovine Adrenodoxin Reductase (AdR)
+PMID32980349,reaction_2,L-α-dilauroyl-sn-glycero-3-phosphocholine
+PMID32980349,reaction_3,Bovine Adrenodoxin (Adx)
+PMID32980349,reaction_3,Bovine Adrenodoxin Reductase (AdR)
+PMID32980349,reaction_4,Human Adrenodoxin (Adx)
+PMID32980349,reaction_4,Bovine Adrenodoxin Reductase (AdR)
+PMID32980349,reaction_5,Bovine Adrenodoxin (Adx)
+PMID32980349,reaction_5,Bovine Adrenodoxin Reductase (AdR)
+PMID32980349,reaction_5,L-α-dilauroyl-sn-glycero-3-phosphocholine
+PMID32980349,reaction_6,Human Adrenodoxin (Adx)
+PMID32980349,reaction_6,Bovine Adrenodoxin Reductase (AdR)
+PMID32980349,reaction_6,L-α-dilauroyl-sn-glycero-3-phosphocholine
+PMID32980349,reaction_7,Bovine Adrenodoxin (Adx)
+PMID32980349,reaction_8,Human Adrenodoxin (Adx)
+PMID32980741,reaction_1,Mg2+
+PMID32980741,reaction_1,Zn2+
+PMID32993959,reaction_1,FAD
+PMID32993959,reaction_2,FAD
+PMID32993959,reaction_3,FAD
+PMID33002308,reaction_2,ATP-biotin
+PMID33002308,reaction_2,endogenous kinases
+PMID33008411,reaction_1,NAD+
+PMID33011272,reaction_1,MgCl2
+PMID33011272,reaction_2,"PKC lipid activator solution (0.5 mg/mL phosphatidylserine, 100 μg/mL diacylglycerol, 0.15% Triton X-100, 1 mM DTT and 2 mM CaCl2)"
+PMID33011272,reaction_3,MgCl2
+PMID33015914,reaction_1,[4Fe-4S] cluster
+PMID33015914,reaction_2,[4Fe-4S] cluster
+PMID33015914,reaction_3,[4Fe-4S] cluster
+PMID33020607,reaction_1,P700 chlorophyll pair
+PMID33020607,reaction_1,chlorophyll A0
+PMID33020607,reaction_1,chlorophyll A1
+PMID33020607,reaction_1,phylloquinones
+PMID33020607,reaction_1,[4Fe-4S] cluster FX
+PMID33020607,reaction_1,[4Fe-4S] cluster FA
+PMID33020607,reaction_1,[4Fe-4S] cluster FB
+PMID33020946,reaction_1,Zn2+
+PMID33020946,reaction_2,Zn2+
+PMID33020946,reaction_3,Zn2+
+PMID33020946,reaction_4,Zn2+
+PMID33020946,reaction_5,Zn2+
+PMID33020946,reaction_6,Zn2+
+PMID33020946,reaction_7,Zn2+
+PMID33031537,reaction_1,E. coli flavodoxin
+PMID33031537,reaction_1,E. coli flavodoxin reductase
+PMID33031537,reaction_1,isocitrate dehydrogenase
+PMID33031537,reaction_1,sodium isocitrate
+PMID33031537,reaction_2,E. coli flavodoxin
+PMID33031537,reaction_2,E. coli flavodoxin reductase
+PMID33031537,reaction_2,isocitrate dehydrogenase
+PMID33031537,reaction_2,sodium isocitrate
+PMID33031537,reaction_3,E. coli flavodoxin
+PMID33031537,reaction_3,E. coli flavodoxin reductase
+PMID33031537,reaction_3,isocitrate dehydrogenase
+PMID33031537,reaction_3,sodium isocitrate
+PMID33038544,reaction_1_GRK2_inhibition,Gβγ
+PMID33045667,reaction_1,Pd-nanoparticles
+PMID33045667,reaction_1,Nafion
+PMID33045667,reaction_1,Prussian Blue
+PMID33045667,reaction_1,Meldola Blue
+PMID33045667,reaction_1,Bovine serum albumin
+PMID33045667,reaction_1,Glutaraldehyde
+PMID33045667,reaction_2,Pd-nanoparticles
+PMID33045667,reaction_2,Nafion
+PMID33045667,reaction_2,Bovine serum albumin
+PMID33045667,reaction_2,Glutaraldehyde
+PMID33045667,reaction_3,Nafion
+PMID33048983,reaction_1,ATP
+PMID33048983,reaction_1,PscO
+PMID33048983,reaction_1,SctN ATPase
+PMID33048983,reaction_2,ATP
+PMID33048983,reaction_2,PscO
+PMID33048983,reaction_2,SctN ATPase
+PMID33048983,reaction_3,ATP
+PMID33048983,reaction_3,PscO
+PMID33048983,reaction_3,SctN ATPase
+PMID33048983,reaction_4,ATP
+PMID33048983,reaction_4,PscO
+PMID33048983,reaction_4,SctN ATPase
+PMID33049293,reaction_1,BSA (carrier protein)
+PMID33051013,reaction_1,Heme
+PMID33051013,reaction_2,Heme
+PMID33051013,reaction_3,Heme
+PMID33051013,reaction_4,Heme
+PMID33051013,reaction_5,Heme
+PMID33051013,reaction_6,Heme
+PMID33051013,reaction_7,Heme
+PMID33051013,reaction_8,Heme
+PMID33051013,reaction_9,Heme
+PMID33051013,reaction_10,Heme
+PMID33051013,reaction_11,Heme
+PMID33051013,reaction_12,Heme
+PMID33051013,reaction_13,Heme
+PMID33051013,reaction_14,Heme
+PMID33051013,reaction_15,Heme
+PMID33051013,reaction_16,Heme
+PMID33051013,reaction_17,Heme
+PMID33051013,reaction_18,Heme
+PMID33051020,reaction_1,PQQ
+PMID33051020,reaction_1,Ubiquinone
+PMID33051020,reaction_1,cytochrome bd
+PMID33051020,reaction_1,cytochrome bo3
+PMID33057913,reaction_1,Galactarolactone isomerase (gli) from Agrobacterium fabrum
+PMID33057913,reaction_1,Galactarate dehydratase (garD) from Escherichia coli
+PMID33057913,reaction_1,5-keto-4-deoxy-D-glucarate aldolase (garL) from Escherichia coli
+PMID33057913,reaction_1,2-hydroxy-3-oxopropionate reductase (garR) from Escherichia coli
+PMID33058282,reaction_1,NADH
+PMID33063604,reaction_5,FeCl3
+PMID33065002,reaction_1,Dolichol-pp-glycan
+PMID33065002,reaction_1,monosialoganglioside GM1
+PMID33065002,reaction_1,phosphatidylcholine
+PMID33065002,reaction_1,phosphatidylethanolamine
+PMID33065002,reaction_1,phosphatidylserine
+PMID33065002,reaction_1,cholesterol
+PMID33068553,reaction_1,ascorbic acid
+PMID33068553,reaction_1,SuPERNase In
+PMID33074120,reaction_1,flavin mononucleotide (FMN)
+PMID33074120,reaction_1,"2,6-dichloroindophenol (DCIP)"
+PMID33080111,reaction_1,FAD
+PMID33080111,reaction_2,FAD
+PMID33080111,reaction_3,FAD
+PMID33080111,reaction_4,FAD
+PMID33080111,reaction_5,FAD
+PMID33080111,reaction_6,FAD
+PMID33080111,reaction_7,FAD
+PMID33080859,reaction_1,FAD
+PMID33081987,reaction_3,NADPH
+PMID33081987,reaction_4,NADPH
+PMID33081987,reaction_5,NADPH
+PMID33081987,reaction_6,NADPH
+PMID33081987,reaction_7,NADPH
+PMID33081987,reaction_8,NADPH
+PMID33081987,reaction_9,NADPH
+PMID33102450,reaction_1,Molybdate (implied)
+PMID33102450,reaction_1,CaCO3
+PMID33102450,reaction_2,Molybdate (implied)
+PMID33102450,reaction_2,CaCO3
+PMID33103429,reaction_8,PQQ
+PMID33106986,reaction_1,SOI-1CP
+PMID33106986,reaction_2,SOI-1CP
+PMID33106986,reaction_3,SOI-1CP
+PMID33106986,reaction_4,SOI-1CP
+PMID33106986,reaction_7,SOI-1CP
+PMID33106986,reaction_8,SOI-1CP
+PMID33106986,reaction_9,SOI-1CP
+PMID33106986,reaction_10,SOI-1CP
+PMID33106986,reaction_13,SOI-1CP
+PMID33106986,reaction_14,SOI-1CP
+PMID33106986,reaction_15,SOI-1CP
+PMID33106986,reaction_16,SOI-1CP
+PMID33106986,reaction_19,SOI-1CP
+PMID33109721,reaction_1,adaptor protein-3 (AP-3)
+PMID33110062,reaction_1,NADPH
+PMID33110062,reaction_2,NADPH
+PMID33113038,reaction_1,Heme b
+PMID33122026,reaction_6,PhaA (thiolase from C. necator)
+PMID33122026,reaction_6,PhaC (PHB synthase from C. necator)
+PMID33122065,reaction_1,Mg2+
+PMID33122065,reaction_1,Ca2+
+PMID33122065,reaction_1,Fe2+
+PMID33122065,reaction_1,Mn2+
+PMID33122065,reaction_1,Zn2+
+PMID33123518,reaction_6,maFACRSYK
+PMID33124786,reaction_4,nsp7
+PMID33124786,reaction_4,nsp8
+PMID33124786,reaction_5,nsp7
+PMID33124786,reaction_5,nsp8
+PMID33124786,reaction_6,nsp7
+PMID33124786,reaction_6,nsp8
+PMID33124786,reaction_7,nsp7
+PMID33124786,reaction_7,nsp8
+PMID33128494,reaction_1,FeSO4
+PMID33128494,reaction_1,sodium ascorbate
+PMID33128494,reaction_1,"homogentisate 1,2-dioxygenase (HGD)"
+PMID33129593,reaction_1,Ubc12
+PMID33129593,reaction_1,Rbx1
+PMID33129593,reaction_1,Mg2+
+PMID33131003,reaction_1,reduced methyl viologen
+PMID33131003,reaction_1,Molybdenum cofactor (Moco)
+PMID33131003,reaction_1,[4Fe-4S] cluster
+PMID33131003,reaction_2,reduced methyl viologen
+PMID33131003,reaction_2,Molybdenum cofactor (Moco)
+PMID33131003,reaction_2,[4Fe-4S] cluster
+PMID33131003,reaction_3,reduced methyl viologen
+PMID33131003,reaction_3,Molybdenum cofactor (Moco)
+PMID33131003,reaction_3,[4Fe-4S] cluster
+PMID33131742,reaction_1,MnSO4
+PMID33131742,reaction_1,glucose oxidase
+PMID33136147,reaction_1,Molybdenum cofactor (Moco)
+PMID33136147,reaction_1,Iron-sulfur (Fe-S) clusters
+PMID33136147,reaction_2,Molybdenum cofactor (Moco)
+PMID33136147,reaction_2,Iron-sulfur (Fe-S) clusters
+PMID33136147,reaction_3,Molybdenum cofactor (Moco)
+PMID33136147,reaction_3,Selenocysteine
+PMID33136147,reaction_4,Molybdenum cofactor (Moco)
+PMID33136147,reaction_4,Iron-sulfur (Fe-S) clusters
+PMID33136147,reaction_4,Ni-Fe clusters
+PMID33136147,reaction_5,Molybdenum cofactor (Moco)
+PMID33139950,reaction_1,Fre (flavin reductase)
+PMID33139950,reaction_2,Fre (flavin reductase)
+PMID33139950,reaction_7,Fre (flavin reductase)
+PMID33139950,reaction_8,Fre (flavin reductase)
+PMID33139950,reaction_9,Fre (flavin reductase)
+PMID33139950,reaction_10,Fre (flavin reductase)
+PMID33139950,reaction_11,Fre (flavin reductase)
+PMID33140461,reaction_1,Ca2+ (activator)
+PMID33140461,reaction_1,Ba2+ (activator)
+PMID33140461,reaction_2,Mg2+ (activator)
+PMID33140461,reaction_2,Ca2+ (activator)
+PMID33140461,reaction_2,Ba2+ (activator)
+PMID33140461,reaction_2,Mn2+ (activator)
+PMID33142415,reaction_1_nfk_assay,ascorbate
+PMID33142415,reaction_1_nfk_assay,methylene blue
+PMID33142415,reaction_1_nfk_assay,bovine liver catalase
+PMID33142415,reaction_2_kyn_adduct_assay,ascorbate
+PMID33142415,reaction_2_kyn_adduct_assay,methylene blue
+PMID33142415,reaction_2_kyn_adduct_assay,bovine liver catalase
+PMID33142415,reaction_3_nfk_assay,ascorbate
+PMID33142415,reaction_3_nfk_assay,methylene blue
+PMID33142415,reaction_3_nfk_assay,bovine liver catalase
+PMID33142415,reaction_4_kyn_adduct_assay,ascorbate
+PMID33142415,reaction_4_kyn_adduct_assay,methylene blue
+PMID33142415,reaction_4_kyn_adduct_assay,bovine liver catalase
+PMID33142418,reaction_3,NADPH regenerating system
+PMID33142418,reaction_4,NADPH regenerating system
+PMID33142418,reaction_5,NADPH regenerating system
+PMID33142418,reaction_6,NADPH regenerating system
+PMID33144004,reaction_1,FMN
+PMID33144004,reaction_2,FMN
+PMID33146219,reaction_1,MgSO4
+PMID33146219,reaction_2,MgSO4
+PMID33146857,reaction_3,syringaldehyde
+PMID33146857,reaction_3,vanillin
+PMID33146857,reaction_3,ABTS
+PMID33146857,reaction_3,guaiacol
+PMID33155804,reaction_1,1 mM ethylenediaminetetraacetic acid (EDTA)
+PMID33155804,reaction_1,5 μM FAD
+PMID33164676,reaction_1,MgCl2
+PMID33164676,reaction_2,MgCl2
+PMID33164676,reaction_3,MgCl2
+PMID33164676,reaction_4,MgCl2
+PMID33166455,reaction_1,PQQ
+PMID33166455,reaction_2,PQQ
+PMID33166455,reaction_3,PQQ
+PMID33166455,reaction_4,PQQ
+PMID33166455,reaction_5,PQQ
+PMID33166455,reaction_6,PQQ
+PMID33168750,reaction_1,Mg2+
+PMID33168750,reaction_1,LDAO (activator)
+PMID33168750,reaction_1,ATP regeneration system
+PMID33168750,reaction_2,Mg2+
+PMID33168750,reaction_2,LDAO (activator)
+PMID33171978,reaction_1,PAPS (endogenously produced)
+PMID33171978,reaction_2,PAPS (endogenously produced)
+PMID33171978,reaction_3,PAPS (endogenously produced)
+PMID33171978,reaction_4,PAPS (endogenously produced)
+PMID33171978,reaction_5,PAPS (endogenously produced)
+PMID33171978,reaction_6,PAPS (endogenously produced)
+PMID33171978,reaction_7,PAPS (endogenously produced)
+PMID33171978,reaction_8,PAPS (endogenously produced)
+PMID33171978,reaction_9,PAPS (endogenously produced)
+PMID33171978,reaction_10,PAPS (endogenously produced)
+PMID33171978,reaction_11,PAPS (endogenously produced)
+PMID33171978,reaction_12,PAPS (endogenously produced)
+PMID33171978,reaction_13,"PAPS (100 µM, externally added)"
+PMID33171978,reaction_14,"PAPS (100 µM, externally added)"
+PMID33171978,reaction_15,"PAPS (100 µM, externally added)"
+PMID33171978,reaction_16,"PAPS (100 µM, externally added)"
+PMID33171978,reaction_17,"PAPS (100 µM, externally added)"
+PMID33179162,reaction_1,Flavin
+PMID33186840,reaction_1,Acetyl-CoA carboxylase (AccABCD)
+PMID33186840,reaction_1,Biotin ligase (BirA)
+PMID33186840,reaction_1,Transhydrogenase (PntAB)
+PMID33188177,reaction_1,Ascorbic acid
+PMID33188177,reaction_4,Ascorbic acid
+PMID33188177,reaction_4,Glucose oxidase
+PMID33188177,reaction_4,Glucose
+PMID33188177,reaction_5,Ascorbic acid
+PMID33188177,reaction_5,Glucose oxidase
+PMID33188177,reaction_5,Glucose
+PMID33188177,reaction_6,Ascorbic acid
+PMID33188177,reaction_6,Glucose oxidase
+PMID33188177,reaction_6,Glucose
+PMID33189850,reaction_1,bovine adrenodoxin (Adx)
+PMID33189850,reaction_1,bovine NADPH-Adx reductase (AdR)
+PMID33189850,reaction_1,"L-α-1,2-dilauroyl-sn-glycero-3-phosphocholine"
+PMID33189850,reaction_2,bovine adrenodoxin (Adx)
+PMID33189850,reaction_2,bovine NADPH-Adx reductase (AdR)
+PMID33189850,reaction_2,"L-α-1,2-dilauroyl-sn-glycero-3-phosphocholine"
+PMID33189850,reaction_3,bovine adrenodoxin (Adx)
+PMID33189850,reaction_3,bovine NADPH-Adx reductase (AdR)
+PMID33189850,reaction_3,"L-α-1,2-dilauroyl-sn-glycero-3-phosphocholine"
+PMID33189850,reaction_4,bovine adrenodoxin (Adx)
+PMID33189850,reaction_4,bovine NADPH-Adx reductase (AdR)
+PMID33189850,reaction_4,"L-α-1,2-dilauroyl-sn-glycero-3-phosphocholine"
+PMID33189850,reaction_5,bovine adrenodoxin (Adx)
+PMID33189850,reaction_5,bovine NADPH-Adx reductase (AdR)
+PMID33189850,reaction_5,"L-α-1,2-dilauroyl-sn-glycero-3-phosphocholine"
+PMID33197770,reaction_2,p47phox
+PMID33199626,reaction_1,RbpA
+PMID33199626,reaction_2,RbpA
+PMID33199626,reaction_3,RbpA
+PMID33199626,reaction_4,RbpA
+PMID33199626,reaction_5,RbpA
+PMID33199626,reaction_5,CarD
+PMID33199626,reaction_6,RbpA
+PMID33199626,reaction_6,CarD
+PMID33203750,reaction_1,Thiamine pyrophosphate (TPP)
+PMID33203750,reaction_1,MgCl2
+PMID33203750,reaction_2,Thiamine pyrophosphate (TPP)
+PMID33203750,reaction_2,MgCl2
+PMID33203750,reaction_3,MgCl2
+PMID33215716,reaction_1,NADPH
+PMID33215716,reaction_2,NADPH
+PMID33215716,reaction_3,NADPH
+PMID33215716,reaction_4,NADPH
+PMID33215716,reaction_5,NADPH
+PMID33215716,reaction_6,NADPH
+PMID33215746,reaction_1,Mg2+
+PMID33233217,reaction_1,Zn2+
+PMID33233217,reaction_2,Zn2+
+PMID33233217,reaction_3,Zn2+
+PMID33240775,reaction_1,FAD
+PMID33241249,reaction_1,MgSO4
+PMID33241249,reaction_2,MgSO4
+PMID33242654,reaction_1,LinTrxR
+PMID33242654,reaction_1,NADPH
+PMID33242654,reaction_2,LinTrx
+PMID33242654,reaction_2,LinTrxR
+PMID33242654,reaction_2,NADPH
+PMID33242654,reaction_3,LinTrxR
+PMID33242654,reaction_3,NADPH
+PMID33242654,reaction_4,LinTrx
+PMID33242654,reaction_4,LinTrxR
+PMID33242654,reaction_4,NADPH
+PMID33242654,reaction_5,Homo sapiens glutaredoxin 1 (HsaGrx)
+PMID33242654,reaction_5,Saccharomyces cerevisiae glutathione reductase
+PMID33242654,reaction_5,GSH
+PMID33242654,reaction_5,NADPH
+PMID33242654,reaction_5,LinTrx
+PMID33242654,reaction_5,LinTrxR
+PMID33242654,reaction_6,Homo sapiens glutaredoxin 1 (HsaGrx)
+PMID33242654,reaction_6,Saccharomyces cerevisiae glutathione reductase
+PMID33242654,reaction_6,GSH
+PMID33242654,reaction_6,NADPH
+PMID33242654,reaction_7,LinTrxR
+PMID33242654,reaction_7,NADPH
+PMID33242654,reaction_8,LinTrxR
+PMID33242654,reaction_8,NADPH
+PMID33242654,reaction_9,Homo sapiens glutaredoxin 1 (HsaGrx)
+PMID33242654,reaction_9,Saccharomyces cerevisiae glutathione reductase
+PMID33242654,reaction_9,GSH
+PMID33242654,reaction_9,NADPH
+PMID33249835,reaction_1,Fe2+
+PMID33249835,reaction_1,Vc (ascorbic acid)
+PMID33257538,reaction_1_translocation,SecYEG
+PMID33257538,reaction_2_atpase,SecYEG in PLs
+PMID33257538,reaction_2_atpase,pSpy
+PMID33259843,reaction_1,E. coli thioredoxin
+PMID33259843,reaction_1,E. coli thioredoxin reductase
+PMID33259843,reaction_1,NADPH
+PMID33259843,reaction_2,E. coli thioredoxin
+PMID33259843,reaction_2,E. coli thioredoxin reductase
+PMID33259843,reaction_2,NADPH
+PMID33264024,reaction_2,FAD
+PMID33264024,reaction_3,FMN
+PMID33264024,reaction_14,FAD
+PMID33267982,reaction_1,Copper
+PMID33267982,reaction_2,Copper
+PMID33267982,reaction_3,Copper
+PMID33267982,reaction_4,Copper
+PMID33267982,reaction_5,Copper
+PMID33267982,reaction_6,Copper
+PMID33267982,reaction_7,Copper
+PMID33267982,reaction_8,Copper
+PMID33267982,reaction_9,Copper
+PMID33267982,reaction_10,Copper
+PMID33267982,reaction_11,Copper
+PMID33267982,reaction_12,Copper
+PMID33267982,reaction_13,Copper
+PMID33267982,reaction_14,Copper
+PMID33267982,reaction_15,Copper
+PMID33267982,reaction_16,Copper
+PMID33267982,reaction_17,Copper
+PMID33267982,reaction_18,Copper
+PMID33267982,reaction_19,Copper
+PMID33267982,reaction_20,Copper
+PMID33267982,reaction_21,Copper
+PMID33269912,reaction_1,Bacterioferritin-associated ferredoxin (Bfd)
+PMID33269912,reaction_1,Heme (in BfrB)
+PMID33269912,reaction_1,[2Fe-2S] cluster (in Bfd)
+PMID33275878,reaction_1,flavin adenine dinucleotide (FAD)
+PMID33275878,reaction_2,flavin adenine dinucleotide (FAD)
+PMID33275878,reaction_2,m-nitrobenzoylalanine (m-NBA)
+PMID33275878,reaction_2,"3,4-dichlorobenzoylalanine"
+PMID33275878,reaction_2,UPF-648
+PMID33283454,reaction_2_in_vitro_PS_synthesis,Firmicutes bacterium Tam41 (to synthesize NBD-CDP-DAG substrate in situ from NBD-PA and CTP)
+PMID33289180,reaction_1,Heme
+PMID33289384,reaction_1,Lycopene cyclase (CrtY)
+PMID33289384,reaction_1,GroES-GroEL chaperones
+PMID33292445,reaction_1,Copper
+PMID33292445,reaction_2,Copper
+PMID33292445,reaction_4,CaCl2 (1 mM)
+PMID33295983,reaction_1,Phenazine methosulfate (PMS)
+PMID33295983,reaction_1,"3-(4,5-dimethylthiazolyl-2)-2,5-diphenyltetrazoliumbromide (MTT)"
+PMID33295983,reaction_2,Phenazine methosulfate (PMS)
+PMID33295983,reaction_2,"3-(4,5-dimethylthiazolyl-2)-2,5-diphenyltetrazoliumbromide (MTT)"
+PMID33295983,reaction_3,Phenazine methosulfate (PMS)
+PMID33295983,reaction_3,"3-(4,5-dimethylthiazolyl-2)-2,5-diphenyltetrazoliumbromide (MTT)"
+PMID33295983,reaction_4,Phenazine methosulfate (PMS)
+PMID33295983,reaction_4,"3-(4,5-dimethylthiazolyl-2)-2,5-diphenyltetrazoliumbromide (MTT)"
+PMID33295983,reaction_5,Phenazine methosulfate (PMS)
+PMID33295983,reaction_5,"3-(4,5-dimethylthiazolyl-2)-2,5-diphenyltetrazoliumbromide (MTT)"
+PMID33303189,reaction_2,Polygonum tinctorium indoxyl b-D-glucoside synthase (PtIGS)
+PMID33342435,reaction_1,FMN
+PMID33342435,reaction_1,Iron-sulfur centers
+PMID33342435,reaction_1,Ferredoxin (from C. pasteurianum)
+PMID33342435,reaction_1,Carbon monoxide dehydrogenase/acetyl-CoA synthase (CODH/ACS from A. woodii)
+PMID33342435,reaction_1,CO
+PMID33349631,reaction_1,Mn2+
+PMID33349631,reaction_2,Mn2+
+PMID33349631,reaction_2,Citrate (activator)
+PMID33349631,reaction_2,ADP (activator)
+PMID33349631,reaction_3,Mn2+
+PMID33349631,reaction_3,Citrate (activator)
+PMID33349631,reaction_3,ADP (activator)
+PMID33359308,reaction_1_BV_mediator,Chitosan
+PMID33359308,reaction_2_AQS_mediator,Chitosan
+PMID33375972,reaction_1,Cu(II)SO4
+PMID33375972,reaction_2,Cu(II)SO4
+PMID33375972,reaction_3,Cu(II)SO4
+PMID33375972,reaction_4,Cu(II)SO4
+PMID33375972,reaction_5,Cu(II)SO4
+PMID33375972,reaction_6,Cu(II)SO4
+PMID33375979,reaction_6,PhaA from Ralstonia eutropha H16
+PMID33375979,reaction_6,PhaB from Ralstonia eutropha H16
+PMID33375979,reaction_7,PhaA from Ralstonia eutropha H16
+PMID33375979,reaction_7,PhaB from Ralstonia eutropha H16
+PMID33375979,reaction_8,PhaA from Ralstonia eutropha H16
+PMID33375979,reaction_8,PhaB from Ralstonia eutropha H16
+PMID33375979,reaction_9,PhaA from Ralstonia eutropha H16
+PMID33375979,reaction_9,PhaB from Ralstonia eutropha H16
+PMID33375979,reaction_10,PhaA from Ralstonia eutropha H16
+PMID33375979,reaction_10,PhaB from Ralstonia eutropha H16
+PMID33375979,reaction_11,PhaA from Ralstonia eutropha H16
+PMID33375979,reaction_11,PhaB from Ralstonia eutropha H16
+PMID33377777,reaction_1,nosDFY (for CuZ maturation)
+PMID33395570,reaction_1,FMN
+PMID33395570,reaction_2,FAD
+PMID33414463,reaction_1,smad2/3
+PMID33428421,reaction_1,Copper
+PMID33428421,reaction_3,PoLPMO9A
+PMID33436639,reaction_1,E. coli inorganic pyrophosphatase
+PMID33455969,reaction_1,Molybdenum-pterin cofactor
+PMID33455969,reaction_1,Iron-sulfur clusters
+PMID33455969,reaction_2,Desulfovibrio vulgaris [NiFe]-hydrogenase
+PMID33455969,reaction_2,Benzyl viologen
+PMID33460502,reaction_1,Haem B
+PMID33460502,reaction_2,Haem B
+PMID33460586,reaction_5,APS reductase (AprAB)
+PMID33460586,reaction_6,Lipoate-binding protein (LbpA)
+PMID33460586,reaction_6,Dihydrolipoamide dehydrogenase (DLDH)
+PMID33460816,reaction_1,SmNox (water-forming NADH oxidase from Streptococcus mutans)
+PMID33460816,reaction_1,FAD
+PMID33460816,reaction_1,NAD+
+PMID33460820,reaction_1,PntAB (membrane bound transhydrogenase)
+PMID33460820,reaction_1,"Pfo (pyruvate-ferredoxin/flavodoxin oxidoreductase, YdbK)"
+PMID33460820,reaction_1,Fpr (flavodoxin reductase)
+PMID33460820,reaction_2,"D-xylose reductase (XyrA, for coupled assay)"
+PMID33469028,reaction_1,NADPH
+PMID33469028,reaction_2,NADPH
+PMID33469028,reaction_3,NADPH
+PMID33469028,reaction_4,NADPH
+PMID33475797,reaction_1,NADPH
+PMID33476696,reaction_1,diiron cofactors
+PMID33479489,reaction_2,Vitamin B12 (cyanocobalamin)
+PMID33479489,reaction_3,Vitamin B12 (cyanocobalamin)
+PMID33479489,reaction_4,norpseudo-B12 ([Ade]NCba)
+PMID33479489,reaction_4,"5,6-dimethylbenzimidazole (DMB)"
+PMID33479489,reaction_5,norpseudo-B12 ([Ade]NCba)
+PMID33479489,reaction_6,norpseudo-B12 ([Ade]NCba)
+PMID33479489,reaction_7,5-methoxybenzimidazolyl-cobamide ([5-OMeBza]Cba)
+PMID33485846,reaction_1,MgSO4
+PMID33485846,reaction_1,cyclodextrin
+PMID33486371,reaction_1,Glucose-glucose dehydrogenase (GDH) from Bacillus megaterium
+PMID33486371,reaction_1,Glucose
+PMID33486371,reaction_2,Glucose-glucose dehydrogenase (GDH) from Bacillus megaterium
+PMID33486371,reaction_2,Glucose
+PMID33486371,reaction_3,Glucose-glucose dehydrogenase (GDH) from Bacillus megaterium
+PMID33486371,reaction_3,Glucose
+PMID33486371,reaction_4,Glucose-glucose dehydrogenase (GDH) from Bacillus megaterium
+PMID33486371,reaction_4,Glucose
+PMID33486371,reaction_5,Glucose-glucose dehydrogenase (GDH) from Bacillus megaterium
+PMID33486371,reaction_5,Glucose
+PMID33486371,reaction_6,Glucose-glucose dehydrogenase (GDH) from Bacillus megaterium
+PMID33486371,reaction_6,Glucose
+PMID33486371,reaction_7,Glucose-glucose dehydrogenase (GDH) from Bacillus megaterium
+PMID33486371,reaction_7,Glucose
+PMID33486371,reaction_8,Glucose-glucose dehydrogenase (GDH) from Bacillus megaterium
+PMID33486371,reaction_8,Glucose
+PMID33486371,reaction_9,Glucose-glucose dehydrogenase (GDH) from Bacillus megaterium
+PMID33486371,reaction_9,Glucose
+PMID33498665,reaction_1,MgCl2
+PMID33498665,reaction_2,MgCl2
+PMID33498665,reaction_3,MgCl2
+PMID33498665,reaction_5,Thiamine pyrophosphate
+PMID33498665,reaction_5,MgCl2
+PMID33512000,reaction_4,Maleylpyruvate isomerase (HbzF from Pseudomonas alcaligenes NCIMB 9867)
+PMID33512000,reaction_5,Maleylpyruvate synthase (MPS from Rhodococcus sp. NCIMB12038)
+PMID33512000,reaction_5,Maleylpyruvate isomerase (HbzF from Pseudomonas alcaligenes NCIMB 9867)
+PMID33512000,reaction_6,Isochorismate synthase (EntC from E. coli)
+PMID33512000,reaction_6,Isochorismate-pyruvate lyase (PchB from Pseudomonas fluorescens)
+PMID33512000,reaction_6,Maleylpyruvate synthase (MPS from Rhodococcus sp. NCIMB12038)
+PMID33512000,reaction_6,Maleylpyruvate isomerase (HbzF from Pseudomonas alcaligenes NCIMB 9867)
+PMID33512000,reaction_6,DAHP synthase (aroGfbr from E. coli)
+PMID33512000,reaction_6,PEP synthase (ppsA from E. coli)
+PMID33512000,reaction_6,Transketolase (tktA from E. coli)
+PMID33512000,reaction_6,Shikimate kinase (aroL from E. coli)
+PMID33522611,reaction_1,Copper
+PMID33522611,reaction_2,Copper
+PMID33522811,reaction_1,Fe(II)
+PMID33522811,reaction_2,Fe(II)
+PMID33522811,reaction_2,L-arginine (activator)
+PMID33529432,reaction_1,CN-OA-m photocatalyst
+PMID33529432,reaction_2,CN-OA-m photocatalyst
+PMID33529432,reaction_3,CN-OA-m photocatalyst
+PMID33529432,reaction_4,CN-OA-m photocatalyst
+PMID33529432,reaction_5,CN-OA-m photocatalyst
+PMID33529432,reaction_6,CN-OA-m photocatalyst
+PMID33529432,reaction_7,CN-OA-m photocatalyst
+PMID33529432,reaction_8,CN-OA-m photocatalyst
+PMID33529432,reaction_9,CN-OA-m photocatalyst
+PMID33529432,reaction_10,CN-OA-m photocatalyst
+PMID33529432,reaction_11,CN-OA-m photocatalyst
+PMID33529432,reaction_11,NAD+
+PMID33529432,reaction_12,CN-OA-m photocatalyst
+PMID33529432,reaction_12,NAD+
+PMID33529432,reaction_13,CN-OA-m photocatalyst
+PMID33529432,reaction_13,NAD+
+PMID33530536,reaction_1,Tetrahydrobiopterin
+PMID33530536,reaction_2,Tetrahydrobiopterin
+PMID33530536,reaction_3,Tetrahydrobiopterin
+PMID33531363,reaction_1,Thioredoxin-f1 (Trx-f1)
+PMID33531496,reaction_1,structural zinc ion
+PMID33533375,reaction_1,Catalase
+PMID33533375,reaction_1,Mn(OAc)3
+PMID33533375,reaction_2,Catalase
+PMID33533375,reaction_2,Mn(OAc)3
+PMID33533375,reaction_3,Catalase
+PMID33533375,reaction_3,Mn(OAc)3
+PMID33533375,reaction_4,Catalase
+PMID33533375,reaction_4,Mn(OAc)3
+PMID33533375,reaction_5,Catalase
+PMID33533375,reaction_5,Mn(OAc)3
+PMID33533375,reaction_6,Catalase
+PMID33533375,reaction_6,Mn(OAc)3
+PMID33533375,reaction_7,Catalase
+PMID33533375,reaction_7,Mn(OAc)3
+PMID33539931,reaction_1,IacF (ferredoxin)
+PMID33548859,reaction_1,FAD
+PMID33548859,reaction_1,FMN
+PMID33548859,reaction_1,Heme
+PMID33548859,reaction_1,tetrahydrobiopterin (BH4)
+PMID33548859,reaction_1,Calmodulin
+PMID33548859,reaction_2,FAD
+PMID33548859,reaction_2,FMN
+PMID33548859,reaction_2,Heme
+PMID33564100,reaction_1,S-adenosyl-[methyl-14C]-L-methionine
+PMID33564100,reaction_2,S-adenosyl-[methyl-14C]-L-methionine
+PMID33564100,reaction_3,S-adenosyl-[methyl-14C]-L-methionine
+PMID33564100,reaction_4,S-adenosyl-[methyl-14C]-L-methionine
+PMID33564100,reaction_5,FeSO4
+PMID33564100,reaction_5,ascorbic acid
+PMID33564100,reaction_6,FeSO4
+PMID33564100,reaction_6,ascorbic acid
+PMID33564100,reaction_7,FeSO4
+PMID33564100,reaction_7,ascorbic acid
+PMID33591179,reaction_1,FAD
+PMID33591179,reaction_2,FAD
+PMID33592267,reaction_1,Mg2+
+PMID33592267,reaction_1,Na+
+PMID33592267,reaction_2,Mg2+
+PMID33592267,reaction_2,Na+
+PMID33592267,reaction_3,Mg2+
+PMID33592267,reaction_3,Na+
+PMID33593577,reaction_1,Cu2+
+PMID33593577,reaction_1,Sg-chi (for synergy assay)
+PMID33593577,reaction_2,Cu2+
+PMID33593577,reaction_2,Sg-chi (for synergy assay)
+PMID33593577,reaction_3,Cu2+
+PMID33599267,reaction_1,NADPH
+PMID33599267,reaction_1,Anabaena ferredoxin-NADP+ reductase (AnFNR)
+PMID33599267,reaction_2,NADPH
+PMID33599267,reaction_2,Anabaena ferredoxin-NADP+ reductase (AnFNR)
+PMID33599267,reaction_2,GvTrx-m
+PMID33609870,reaction_1,NAD(P)H
+PMID33609870,reaction_2,NAD(P)H
+PMID33623002,reaction_1,Copper
+PMID33623002,reaction_1,Pyocyanin
+PMID33623002,reaction_1,Azurin
+PMID33624374,reaction_6,AzpF (carrier protein)
+PMID33624374,reaction_7,AzpF (carrier protein)
+PMID33624374,reaction_8,AzpF (carrier protein)
+PMID33624917,reaction_4,d-glucose dehydrogenase (GDH)
+PMID33624917,reaction_4,d-glucose
+PMID33624917,reaction_5,d-glucose dehydrogenase (GDH)
+PMID33624917,reaction_5,d-glucose
+PMID33637718,reaction_1,Fe(II)
+PMID33647795,reaction_1,Molybdenum cofactor
+PMID33649331,reaction_1,FAD
+PMID33649331,reaction_1,methyl viologen
+PMID33649331,reaction_1,sodium dithionite
+PMID33649331,reaction_2,FAD
+PMID33649331,reaction_2,FMN
+PMID33649331,reaction_2,methyl viologen
+PMID33649331,reaction_2,sodium dithionite
+PMID33649331,reaction_2,ApbE enzyme
+PMID33656282,reaction_1,putidaredoxin (Pdx)
+PMID33656282,reaction_1,putidaredoxin reductase (Pdr)
+PMID33656282,reaction_1,glucose-6-phosphate dehydrogenase (G6P-DH)
+PMID33656879,reaction_1,Cytochrome b5
+PMID33656879,reaction_1,Mn-cytochrome b5
+PMID33656879,reaction_1,Cytochrome P450 reductase
+PMID33656879,reaction_1,Lipid nanodiscs
+PMID33656879,reaction_2,Cytochrome b5
+PMID33656879,reaction_2,Mn-cytochrome b5
+PMID33656879,reaction_2,Cytochrome P450 reductase
+PMID33656879,reaction_2,Lipid nanodiscs
+PMID33662571,reaction_1,Selenocysteine (catalytic residue)
+PMID33662571,reaction_1,NADPH (in coupled assay)
+PMID33666816,reaction_1,"Pimeloyl-CoA synthetase (BioW, gene bioW, from Bacillus subtilis 168, GenBank ID 938017)"
+PMID33666816,reaction_1,"S-adenosyl-L-methionine synthetase (SAM synthetase, Sam2, gene sam2, from Saccharomyces cerevisiae ZJU001, GenBank ID 852113)"
+PMID33683401,reaction_1,Mannitol-1-phosphate phosphatase (Mpp)
+PMID33684360,reaction_1,FAD
+PMID33684554,reaction_1_head,lactate dehydrogenase
+PMID33684554,reaction_1_head,pyruvate kinase
+PMID33684554,reaction_1_head,Mg2+
+PMID33684554,reaction_1_head,K+
+PMID33684554,reaction_1_head,Na+
+PMID33684554,reaction_2_thorax,lactate dehydrogenase
+PMID33684554,reaction_2_thorax,pyruvate kinase
+PMID33684554,reaction_2_thorax,Mg2+
+PMID33684554,reaction_2_thorax,K+
+PMID33684554,reaction_2_thorax,Na+
+PMID33684554,reaction_3_abdomen,lactate dehydrogenase
+PMID33684554,reaction_3_abdomen,pyruvate kinase
+PMID33684554,reaction_3_abdomen,Mg2+
+PMID33684554,reaction_3_abdomen,K+
+PMID33684554,reaction_3_abdomen,Na+
+PMID33691103,reaction_1,NADP+
+PMID33691103,reaction_2,NADP+
+PMID33712158,reaction_1,Ascorbic acid
+PMID33712158,reaction_1,Gallic acid
+PMID33712158,reaction_1,Chlorophyllin
+PMID33712158,reaction_3,Celluclast 1.5 L
+PMID33712158,reaction_4,Celluclast 1.5 L
+PMID33712158,reaction_5,Celluclast 1.5 L
+PMID33716610,reaction_1,Pyruvate dehydrogenase kinase (PDK)
+PMID33716610,reaction_1,Pyruvate dehydrogenase phosphate phosphatase (PDP)
+PMID33720428,reaction_1,di-iron cluster
+PMID33720428,reaction_2,di-iron cluster
+PMID33722570,reaction_5,BrxB
+PMID33725631,reaction_1,BSA
+PMID33731920,reaction_1,ferredoxin
+PMID33731920,reaction_1,ferredoxin:NADP+ reductase
+PMID33731920,reaction_1,catalase
+PMID33736288,reaction_1,Mg2+
+PMID33736288,reaction_1,K+
+PMID33736288,reaction_1,inorganic pyrophosphatase
+PMID33748704,reaction_1,Zn2+
+PMID33750541,reaction_1,Flavin adenine dinucleotide (FAD)
+PMID33750541,reaction_2,Flavin adenine dinucleotide (FAD)
+PMID33750543,reaction_1,Copper
+PMID33750543,reaction_1,Horseradish peroxidase (HRP)
+PMID33750543,reaction_1,ABTS
+PMID33750543,reaction_2,Copper
+PMID33750543,reaction_2,Horseradish peroxidase (HRP)
+PMID33750543,reaction_2,ABTS
+PMID33750543,reaction_3,Copper
+PMID33750543,reaction_3,Horseradish peroxidase (HRP)
+PMID33750543,reaction_3,ABTS
+PMID33750543,reaction_4,Copper
+PMID33750543,reaction_4,Horseradish peroxidase (HRP)
+PMID33750543,reaction_4,ABTS
+PMID33750543,reaction_5,Copper
+PMID33750543,reaction_5,Horseradish peroxidase (HRP)
+PMID33750543,reaction_5,ABTS
+PMID33750543,reaction_6,Copper
+PMID33750543,reaction_6,Horseradish peroxidase (HRP)
+PMID33750543,reaction_6,ABTS
+PMID33756342,reaction_1,Renilla Luciferase (internal control)
+PMID33763825,reaction_1,Zn2+
+PMID33763825,reaction_2,Zn2+
+PMID33763825,reaction_3,Zn2+
+PMID33763825,reaction_4,Zn2+
+PMID33763825,reaction_5,Zn2+
+PMID33763825,reaction_6,Zn2+
+PMID33764624,reaction_1,FAD (intrinsic)
+PMID33764624,reaction_1,horseradish peroxidase (assay)
+PMID33764624,reaction_2,FAD (intrinsic)
+PMID33773110,reaction_1,IslB (activating enzyme)
+PMID33773110,reaction_1,S-adenosylmethionine (AdoMet)
+PMID33773110,reaction_1,[4Fe-4S] cluster
+PMID33773110,reaction_2,IslB (activating enzyme)
+PMID33773110,reaction_2,S-adenosylmethionine (AdoMet)
+PMID33773110,reaction_2,[4Fe-4S] cluster
+PMID33773110,reaction_2,Yeast alcohol dehydrogenase (for coupled assay)
+PMID33774358,reaction_1,Mn2+
+PMID33781676,reaction_6,RtFad1 (co-overexpressed)
+PMID33781676,reaction_7,RtFad1 (co-overexpressed)
+PMID33793924,reaction_1,FAD
+PMID33793924,reaction_2,FAD
+PMID33793924,reaction_3,MgCl2
+PMID33793924,reaction_4,MgCl2
+PMID33793924,reaction_5,MgCl2
+PMID33793924,reaction_6,MgCl2
+PMID33793924,reaction_7,MgCl2
+PMID33793924,reaction_8,MgCl2
+PMID33802034,reaction_1,glucose
+PMID33802034,reaction_1,glucose dehydrogenase (GDH)
+PMID33802034,reaction_1,NAD+
+PMID33802034,reaction_2,glucose
+PMID33802034,reaction_3,glucose
+PMID33802034,reaction_4,glucose
+PMID33802034,reaction_4,glucose dehydrogenase (GDH)
+PMID33802034,reaction_4,NAD+
+PMID33802034,reaction_5,glucose
+PMID33802034,reaction_6,glucose
+PMID33802034,reaction_7,glucose
+PMID33802034,reaction_7,glucose dehydrogenase (GDH)
+PMID33802034,reaction_7,NAD+
+PMID33802034,reaction_8,glucose
+PMID33804376,reaction_1,Copper
+PMID33804376,reaction_2,Copper
+PMID33812916,reaction_1,FAD
+PMID33812916,reaction_5,FAD
+PMID33812916,reaction_5,FMN
+PMID33812916,reaction_5,NAD+
+PMID33812916,reaction_6,FAD
+PMID33812916,reaction_6,FMN
+PMID33812916,reaction_6,NAD+
+PMID33812916,reaction_7,FAD
+PMID33812916,reaction_7,FMN
+PMID33812916,reaction_7,ATP
+PMID33824313,reaction_1,ferrous ammonium sulfate
+PMID33824313,reaction_1,DTT
+PMID33842213,reaction_1,NADPH
+PMID33842213,reaction_2,NADPH
+PMID33842213,reaction_3,NADPH
+PMID33842213,reaction_4,NADPH
+PMID33842213,reaction_5,NADPH
+PMID33842213,reaction_6,NADPH
+PMID33842213,reaction_7,NADPH
+PMID33842213,reaction_8,NADPH
+PMID33842213,reaction_9,NADPH
+PMID33842213,reaction_10,NADPH
+PMID33842213,reaction_11,NADP+
+PMID33842213,reaction_12,NADP+
+PMID33842213,reaction_13,NADP+
+PMID33842213,reaction_14,NADP+
+PMID33842839,reaction_2_MET,"PV2 redox polymer (2,2′-viologen-modified hydrogel)"
+PMID33842839,reaction_3_biofuel_cell_anode,PV2 redox polymer
+PMID33842839,reaction_3_biofuel_cell_anode,Bilirubin oxidase from Myrothecium verrucaria (cathode enzyme)
+PMID33842839,reaction_4_electrolyser_cathode,PV2 redox polymer
+PMID33844097,reaction_1,FAD
+PMID33844097,reaction_1,DTT
+PMID33845332,reaction_2,Ubiquitin-proteasome system
+PMID33845332,reaction_2,K48-linked ubiquitin chains
+PMID33846091,reaction_2,prFMN
+PMID33846091,reaction_2,UbiX
+PMID33846091,reaction_3,prFMN
+PMID33846091,reaction_3,UbiX
+PMID33846091,reaction_4,Ascorbic acid
+PMID33846823,reaction_3,Formate dehydrogenase (for mutant screening)
+PMID33846823,reaction_3,Formate (for mutant screening)
+PMID33846823,reaction_3,Glucose dehydrogenase (for final resolution process)
+PMID33846823,reaction_3,Glucose (for final resolution process)
+PMID33852289,reaction_1,di-iron center
+PMID33857841,reaction_1,FAD
+PMID33864621,reaction_1,Zinc ion
+PMID33867026,reaction_1,phenazine methosulfate (PMS)
+PMID33867026,reaction_1,Pyrroloquinoline quinone (PQQ)
+PMID33867026,reaction_1,NH4Cl (Required)
+PMID33867026,reaction_1,Lanthanide (La³⁺-Nd³⁺)
+PMID33867026,reaction_2,phenazine methosulfate (PMS)
+PMID33867026,reaction_2,Pyrroloquinoline quinone (PQQ)
+PMID33867026,reaction_2,NH4Cl (Required)
+PMID33867026,reaction_2,Lanthanide (La³⁺-Nd³⁺)
+PMID33867026,reaction_3,phenazine methosulfate (PMS)
+PMID33867026,reaction_3,Pyrroloquinoline quinone (PQQ)
+PMID33867026,reaction_3,NH4Cl (Required)
+PMID33867026,reaction_3,Lanthanide (La³⁺-Nd³⁺)
+PMID33867026,reaction_4,phenazine methosulfate (PMS)
+PMID33867026,reaction_4,Pyrroloquinoline quinone (PQQ)
+PMID33867026,reaction_4,NH4Cl (Required)
+PMID33867026,reaction_4,Lanthanide (La³⁺-Nd³⁺)
+PMID33867026,reaction_5,phenazine methosulfate (PMS)
+PMID33867026,reaction_5,Pyrroloquinoline quinone (PQQ)
+PMID33867026,reaction_5,NH4Cl (Required)
+PMID33867026,reaction_5,Lanthanide (La³⁺-Nd³⁺)
+PMID33867026,reaction_6,phenazine methosulfate (PMS)
+PMID33867026,reaction_6,Pyrroloquinoline quinone (PQQ)
+PMID33867026,reaction_6,NH4Cl (Required)
+PMID33867026,reaction_6,Lanthanide (La³⁺-Nd³⁺)
+PMID33867026,reaction_7,phenazine methosulfate (PMS)
+PMID33867026,reaction_7,Pyrroloquinoline quinone (PQQ)
+PMID33867026,reaction_7,NH4Cl (Required)
+PMID33867026,reaction_7,Lanthanide (La³⁺-Nd³⁺)
+PMID33867026,reaction_8,phenazine methosulfate (PMS)
+PMID33867026,reaction_8,Pyrroloquinoline quinone (PQQ)
+PMID33867026,reaction_8,NH4Cl (Required)
+PMID33867026,reaction_8,Lanthanide (La³⁺-Nd³⁺)
+PMID33867026,reaction_9,phenazine methosulfate (PMS)
+PMID33867026,reaction_9,Pyrroloquinoline quinone (PQQ)
+PMID33867026,reaction_9,NH4Cl (Required)
+PMID33867026,reaction_9,Lanthanide (La³⁺-Nd³⁺)
+PMID33867026,reaction_10,phenazine methosulfate (PMS)
+PMID33867026,reaction_10,Pyrroloquinoline quinone (PQQ)
+PMID33867026,reaction_10,NH4Cl (Stimulatory)
+PMID33867026,reaction_10,Lanthanide (La³⁺-Dy³⁺)
+PMID33867026,reaction_11,phenazine methosulfate (PMS)
+PMID33867026,reaction_11,Pyrroloquinoline quinone (PQQ)
+PMID33867026,reaction_11,NH4Cl (Not required)
+PMID33867026,reaction_11,Lanthanide (La³⁺-Sm³⁺)
+PMID33867026,reaction_12,phenazine methosulfate (PMS)
+PMID33867026,reaction_12,Pyrroloquinoline quinone (PQQ)
+PMID33867026,reaction_12,NH4Cl (Stimulatory)
+PMID33867026,reaction_12,Lanthanide (La³⁺-Yb³⁺)
+PMID33867026,reaction_13,XoxG4
+PMID33895365,reaction_1,AroG*
+PMID33895365,reaction_1,QsuB
+PMID33895365,reaction_2,AroG* (feedback-insensitive 3-deoxy-D-arabino-heptulosonate 7-phosphate synthase)
+PMID33899864,reaction_1,FMN
+PMID33899864,reaction_1,Catalase
+PMID33899864,reaction_1,"AmNAH (1-(2-carbamoylmethyl)-1,4-dihydronicotinamide)"
+PMID33899864,reaction_1,"BNAH (1-benzyl-1,4-dihydronicotinamide)"
+PMID33899864,reaction_2,FMN
+PMID33899864,reaction_2,Catalase
+PMID33899864,reaction_2,"AmNAH (1-(2-carbamoylmethyl)-1,4-dihydronicotinamide)"
+PMID33899864,reaction_3,FMN
+PMID33899864,reaction_3,Catalase
+PMID33899864,reaction_3,"AmNAH (1-(2-carbamoylmethyl)-1,4-dihydronicotinamide)"
+PMID33901808,reaction_2,Pyridoxal phosphate (PLP)
+PMID33910055,reaction_1,FAD
+PMID33910055,reaction_2,FAD
+PMID33910055,reaction_3,FAD
+PMID33910055,reaction_4,FAD
+PMID33913984,reaction_1,MgCl2
+PMID33913984,reaction_2,MgCl2
+PMID33913984,reaction_3,MgCl2
+PMID33913984,reaction_4,MgCl2
+PMID33913984,reaction_5,MgCl2
+PMID33913984,reaction_6,MgCl2
+PMID33913984,reaction_7,MgCl2
+PMID33913984,reaction_8,MgCl2
+PMID33913984,reaction_9,MgCl2
+PMID33913984,reaction_10,MgCl2
+PMID33913984,reaction_11,MgCl2
+PMID33913984,reaction_12,MgCl2
+PMID33913984,reaction_13,MgCl2
+PMID33913984,reaction_14,MgCl2
+PMID33913984,reaction_15,MgCl2
+PMID33913984,reaction_16,MgCl2
+PMID33913984,reaction_17,MgCl2
+PMID33913984,reaction_18,MgCl2
+PMID33913984,reaction_19,MgCl2
+PMID33922867,reaction_1,Heme
+PMID33929595,reaction_1,"Glucose dehydrogenase from Bacillus amyloliquefaciens DSM 7 (BaGDH, GenBank no. CP054415.1) used for NADH regeneration in coupled reactions."
+PMID33942867,reaction_1,PLP
+PMID33942867,reaction_2,PLP
+PMID33942867,reaction_3,PLP
+PMID33942867,reaction_4,PLP
+PMID33942867,reaction_5,PLP
+PMID33942867,reaction_6,PLP
+PMID33942867,reaction_7,PLP
+PMID33942867,reaction_8,PLP
+PMID33942867,reaction_9,PLP
+PMID33942867,reaction_10,PLP
+PMID33950676,reaction_1,FAD
+PMID33955667,reaction_1,Fe(II)
+PMID33955667,reaction_2,Fe(II)
+PMID33969584,reaction_1,MgCl2
+PMID33969584,reaction_1,E. coli inorganic pyrophosphatase
+PMID33977577,reaction_1,FMN
+PMID33978969,reaction_1,NADPH
+PMID33979735,reaction_1,Leucine
+PMID33996018,reaction_1,NADH
+PMID33999624,reaction_1,Fe(II)
+PMID34010508,reaction_1,Arh1_A18G
+PMID34010508,reaction_1,Etp1fd
+PMID34010508,reaction_1,NADPH
+PMID34010508,reaction_1,glucose-6-phosphate
+PMID34010508,reaction_1,glucose-6-phosphate dehydrogenase
+PMID34010508,reaction_1,MgCl2
+PMID34048880,reaction_1,Fe(II)
+PMID34053981,reaction_1,Mg2+
+PMID34053981,reaction_2,Mg2+
+PMID34053981,reaction_3,Mg2+
+PMID34053981,reaction_4,Mg2+
+PMID34053981,reaction_5,Mg2+
+PMID34053981,reaction_6,Mg2+
+PMID34053981,reaction_7,Mg2+
+PMID34053981,reaction_8,Mg2+
+PMID34053981,reaction_9,Mg2+
+PMID34053981,reaction_10,Mg2+
+PMID34056479,reaction_1,Fe(II) (from (NH4)2Fe(SO4)2)
+PMID34056479,reaction_1,L-ascorbic acid
+PMID34060308,reaction_2,CuSO4
+PMID34060308,reaction_3,Copper (enzyme was Cu-reconstituted)
+PMID34060308,reaction_4,Copper (enzyme was Cu-reconstituted)
+PMID34060308,reaction_6,Copper
+PMID34065782,reaction_7,NADPH-cytochrome P450 reductase
+PMID34065782,reaction_8,NADPH-cytochrome P450 reductase
+PMID34065782,reaction_9,NADPH-cytochrome P450 reductase
+PMID34065782,reaction_10,NADPH-cytochrome P450 reductase
+PMID34069009,reaction_1,NADH
+PMID34069009,reaction_1,FMN
+PMID34069009,reaction_2,NADH
+PMID34069009,reaction_2,FMN
+PMID34069009,reaction_3,NADH
+PMID34069009,reaction_3,FMN
+PMID34069009,reaction_4,NADH
+PMID34069009,reaction_4,FMN
+PMID34069009,reaction_5,NADH
+PMID34069009,reaction_5,FMN
+PMID34069009,reaction_6,NADH
+PMID34069009,reaction_6,FMN
+PMID34078898,reaction_1,NADPH-CYP reductase (from WAT11 yeast strain)
+PMID34078898,reaction_2,NADPH-CYP reductase (from WAT11 yeast strain)
+PMID34078898,reaction_3,NADPH-CYP reductase (from WAT11 yeast strain)
+PMID34080200,reaction_1,L-galactono-lactone (ascorbate precursor)
+PMID34091695,reaction_1,ferredoxin
+PMID34112370,reaction_1,Catalase (added during copper reconstitution experiments)
+PMID34112370,reaction_2,Catalase (added during copper reconstitution experiments)
+PMID34123216,reaction_3,NADH oxidase from Thermus thermophilus (Tt-NOX)
+PMID34123216,reaction_3,Catalase from bovine liver (Hl-CAT)
+PMID34123216,reaction_3,NADH oxidase from Lactobacillus pentosus (Lp-NOX)
+PMID34123320,reaction_1,VnfH
+PMID34123320,reaction_1,ATP
+PMID34123320,reaction_1,dithionite
+PMID34123320,reaction_2,VnfH
+PMID34123320,reaction_2,ATP
+PMID34123320,reaction_2,dithionite
+PMID34123320,reaction_3,VnfH
+PMID34123320,reaction_3,ATP
+PMID34123320,reaction_3,MgCl2
+PMID34123320,reaction_3,BSA
+PMID34123320,reaction_3,creatine phosphokinase
+PMID34123320,reaction_3,dithionite
+PMID34156250,reaction_1,Copper (Cu2+)
+PMID34156250,reaction_1,caddie protein (MelC1)
+PMID34156250,reaction_2,Copper (Cu2+)
+PMID34156250,reaction_2,caddie protein (MelC1)
+PMID34156250,reaction_3,Copper (Cu2+)
+PMID34156250,reaction_3,caddie protein (MelC1)
+PMID34156250,reaction_4,Copper (Cu2+)
+PMID34156250,reaction_4,caddie protein (MelC1)
+PMID34156250,reaction_5,Copper (Cu2+)
+PMID34156250,reaction_5,caddie protein (MelC1)
+PMID34156250,reaction_6,Copper (Cu2+)
+PMID34156250,reaction_6,caddie protein (MelC1)
+PMID34156250,reaction_7,Copper (Cu2+)
+PMID34156250,reaction_7,caddie protein (MelC1)
+PMID34156250,reaction_8,Copper (Cu2+)
+PMID34156250,reaction_8,caddie protein (MelC1)
+PMID34163896,reaction_1,Fe(II)
+PMID34163896,reaction_1,L-ascorbic acid
+PMID34171691,reaction_1,yeast glutathione reductase
+PMID34171691,reaction_1,GSH
+PMID34171691,reaction_2,yeast glutathione reductase
+PMID34171691,reaction_2,GSH
+PMID34171691,reaction_3,yeast glutathione reductase
+PMID34171691,reaction_3,GSH
+PMID34189909,reaction_1,NADPH P450 reductase
+PMID34189909,reaction_1,Cytochrome b5
+PMID34189909,reaction_1,"NADPH regenerating system (NADP+, glucose-6-phosphate, glucose-6-phosphate dehydrogenase)"
+PMID34189909,reaction_2,NADPH P450 reductase
+PMID34189909,reaction_2,Cytochrome b5
+PMID34189909,reaction_2,"NADPH regenerating system (NADP+, glucose-6-phosphate, glucose-6-phosphate dehydrogenase)"
+PMID34204515,reaction_3,Phosphite dehydrogenase
+PMID34204515,reaction_3,FAD
+PMID34204515,reaction_3,NADPH
+PMID34246414,reaction_2,TMPRSS2
+PMID34246414,reaction_3,Heparin
+PMID34246414,reaction_4,CD4
+PMID34246414,reaction_6,TMPRSS2
+PMID34262629,reaction_3,phosphite dehydrogenase
+PMID34262629,reaction_4,phosphite dehydrogenase
+PMID34262629,reaction_5,phosphite dehydrogenase
+PMID34289079,reaction_2,1 mM divalent cation (MgCl2)
+PMID34289079,reaction_3,10 mM divalent cation (MgCl2)
+PMID34289079,reaction_3,"0.2 mM sulfhydryl group (DTT, Cys)"
+PMID34290951,reaction_1,MSH
+PMID34290951,reaction_1,Mtr
+PMID34290951,reaction_2,Trx
+PMID34290951,reaction_2,TrxR
+PMID34290951,reaction_3,MSH
+PMID34290951,reaction_3,Mtr
+PMID34290951,reaction_4,MSH
+PMID34290951,reaction_4,Mtr
+PMID34290951,reaction_6_control,MSH
+PMID34290951,reaction_6_control,Mtr
+PMID34290951,reaction_7_control,MSH
+PMID34290951,reaction_7_control,Mtr
+PMID34290951,reaction_8_control,MSH
+PMID34290951,reaction_8_control,Mtr
+PMID34292356,reaction_1,cytochrome b5
+PMID34292356,reaction_1,cytochrome b5 reductase
+PMID34295569,reaction_1,FAD
+PMID34295569,reaction_2,FAD
+PMID34297466,reaction_1,MgCl2
+PMID34306835,reaction_3_O2,horseradish peroxidase
+PMID34315853,reaction_1,IGF2BP2
+PMID34327042,reaction_1,Putidaredoxin (Pdx)
+PMID34327042,reaction_1,NADH-Pdx reductase (PdR)
+PMID34327042,reaction_2,Putidaredoxin (Pdx)
+PMID34327042,reaction_2,NADH-Pdx reductase (PdR)
+PMID34327042,reaction_3,Putidaredoxin (Pdx)
+PMID34327042,reaction_3,NADH-Pdx reductase (PdR)
+PMID34327042,reaction_4,Putidaredoxin (Pdx)
+PMID34327042,reaction_4,NADH-Pdx reductase (PdR)
+PMID34327042,reaction_5,Putidaredoxin (Pdx)
+PMID34327042,reaction_5,NADH-Pdx reductase (PdR)
+PMID34340545,reaction_1,MgCl2
+PMID34340545,reaction_2,E. coli MAT (structural stabilization)
+PMID34358993,reaction_1,HRP-conjugated IgG
+PMID34358993,reaction_1,TMB One-Step Substrate Reagent
+PMID34364941,reaction_1,DTT
+PMID34364941,reaction_2,UBE1L (E1)
+PMID34364941,reaction_2,UBCH8 (E2)
+PMID34364941,reaction_2,3XFlag-HERC5 (E3)
+PMID34382711,reaction_1_EcFPR,FAD
+PMID34382711,reaction_2_PcFPR,FAD
+PMID34382711,reaction_3_BaFPR,FAD
+PMID34382711,reaction_4_LepFNR,FAD
+PMID34382711,reaction_5_PeaFNR,FAD
+PMID34420183,reaction_1,Bovine Serum Albumin (BSA)
+PMID34420183,reaction_1,Dithiothreitol (DTT)
+PMID34420183,reaction_1,EDTA
+PMID34423563,reaction_1,DTT
+PMID34423563,reaction_2,DTT
+PMID35229477,reaction_1,SLAH3
+PMID35229477,reaction_2,NRT1.1
+PMID35285984,reaction_1,[4Fe-4S]2+ cluster (intrinsic)
+PMID35285984,reaction_1,flavodoxin (FldA)
+PMID35285984,reaction_1,flavodoxin reductase (FpR1)
+PMID35435705,reaction_1,ATP
+PMID35435705,reaction_2,ATP
+PMID35517366,reaction_6,PcPCL
+PMID35517366,reaction_6,AtMatB
+PMID35517366,reaction_6,ATP
+PMID35517366,reaction_6,CoA
+PMID35517366,reaction_6,MgCl2
+PMID35517366,reaction_7,PcPCL
+PMID35517366,reaction_7,AtMatB
+PMID35517366,reaction_7,ATP
+PMID35517366,reaction_7,CoA
+PMID35517366,reaction_7,MgCl2
+PMID35517366,reaction_8,PcPCL
+PMID35517366,reaction_8,AtMatB
+PMID35517366,reaction_8,ATP
+PMID35517366,reaction_8,CoA
+PMID35517366,reaction_8,MgCl2
+PMID35517366,reaction_9,PcPCL
+PMID35517366,reaction_9,AtMatB
+PMID35517366,reaction_9,ATP
+PMID35517366,reaction_9,CoA
+PMID35517366,reaction_9,MgCl2
+PMID35517366,reaction_10,PcPCL
+PMID35517366,reaction_10,AtMatB
+PMID35517366,reaction_10,ATP
+PMID35517366,reaction_10,CoA
+PMID35517366,reaction_10,MgCl2
+PMID35517366,reaction_11,PcPCL
+PMID35517366,reaction_11,AtMatB
+PMID35517366,reaction_11,ATP
+PMID35517366,reaction_11,CoA
+PMID35517366,reaction_11,MgCl2
+PMID35530214,reaction_1,Cytochrome P450 reductase from Arabidopsis thaliana (AtCPR)
+PMID35721870,reaction_1,Fe(II)
+PMID35721870,reaction_2,Fe(II)
+PMID35721870,reaction_3,Fe(II)
+PMID35721870,reaction_4,Fe(II)
+PMID35721870,reaction_5,Fe(II)
+PMID35721870,reaction_6,Fe(II)
