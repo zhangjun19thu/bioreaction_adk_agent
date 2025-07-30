@@ -239,12 +239,22 @@ def compare_reactions(
     result += "| 反应ID | 转化率 | 产率 | 温度(°C) | pH |\n"
     result += "|--------|--------|------|----------|----|\n"
     for data in comparison_data:
+        # 转化率
+        cr = data.get('conversion_rate', 'N/A')
+        cr_unit = data.get('conversion_rate_unit', '')
+        cr_error = data.get('conversion_rate_error', '')
+        cr_str = f"{cr} {cr_unit} {(f'(误差: {cr_error})' if cr_error else '')}" if cr != 'N/A' else 'N/A'
+        # 产率
+        py = data.get('product_yield', 'N/A')
+        py_unit = data.get('product_yield_unit', '')
+        py_error = data.get('product_yield_error', '')
+        py_str = f"{py} {py_unit} {(f'(误差: {py_error})' if py_error else '')}" if py != 'N/A' else 'N/A'
         result += f"| {data.get('literature_id', '')}:{data.get('reaction_id', '')} | "
-        result += f"{data.get('conversion_rate', 'N/A')} | "
-        result += f"{data.get('product_yield', 'N/A')} | "
+        result += f"{cr_str} | "
+        result += f"{py_str} | "
         result += f"{data.get('temperature_celsius', 'N/A')} | "
         result += f"{data.get('ph', 'N/A')} |\n"
-    result += "\n"
+        result += "\n"
     
     # 关键差异分析
     result += "## 关键差异分析\n\n"
@@ -417,33 +427,8 @@ def _suggest_organism_optimization(target_enzyme, target_metric, enzymes_df, act
     
     return result
 
-def literature_comparison(
-    literature_ids: List[str],
-    comparison_aspect: str
-) -> str:
-    """
-    对比多篇文献的方法学、结果或结论。
-    
-    :param literature_ids: List[str]
-    :param comparison_aspect: str
-    """
-    if len(literature_ids) < 2:
-        return "至少需要2篇文献进行对比分析。"
-    
-    result = f"# 文献对比分析报告\n\n"
-    result += f"**对比文献**: {', '.join(literature_ids)}\n"
-    result += f"**对比方面**: {comparison_aspect}\n\n"
-    
-    # 这里需要调用深度研究工具来获取文献内容
-    # 由于工具限制，这里提供框架
-    result += "## 对比分析\n\n"
-    result += "此功能需要结合深度研究工具来获取文献内容进行详细对比。\n"
-    result += "建议使用 `get_summary_from_literature` 工具分别获取各文献信息后再进行对比。\n"
-    
-    return result
 
 # --- 创建FunctionTool实例 ---
 analyze_reaction_trends_tool = FunctionTool(func=analyze_reaction_trends)
 compare_reactions_tool = FunctionTool(func=compare_reactions)
 suggest_optimization_tool = FunctionTool(func=suggest_optimization)
-literature_comparison_tool = FunctionTool(func=literature_comparison)

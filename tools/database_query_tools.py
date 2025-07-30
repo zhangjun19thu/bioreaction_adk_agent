@@ -6,6 +6,7 @@ from .database_loader import DB
 from ..config import QUERY_CONFIG, ANALYSIS_CONFIG
 import re
 import logging
+logging.basicConfig(filename="test.log", filemode="w", format="%(asctime)s %(name)s:%(levelname)s:%(message)s", datefmt="%d-%M-%Y %H:%M:%S", level=logging.DEBUG)
 
 def normalize_enzyme_name(name: str) -> str:
     """
@@ -65,23 +66,48 @@ def get_reaction_summary(
     # 性能信息
     if not reaction_activity.empty:
         activity_info = reaction_activity.iloc[0]
-        summary += f"**转化率**: {activity_info.get('conversion_rate', 'N/A')}\n"
-        summary += f"**产率**: {activity_info.get('product_yield', 'N/A')}\n"
-        summary += f"**活性**: {activity_info.get('activity', 'N/A')}\n\n"
+        # 转化率
+        cr = activity_info.get('conversion_rate', 'N/A')
+        cr_unit = activity_info.get('conversion_rate_unit', '')
+        cr_error = activity_info.get('conversion_rate_error', '')
+        summary += f"**转化率**: {cr} {cr_unit} {(f'(误差: {cr_error})' if cr_error else '')}\n"
+        # 产率
+        py = activity_info.get('product_yield', 'N/A')
+        py_unit = activity_info.get('product_yield_unit', '')
+        py_error = activity_info.get('product_yield_error', '')
+        summary += f"**产率**: {py} {py_unit} {(f'(误差: {py_error})' if py_error else '')}\n"
+        # 选择性
+        summary += f"**对映选择性**: {activity_info.get('regioselectivity', 'N/A')}\n"
+        summary += f"**立体选择性**: {activity_info.get('stereoselectivity', 'N/A')}\n"
     
+        # 对映体过量
+        ee = activity_info.get('enantiomeric_excess', None)
+        ee_unit = activity_info.get('enantiomeric_excess_unit', '')
+        ee_error = '' # 如有enantiomeric_excess_error字段可补充
+        if ee is not None and ee != '' and ee != 'N/A':
+            summary += f"**对映体过量**: {ee} {ee_unit} {(f'(误差: {ee_error})' if ee_error else '')}\n\n"
+
     # 实验条件
     if not reaction_conditions.empty:
         condition_info = reaction_conditions.iloc[0]
         summary += f"**温度**: {condition_info.get('temperature_celsius', 'N/A')}°C\n"
         summary += f"**pH**: {condition_info.get('ph', 'N/A')}\n"
-        summary += f"**反应时间**: {condition_info.get('reaction_time_hours', 'N/A')}小时\n\n"
-    
+        # summary += f"**反应时间**: {condition_info.get('reaction_time_hours', 'N/A')}小时\n\n"
+        summary += f"**pH补充说明**: {condition_info.get('ph_details', 'N/A')}\n"
+        summary += f"**实验类型**: {condition_info.get('assay_type', 'N/A')}\n"
+        summary += f"**实验细节**: {condition_info.get('assay_details', 'N/A')}\n"
+        summary += f"**缓冲液/溶剂**: {condition_info.get('solvent_buffer', 'N/A')}\n"
+        summary += f"**表达宿主**: {condition_info.get('expression_host', 'N/A')}\n"
+        summary += f"**表达载体**: {condition_info.get('expression_vector', 'N/A')}\n"
+        summary += f"**诱导条件**: {condition_info.get('expression_induction', 'N/A')}\n"
+
     # 反应参与分子
     if not reaction_participants.empty:
         summary += "**反应参与分子**:\n"
         for _, participant in reaction_participants.iterrows():
             summary += f"- {participant.get('participant_name', 'N/A')} ({participant.get('role', 'N/A')})\n"
     
+    summary += '\n'
     return summary
 
 def _enzyme_name_or_synonym_match(df, enzyme_name):
@@ -104,17 +130,18 @@ def _enzyme_name_or_synonym_match(df, enzyme_name):
         return False
     return df.apply(lambda row: match_synonyms(row.get('enzyme_synonyms', None), row.get('enzyme_name', '')), axis=1)
 
-def find_reactions_by_enzyme(
-    enzyme_name: str = None,
-    organism: str = None,
-    max_results: int = 10
-) -> str:
+def find_reactions_by_enzyme(**kwargs) -> str:
+
     """
-    根据酶名称和物种查找相关反应。参数均可选。
-    :param enzyme_name: str，可选
-    :param organism: str，可选
+    根据酶名称或物种查找相关反应。参数均可选。
+    :param enzyme_name: str，可选，不严格要求
+    :param organism: str，可选,不严格要求
     :param max_results: int
     """
+    enzyme_name = kwargs.get('enzyme_name', None)
+    organism = kwargs.get('organism', None)
+    max_results = kwargs.get('max_results', QUERY_CONFIG["max_results"])
+    
     if not DB: return "数据库未加载。"
     enzymes_df = DB.get('2_enzymes', pd.DataFrame())
     core_df = DB.get('1_reactions_core', pd.DataFrame())
@@ -122,6 +149,7 @@ def find_reactions_by_enzyme(
         return "核心数据表未加载。"
     # 构建查询条件
     query_conditions = []
+    
     if enzyme_name:
         query_conditions.append(_enzyme_name_or_synonym_match(enzymes_df, enzyme_name))
     if organism:
@@ -135,33 +163,32 @@ def find_reactions_by_enzyme(
         return f"未找到匹配酶 '{enzyme_name}' 和物种 '{organism}' 的反应。"
     # 合并反应信息
     merged_df = pd.merge(filtered_enzymes, core_df, on=['literature_id', 'reaction_id'])
-    # 限制结果数量
-    max_results = min(max_results, QUERY_CONFIG["max_results"])
+
     result_df = merged_df.head(max_results)
     # 格式化输出
     result = f"# 酶相关反应查询结果\n\n"
     result += f"**查询条件**: 酶={enzyme_name if enzyme_name else '全部'}, 物种={organism if organism else '全部'}\n"
-    result += f"**找到反应数**: {len(result_df)} (共{len(merged_df)}个)\n\n"
+    result += f"**输出反应数**: {len(result_df)} (共找到{len(merged_df)}个反应)\n\n"
     for _, row in result_df.iterrows():
         result += f"## {row['literature_id']}:{row['reaction_id']}\n"
         result += f"- **酶**: {row['enzyme_name']}\n"
         result += f"- **物种**: {row['organism']}\n"
+        result += f"- **酶EC号**: {row['ec_number']}\n"
         result += f"- **反应**: {row['reaction_equation']}\n"
         result += f"- **反应是否可逆**: {row['reaction_type_reversible']}\n\n"
     return result
 
-def find_inhibition_data(
-    inhibitor_name: str = None,
-    enzyme_name: str = None,
-    max_results: int = 10
-) -> str:
+def find_inhibition_data(**kwargs) -> str:
     """
-    查找抑制剂相关的数据。参数均可选。
+    根据抑制剂名或酶名字查找抑制剂相关的数据。参数均可选。
     
-    :param inhibitor_name: str，可选
-    :param enzyme_name: str，可选
+    :param inhibitor_name: str，可选，不严格要求
+    :param enzyme_name: str，可选，不严格要求
     :param max_results: int
     """
+    inhibitor_name = kwargs.get('inhibitor_name', None)
+    enzyme_name = kwargs.get('enzyme_name', None)
+    max_results = kwargs.get('max_results', QUERY_CONFIG["max_results"])
     if not DB: return "数据库未加载。"
     
     inhibitors_df = DB.get('8_inhibitors_main', pd.DataFrame())
@@ -171,51 +198,57 @@ def find_inhibition_data(
     if inhibitors_df.empty or inhibition_params_df.empty:
         return "抑制剂数据表未加载。"
     
+    # 先合并酶信息
+    merged_inhibitors = pd.merge(inhibitors_df, enzymes_df, on=['literature_id', 'reaction_id'], how='left', suffixes=('', '_enzyme'))
     # 构建查询条件
     query_conditions = []
     if inhibitor_name:
-        query_conditions.append(inhibitors_df['inhibitor_name'].str.contains(inhibitor_name, case=False, na=False))
+        query_conditions.append(merged_inhibitors['inhibitor_name'].str.contains(inhibitor_name, case=False, na=False))
     if enzyme_name:
-        # 适配酶同义词
-        enzyme_match = _enzyme_name_or_synonym_match(inhibitors_df, enzyme_name) if 'enzyme_synonyms' in inhibitors_df.columns else inhibitors_df['enzyme_name'].str.contains(enzyme_name, case=False, na=False)
+        # 支持酶名和同义词模糊匹配
+        enzyme_match = _enzyme_name_or_synonym_match(merged_inhibitors, enzyme_name) if 'enzyme_synonyms' in merged_inhibitors.columns else merged_inhibitors['enzyme_name'].str.contains(enzyme_name, case=False, na=False)
         query_conditions.append(enzyme_match)
     
     if not query_conditions:
         return "请提供抑制剂名称或酶名称。"
     
     # 应用查询条件
-    filtered_inhibitors = inhibitors_df[pd.concat(query_conditions, axis=1).all(axis=1)]
+    filtered_inhibitors = merged_inhibitors[pd.concat(query_conditions, axis=1).all(axis=1)]
     
     if filtered_inhibitors.empty:
         return f"未找到匹配的抑制剂数据。"
     
     # 合并抑制参数
-    merged_df = pd.merge(filtered_inhibitors, inhibition_params_df, on=['literature_id', 'reaction_id'], how='left')
+    merged_df = pd.merge(filtered_inhibitors, inhibition_params_df, on=['literature_id', 'reaction_id','inhibitor_name'], how='left')
     
-    # 限制结果数量
-    max_results = min(max_results, QUERY_CONFIG["max_results"])
     result_df = merged_df.head(max_results)
-    
+    # print(result_df.columns)
     # 格式化输出
     result = f"# 抑制剂数据查询结果\n\n"
     result += f"**查询条件**: 抑制剂={inhibitor_name if inhibitor_name else '全部'}, 酶={enzyme_name if enzyme_name else '全部'}\n"
-    result += f"**找到记录数**: {len(result_df)}\n\n"
+    result += f"**输出记录数**: {len(result_df)} (共找到{len(merged_df)}条记录)\n\n"
     
     for _, row in result_df.iterrows():
         result += f"## {row['literature_id']}:{row['reaction_id']}\n"
-        result += f"- **抑制剂**: {row['inhibitor_name']}\n"
-        result += f"- **酶**: {row['enzyme_name']}\n"
+        result += f"- **抑制剂**: {row.get('inhibitor_name', 'N/A')}\n"
+        result += f"- **酶**: {row.get('enzyme_name', 'N/A')}\n"
         result += f"- **抑制类型**: {row.get('inhibition_type', 'N/A')}\n"
-        result += f"- **Ki值**: {row.get('ki_value', 'N/A')}\n"
-        result += f"- **IC50**: {row.get('ic50_value', 'N/A')}\n\n"
-    
+        result += f"- **定性效应**: {row.get('activity_qualitative', 'N/A')} and {row.get('inhibition_qualitative', 'N/A')} \n"
+        # 输出所有参数类型及数值
+        if pd.notnull(row.get('parameter_type')) and pd.notnull(row.get('value')):
+            param_type = str(row.get('parameter_type', '')).strip()
+            value = row.get('value', 'N/A')
+            unit = row.get('unit', '')
+            error = row.get('error_margin', '')
+            param_str = f"- **{param_type}**: {value} {unit}"
+            if error and str(error).strip():
+                param_str += f" (误差: {error})"
+            result += param_str + "\n"
+        result += f"- **热力学信息**: {row.get('thermodynamics', 'N/A')}\n"
+        result += f"- **说明补充**: {row.get('details', 'N/A')} and {row.get('notes', 'N/A')} \n\n"
     return result
 
-def find_reactions_by_organism(
-    organism: str = None,
-    ec_number: str = None,
-    max_results: int = 10
-) -> str:
+def find_reactions_by_organism(**kwargs) -> str:
     """
     根据物种和酶EC号查找反应。参数均可选。
     
@@ -223,6 +256,9 @@ def find_reactions_by_organism(
     :param ec_number: str，可选
     :param max_results: int
     """
+    organism = kwargs.get('organism', None)
+    ec_number = kwargs.get('ec_number', None)
+    max_results = kwargs.get('max_results', QUERY_CONFIG["max_results"])
     if not DB: return "数据库未加载。"
     
     enzymes_df = DB.get('2_enzymes', pd.DataFrame())
@@ -251,14 +287,12 @@ def find_reactions_by_organism(
     merged_df = pd.merge(filtered_enzymes, core_df, on=['literature_id', 'reaction_id'])
     merged_df = pd.merge(merged_df, conditions_df, on=['literature_id', 'reaction_id'], how='left')
     
-    # 限制结果数量
-    max_results = min(max_results, QUERY_CONFIG["max_results"])
     result_df = merged_df.head(max_results)
     
     # 格式化输出
     result = f"# 物种+EC号反应查询结果\n\n"
     result += f"**查询条件**: 物种={organism if organism else '全部'}, EC号={ec_number if ec_number else '全部'}\n"
-    result += f"**找到反应数**: {len(result_df)} (共{len(merged_df)}个)\n\n"
+    result += f"**输出反应数**: {len(result_df)} (共找到{len(merged_df)}个反应)\n\n"
     
     for _, row in result_df.iterrows():
         result += f"## {row['literature_id']}:{row['reaction_id']}\n"
@@ -279,11 +313,7 @@ def find_reactions_by_organism(
         result += "\n"
     return result
 
-def find_reactions_by_condition(
-    temperature_range: str = None,
-    ph_range: str = None,
-    max_results: int = 10
-) -> str:
+def find_reactions_by_condition(**kwargs) -> str:
     """
     根据实验条件查找反应。参数均可选。
     
@@ -291,6 +321,9 @@ def find_reactions_by_condition(
     :param ph_range: str (例如: "7-9", ">9", "<5")，可选
     :param max_results: int
     """
+    temperature_range = kwargs.get('temperature_range', None)
+    ph_range = kwargs.get('ph_range', None)
+    max_results = kwargs.get('max_results', QUERY_CONFIG["max_results"])
     if not DB: return "数据库未加载。"
     
     conditions_df = DB.get('3_experimental_conditions', pd.DataFrame())
@@ -345,14 +378,12 @@ def find_reactions_by_condition(
     merged_df = pd.merge(filtered_conditions, core_df, on=['literature_id', 'reaction_id'])
     merged_df = pd.merge(merged_df, enzymes_df, on=['literature_id', 'reaction_id'])
     
-    # 限制结果数量
-    max_results = min(max_results, QUERY_CONFIG["max_results"])
     result_df = merged_df.head(max_results)
     
     # 格式化输出
     result = f"# 条件查询结果\n\n"
     result += f"**查询条件**: 温度={temperature_range if temperature_range else '全部'}, pH={ph_range if ph_range else '全部'}\n"
-    result += f"**找到反应数**: {len(result_df)} (共{len(merged_df)}个)\n\n"
+    result += f"**输出记录数**: {len(result_df)} (共找到{len(merged_df)}个记录)\n\n"
     
     for _, row in result_df.iterrows():
         result += f"## {row['literature_id']}:{row['reaction_id']}\n"
@@ -372,16 +403,15 @@ def find_reactions_by_condition(
         result += "\n"
     return result
 
-def find_reactions_with_pdb_id(
-    pdb_id: str = None,
-    max_results: int = 10
-) -> str:
+def find_reactions_with_pdb_id(**kwargs) -> str:
     """
     查找具有PDB ID的反应。参数均可选。
     
     :param pdb_id: str，可选
     :param max_results: int
     """
+    pdb_id = kwargs.get('pdb_id', None)
+    max_results = kwargs.get('max_results', QUERY_CONFIG["max_results"])
     if not DB: return "数据库未加载。"
     
     enzymes_df = DB.get('2_enzymes', pd.DataFrame())
@@ -399,15 +429,13 @@ def find_reactions_with_pdb_id(
     
     # 合并数据
     merged_df = pd.merge(filtered_enzymes, core_df, on=['literature_id', 'reaction_id'])
-    
-    # 限制结果数量
-    max_results = min(max_results, QUERY_CONFIG["max_results"])
+
     result_df = merged_df.head(max_results)
     
     # 格式化输出
     result = f"# PDB ID查询结果\n\n"
     result += f"**查询PDB ID**: {pdb_id if pdb_id else '全部'}\n"
-    result += f"**找到反应数**: {len(result_df)} (共{len(merged_df)}个)\n\n"
+    result += f"**输出记录数**: {len(result_df)} (共找到{len(merged_df)}个记录)\n\n"
     
     for _, row in result_df.iterrows():
         result += f"## {row['literature_id']}:{row['reaction_id']}\n"
@@ -417,23 +445,19 @@ def find_reactions_with_pdb_id(
         result += f"- **反应**: {row['reaction_equation']}\n"
         result += f"- **EC号**: {row['ec_number']}\n"
 
-        result += f"- **温度**: {row.get('temperature_celsius', 'N/A')}°C\n"
-        result += f"- **pH**: {row.get('ph', 'N/A')}\n"
-        result += f"- **pH补充说明**: {row.get('ph_details', 'N/A')}\n"
-        result += f"- **实验类型**: {row.get('assay_type', 'N/A')}\n"
-        result += f"- **实验细节**: {row.get('assay_details', 'N/A')}\n"
-        result += f"- **缓冲液/溶剂**: {row.get('solvent_buffer', 'N/A')}\n"
-        result += f"- **表达宿主**: {row.get('expression_host', 'N/A')}\n"
-        result += f"- **表达载体**: {row.get('expression_vector', 'N/A')}\n"
-        result += f"- **诱导条件**: {row.get('expression_induction', 'N/A')}\n"
+        # result += f"- **温度**: {row.get('temperature_celsius', 'N/A')}°C\n"
+        # result += f"- **pH**: {row.get('ph', 'N/A')}\n"
+        # result += f"- **pH补充说明**: {row.get('ph_details', 'N/A')}\n"
+        # result += f"- **实验类型**: {row.get('assay_type', 'N/A')}\n"
+        # result += f"- **实验细节**: {row.get('assay_details', 'N/A')}\n"
+        # result += f"- **缓冲液/溶剂**: {row.get('solvent_buffer', 'N/A')}\n"
+        # result += f"- **表达宿主**: {row.get('expression_host', 'N/A')}\n"
+        # result += f"- **表达载体**: {row.get('expression_vector', 'N/A')}\n"
+        # result += f"- **诱导条件**: {row.get('expression_induction', 'N/A')}\n"
         result += "\n"    
     return result
 
-def find_top_reactions_by_performance(
-    metric: str = None,
-    top_n: int = 10,
-    min_data_points: int = 10
-) -> str:
+def find_top_reactions_by_performance(**kwargs) -> str:
     """
     根据性能指标（如conversion_rate、product_yield等，来源于4_activity_performance.csv）查找表现最好的反应。
     不处理动力学参数（如kcat、Km、Vmax等），动力学参数请用find_kinetic_parameters。
@@ -443,6 +467,9 @@ def find_top_reactions_by_performance(
     :param top_n: int
     :param min_data_points: int
     """
+    metric = kwargs.get('metric', None)
+    top_n = kwargs.get('top_n', 5)
+    min_data_points = kwargs.get('min_data_points', 5)
     if not DB: return "数据库未加载。"
     
     activity_df = DB.get('4_activity_performance', pd.DataFrame())
@@ -493,43 +520,44 @@ def find_top_reactions_by_performance(
     result += f"**总数据点**: {len(activity_df)}\n\n"
     
     # 单位、误差字段自动适配
-    unit_col = f"{metric}_unit" if metric else None
-    error_col = f"{metric}_error" if metric else None
     for i, (_, row) in enumerate(merged_df.iterrows(), 1):
         result += f"## 第{i}名: {row['literature_id']}:{row['reaction_id']}\n"
         value = row[metric] if metric else row['conversion_rate'] # 默认值
-        if metric and metric in numeric_metrics:
+        # 新增：始终输出unit和error（仅对conversion_rate、product_yield、enantiomeric_excess）
+        if metric in ['conversion_rate', 'product_yield', 'enantiomeric_excess']:
+            unit_col = f"{metric}_unit"
+            error_col = f"{metric}_error"
             unit = row[unit_col] if unit_col in row and pd.notnull(row[unit_col]) else ''
             error = row[error_col] if error_col in row and pd.notnull(row[error_col]) else ''
-            result += f"- **{metric}**: {value} {unit} {f'(误差: {error})' if error else ''}\n"
+            result += f"- **{metric}**: {value} {unit} {(f'(误差: {error})' if error else '')}\n"
         else:
             result += f"- **{metric}**: {value}\n"
         result += f"- **酶**: {row['enzyme_name']}\n"
         result += f"- **物种**: {row['organism']}\n"
         result += f"- **反应**: {row['reaction_equation']}\n"
         result += f"- **EC号**: {row['ec_number']}\n"
-        result += f"- **温度**: {row.get('temperature_celsius', 'N/A')}°C\n"
-        result += f"- **pH**: {row.get('ph', 'N/A')}\n"
-        result += f"- **pH补充说明**: {row.get('ph_details', 'N/A')}\n"
-        result += f"- **实验类型**: {row.get('assay_type', 'N/A')}\n"
-        result += f"- **实验细节**: {row.get('assay_details', 'N/A')}\n"
-        result += f"- **缓冲液/溶剂**: {row.get('solvent_buffer', 'N/A')}\n"
-        result += f"- **表达宿主**: {row.get('expression_host', 'N/A')}\n"
-        result += f"- **表达载体**: {row.get('expression_vector', 'N/A')}\n"
-        result += f"- **诱导条件**: {row.get('expression_induction', 'N/A')}\n"
+        
+        # result += f"- **温度**: {row.get('temperature_celsius', 'N/A')}°C\n"
+        # result += f"- **pH**: {row.get('ph', 'N/A')}\n"
+        # result += f"- **pH补充说明**: {row.get('ph_details', 'N/A')}\n"
+        # result += f"- **实验类型**: {row.get('assay_type', 'N/A')}\n"
+        # result += f"- **实验细节**: {row.get('assay_details', 'N/A')}\n"
+        # result += f"- **缓冲液/溶剂**: {row.get('solvent_buffer', 'N/A')}\n"
+        # result += f"- **表达宿主**: {row.get('expression_host', 'N/A')}\n"
+        # result += f"- **表达载体**: {row.get('expression_vector', 'N/A')}\n"
+        # result += f"- **诱导条件**: {row.get('expression_induction', 'N/A')}\n"
         result += "\n"
     return result
 
-def find_conditions_by_enzyme(
-    enzyme_name: str = None,
-    max_results: int = 10
-) -> str:
+def find_conditions_by_enzyme(**kwargs) -> str:
     """
     查找特定酶的实验条件。参数均可选。
     
     :param enzyme_name: str，可选
     :param max_results: int
     """
+    enzyme_name = kwargs.get('enzyme_name', None)
+    max_results = kwargs.get('max_results', QUERY_CONFIG["max_results"])
     if not DB: return "数据库未加载。"
     
     enzymes_df = DB.get('2_enzymes', pd.DataFrame())
@@ -548,14 +576,12 @@ def find_conditions_by_enzyme(
     # 合并条件数据
     merged_df = pd.merge(filtered_enzymes, conditions_df, on=['literature_id', 'reaction_id'])
     
-    # 限制结果数量
-    max_results = min(max_results, QUERY_CONFIG["max_results"])
     result_df = merged_df.head(max_results)
     
     # 格式化输出
     result = f"# 酶条件查询结果\n\n"
     result += f"**目标酶**: {enzyme_name if enzyme_name else '全部'}\n"
-    result += f"**找到记录数**: {len(result_df)} (共{len(merged_df)}个)\n\n"
+    result += f"**输出记录数**: {len(result_df)} (共找到记录{len(merged_df)}个)\n\n"
     
     for _, row in result_df.iterrows():
         result += f"## 文献编号: {row['literature_id']} 反应编号: {row['reaction_id']}\n"
@@ -574,21 +600,21 @@ def find_conditions_by_enzyme(
       
     return result
 
-def find_enzymes_by_participant(
-    participant_name: str = None,
-    max_results: int = 10
-) -> str:
+def find_enzymes_by_participant(**kwargs) -> str:
     """
     根据反应参与分子查找相关酶。参数均可选。
     
     :param participant_name: str，可选
     :param max_results: int
     """
+    participant_name = kwargs.get('participant_name', None)
+    max_results = kwargs.get('max_results', QUERY_CONFIG["max_results"])
     if not DB: return "数据库未加载。"
     
     participants_df = DB.get('5_reaction_participants', pd.DataFrame())
     enzymes_df = DB.get('2_enzymes', pd.DataFrame())
     core_df = DB.get('1_reactions_core', pd.DataFrame())
+    conditions_df = DB.get('3_experimental_conditions', pd.DataFrame())
     
     if participants_df.empty or enzymes_df.empty:
         return "核心数据表未加载。"
@@ -603,15 +629,14 @@ def find_enzymes_by_participant(
     # 合并数据
     merged_df = pd.merge(filtered_participants, enzymes_df, on=['literature_id', 'reaction_id'])
     merged_df = pd.merge(merged_df, core_df, on=['literature_id', 'reaction_id'])
-    
-    # 限制结果数量
-    max_results = min(max_results, QUERY_CONFIG["max_results"])
+    merged_df = pd.merge(merged_df, conditions_df, on=['literature_id', 'reaction_id'])
+
     result_df = merged_df.head(max_results)
     
     # 格式化输出
     result = f"# 参与者酶查询结果\n\n"
     result += f"**目标参与者**: {participant_name if participant_name else '全部'}\n"
-    result += f"**找到记录数**: {len(result_df)} (共{len(merged_df)}个)\n\n"
+    result += f"**输出记录数**: {len(result_df)} (共找到记录{len(merged_df)}个)\n\n"
     
     for _, row in result_df.iterrows():
         result += f"## {row['literature_id']}:{row['reaction_id']}\n"
@@ -635,9 +660,9 @@ def find_enzymes_by_participant(
 
 # 新增智能查询工具
 def smart_search_reactions(
-    search_query: str = None,
-    search_fields: List[str] = None,
-    max_results: int = 10
+    search_query: str,
+    search_fields: List[str],
+    max_results: int
 ) -> str:
     """
     智能搜索反应，支持多字段模糊匹配。参数均可选。
@@ -681,7 +706,8 @@ def smart_search_reactions(
             if field == "enzyme_name" or field == "enzyme_synonyms":
                 search_conditions.append(_enzyme_name_or_synonym_match(merged_df, search_query))
             else:
-                search_conditions.append(merged_df[field].astype(str).str.contains(search_query, case=False, na=False))
+                # case=False，理论上不区分大小写;去除正则影响，使用regex=False
+                search_conditions.append(merged_df[field].astype(str).str.contains(search_query, case=False, na=False,regex=False))
     
     if not search_conditions:
         return "未找到有效的搜索字段。"
@@ -693,20 +719,19 @@ def smart_search_reactions(
     if filtered_df.empty:
         return f"未找到匹配查询 '{search_query}' 的反应。"
     
-    # 限制结果数量
-    max_results = min(max_results, QUERY_CONFIG["max_results"])
     result_df = filtered_df.head(max_results)
     
     # 格式化输出
     result = f"# 智能搜索结果\n\n"
     result += f"**搜索查询**: {search_query if search_query else '全部'}\n"
     result += f"**搜索字段**: {', '.join(valid_fields) if valid_fields else '全部'}\n"
-    result += f"**找到反应数**: {len(result_df)} (共{len(filtered_df)}个)\n\n"
+    result += f"**输出记录数**: {len(result_df)} (共找到记录{len(filtered_df)}个)\n\n"
     
     for _, row in result_df.iterrows():
-        result += f"## {row['literature_id']}:{row['reaction_id']}\n"
+        result += f"## 文献id:{row['literature_id']},反应id:{row['reaction_id']}\n"
         result += f"- **酶**: {row.get('enzyme_name', 'N/A')}\n"
         result += f"- **物种**: {row.get('organism', 'N/A')}\n"
+        result += f"- **酶EC号**: {row.get('ec_number', 'N/A')}\n"
         result += f"- **反应**: {row.get('reaction_equation', 'N/A')}\n"
         result += f"- **反应是否可逆**: {row.get('reaction_type_reversible', 'N/A')}\n"
         if 'participant_name' in row and pd.notnull(row['participant_name']):
@@ -767,95 +792,75 @@ def get_database_statistics() -> str:
     
     return result
 
-def find_similar_reactions(
-    target_reaction_id: str = None,
-    similarity_criteria: str = None,
-    max_results: int = 10
-) -> str:
+def find_similar_reactions(**kwargs) -> str:
     """
-    查找相似反应。参数均可选。
+    根据反应id及相似性标准查找制定反应相似的反应。
     
-    :param target_reaction_id: str，可选
-    :param similarity_criteria: str，可选
-    :param max_results: int
+    :param target_reaction_id: str
+    :param similarity_criteria: str
+    :param max_results: int,可选
     """
+    target_reaction_id = kwargs.get('target_reaction_id', None)
+    similarity_criteria = kwargs.get('similarity_criteria', None)
+    max_results = kwargs.get('max_results', QUERY_CONFIG["max_results"])
     if not DB: return "数据库未加载。"
+
+    # 合并所有相关表
+    enzymes_df = DB.get('2_enzymes', pd.DataFrame())
+    core_df = DB.get('1_reactions_core', pd.DataFrame())
+    conditions_df = DB.get('3_experimental_conditions', pd.DataFrame())
+    merged_df = pd.merge(enzymes_df, core_df, on=['literature_id', 'reaction_id'])
+    merged_df = pd.merge(merged_df, conditions_df, on=['literature_id', 'reaction_id'])
     
-    # 解析目标反应ID
+    # 解析目标反应
     if target_reaction_id and ':' not in target_reaction_id:
         return "反应ID格式错误，应为 'literature_id:reaction_id'"
-    
     lit_id = target_reaction_id.split(':', 1)[0] if target_reaction_id else None
     react_id = target_reaction_id.split(':', 1)[1] if target_reaction_id else None
-    
-    # 获取目标反应信息
-    core_df = DB.get('1_reactions_core', pd.DataFrame())
-    enzymes_df = DB.get('2_enzymes', pd.DataFrame())
-    
-    target_reaction = core_df[(core_df['literature_id'] == lit_id) & (core_df['reaction_id'] == react_id)] if lit_id and react_id else pd.DataFrame()
-    target_enzyme = enzymes_df[(enzymes_df['literature_id'] == lit_id) & (enzymes_df['reaction_id'] == react_id)] if lit_id and react_id else pd.DataFrame()
-    
-    if target_reaction.empty:
+
+    target_row = merged_df[(merged_df['literature_id'] == lit_id) & (merged_df['reaction_id'] == react_id)]
+    if target_row.empty:
         return f"未找到目标反应 {target_reaction_id}"
-    
-    # 根据相似性标准查找
-    if similarity_criteria == "enzyme":
-        if not target_enzyme.empty:
-            enzyme_name = target_enzyme.iloc[0]['enzyme_name']
-            similar = enzymes_df[
-                _enzyme_name_or_synonym_match(enzymes_df, enzyme_name.split('_')[0]) &
-                (enzymes_df['literature_id'] != lit_id)
+
+    # 根据相似性标准筛选
+    # 支持多种酶相关的相似性标准，区分酶名与EC号
+    if any(x in str(similarity_criteria).lower() for x in ["enzyme", "酶", "enzyme_name", "酶名"]):
+        enzyme_name = target_row.iloc[0]['enzyme_name']
+        similar = merged_df[
+            (merged_df['enzyme_name'].str.contains(enzyme_name.split('_')[0], case=False, na=False)) &
+            ~((merged_df['literature_id'] == lit_id) & (merged_df['reaction_id'] == react_id))
+        ]
+    elif any(x in str(similarity_criteria).lower() for x in ["ec_number", "ec号", "ec", "酶分类"]):
+        ec_number = str(target_row.iloc[0].get('ec_number', ''))
+        if ec_number:
+            ec_main = '.'.join(ec_number.split('.')[:2])
+            similar = merged_df[
+                (merged_df['ec_number'].astype(str).str.startswith(ec_main)) &
+                ~((merged_df['literature_id'] == lit_id) & (merged_df['reaction_id'] == react_id))
             ]
         else:
-            return "目标反应无酶信息"
-    elif similarity_criteria == "ec_number":
-        if not target_enzyme.empty:
-            ec_number = str(target_enzyme.iloc[0].get('ec_number', ''))
-            if ec_number:
-                # 支持主类/子类模糊匹配（如1.1.1.1主类为1.1，子类为1.1.1）
-                ec_main = '.'.join(ec_number.split('.')[:2])  # 主类
-                ec_sub = '.'.join(ec_number.split('.')[:3])  # 子类
-                similar = enzymes_df[
-                    (enzymes_df['ec_number'].astype(str).str.startswith(ec_main)) &
-                    (enzymes_df['literature_id'] != lit_id)
-                ]
-                # 如果主类匹配结果太多，可进一步用子类筛选
-                if len(similar) > max_results * 2 and len(ec_sub) > 0:
-                    similar = enzymes_df[
-                        (enzymes_df['ec_number'].astype(str).str.startswith(ec_sub)) &
-                        (enzymes_df['literature_id'] != lit_id)
-                    ]
-            else:
-                return "目标反应无EC号信息"
-        else:
-            return "目标反应无酶信息"
+            return "目标反应无EC号信息"
     else:
         return "不支持的相似性标准"
-    
+
     if similar.empty:
         return f"未找到相似反应"
-    
-    # 合并数据
-    merged_df = pd.merge(similar, core_df, on=['literature_id', 'reaction_id'])
-    merged_df = pd.merge(merged_df, enzymes_df, on=['literature_id', 'reaction_id'])
-    
-    # 限制结果数量
-    max_results = min(max_results, QUERY_CONFIG["max_results"])
-    result_df = merged_df.head(max_results)
-    
+
+    result_df = similar.head(max_results)
+
     # 格式化输出
     result = f"# 相似反应查询结果\n\n"
     result += f"**目标反应**: {target_reaction_id if target_reaction_id else '全部'}\n"
     result += f"**相似性标准**: {similarity_criteria if similarity_criteria else '全部'}\n"
-    result += f"**找到相似反应数**: {len(result_df)}\n\n"
-    
+    result += f"**输出相似反应数**: {len(result_df)}，共找到记录{len(similar)}条\n\n"
+
     for _, row in result_df.iterrows():
         result += f"## {row['literature_id']}:{row['reaction_id']}\n"
-        result += f"- **酶**: {row['enzyme_name']}\n"
-        result += f"- **EC号**: {row['ec_number']}\n"
-        result += f"- **物种**: {row['organism']}\n"
-        result += f"- **反应**: {row['reaction_equation']}\n"
-        result += f"- **反应是否可逆**: {row['reaction_type_reversible']}\n\n"
+        result += f"- **酶**: {row.get('enzyme_name', 'N/A')}\n"
+        result += f"- **EC号**: {row.get('ec_number', 'N/A')}\n"
+        result += f"- **物种**: {row.get('organism', 'N/A')}\n"
+        result += f"- **反应**: {row.get('reaction_equation', 'N/A')}\n"
+        result += f"- **反应是否可逆**: {row.get('reaction_type_reversible', 'N/A')}\n\n"
         result += f"- **温度**: {row.get('temperature_celsius', 'N/A')}°C\n"
         result += f"- **pH**: {row.get('ph', 'N/A')}\n"
         result += f"- **pH补充说明**: {row.get('ph_details', 'N/A')}\n"
@@ -866,12 +871,15 @@ def find_similar_reactions(
         result += f"- **表达载体**: {row.get('expression_vector', 'N/A')}\n"
         result += f"- **诱导条件**: {row.get('expression_induction', 'N/A')}\n"
         result += "\n"
-    
+        
+    MAX_OUTPUT_LEN = 1000  # 你可以根据实际情况调整
+    if len(result) > MAX_OUTPUT_LEN:
+        result = result[:MAX_OUTPUT_LEN] + "\n\n【内容过长，仅显示前部分】"
     return result
 
 def analyze_reaction_patterns(
-    pattern_type: str = None,
-    min_occurrences: int = 1
+    pattern_type: str,
+    min_occurrences: int
 ) -> str:
     """
     分析反应模式。参数均可选。
@@ -914,7 +922,7 @@ def analyze_reaction_patterns(
     
     elif pattern_type == "reaction_type_frequency":
         # 反应类型频率分析
-        type_counts = merged_df['reaction_type'].value_counts()
+        type_counts = merged_df['reaction_type_reversible'].value_counts()
         frequent_types = type_counts[type_counts >= min_occurrences]
         
         result += "## 反应类型分析\n\n"
@@ -926,27 +934,39 @@ def analyze_reaction_patterns(
     
     return result
 
-def find_kinetic_parameters(
-    literature_id: str = None,
-    reaction_id: str = None,
-    parameter_type: str = None,
-    max_results: int = 10
-) -> str:
+def find_kinetic_parameters(**kwargs) -> str:
     """
     查询并展示指定反应的动力学参数（如kcat、Km、Vmax、kcat_km、specific_activity等）。
-    支持按文献、反应、参数类型筛选。参数均可选。
-    :param literature_id: str，可选
-    :param reaction_id: str，可选
+    支持按文献、反应、参数类型、酶名筛选。参数均可选。
+    
+    :param literature_id: str，可选，举例: PMID32044030
+    :param reaction_id: str，可选，举例: reaction_1
     :param parameter_type: str，可选（如'kcat','Km','Vmax', 'kcat_km', 'specific_activity'等）
+    :param enzyme_name: str，可选（支持酶名检索）
     :param max_results: int
     """
+    literature_id = kwargs.get('literature_id', None)
+    reaction_id = kwargs.get('reaction_id', None)
+    parameter_type = kwargs.get('parameter_type', None)
+    enzyme_name = kwargs.get('enzyme_name', None)
+    max_results = kwargs.get('max_results', QUERY_CONFIG["max_results"])
+    
     if not DB: return "数据库未加载。"
     kinetic_df = DB.get('6_kinetic_parameters', pd.DataFrame())
+    enzymes_df = DB.get('2_enzymes', pd.DataFrame())
     if kinetic_df.empty:
         return "动力学参数数据表未加载。"
-
     # 条件筛选
     df = kinetic_df.copy()
+    # 新增：支持酶名检索
+    if enzyme_name and not enzymes_df.empty:
+        enzyme_rows = enzymes_df[enzymes_df['enzyme_name'].str.contains(enzyme_name, case=False, na=False)]
+        if enzyme_rows.empty:
+            return f"未找到酶名为 '{enzyme_name}' 的相关反应。"
+        # 获取所有相关literature_id和reaction_id
+        id_pairs = enzyme_rows[['literature_id', 'reaction_id']].drop_duplicates()
+        # 合并条件
+        df = pd.merge(df, id_pairs, on=['literature_id', 'reaction_id'])
     if literature_id:
         df = df[df['literature_id'] == literature_id]
     if reaction_id:
@@ -955,19 +975,24 @@ def find_kinetic_parameters(
         df = df[df['parameter_type'].str.lower() == parameter_type.lower()]
     if df.empty:
         return "未找到匹配的动力学参数数据。"
-
+    
     # 限制结果数量
+    total = len(df)
     df = df.head(max_results)
-
     # 分组展示
     result = f"# 动力学参数查询结果\n\n"
+    result += f"**输出记录数**: {len(df)}，共找到记录{total}条\n\n"
+    
     group_cols = ['literature_id', 'reaction_id', 'source_type', 'mutation_description']
     grouped = df.groupby(group_cols)
     for group_keys, group_df in grouped:
         lit, rid, src, mut = group_keys
         result += f"## 文献: {lit} 反应: {rid} 类型: {src}"
-        if mut and str(mut).strip():
-            result += f" 突变: {mut}"
+        if src == "wild_type":
+            result += f" 野生型: WT"
+        else:
+            if mut and str(mut).strip():
+                result += f" 突变: {mut}"
         result += "\n"
         for _, row in group_df.iterrows():
             result += f"- **参数类型**: {row['parameter_type']}"
@@ -982,7 +1007,73 @@ def find_kinetic_parameters(
         result += "\n"
     return result
 
-# --- 创建FunctionTool实例 ---
+def find_mutant_performance(**kwargs) -> str:
+    """
+    查询突变体的性能表现，支持按酶名、文献ID、反应ID、突变描述等索引。
+    整合7_mutants_characterized和2_enzymes表。
+
+    :param enzyme_name: str，可选
+    :param literature_id: str，可选
+    :param reaction_id: str，可选
+    :param mutation_description: str，可选
+    :param max_results: int
+    """
+    enzyme_name = kwargs.get('enzyme_name', None)
+    literature_id = kwargs.get('literature_id', None)
+    reaction_id = kwargs.get('reaction_id', None)
+    mutation_description = kwargs.get('mutation_description', None)
+    max_results = kwargs.get('max_results', QUERY_CONFIG["max_results"])
+    
+    if not DB:
+        return "数据库未加载。"
+    mutants_df = DB.get('7_mutants_characterized', pd.DataFrame())
+    enzymes_df = DB.get('2_enzymes', pd.DataFrame())
+    # kinetic_df = DB.get('6_kinetic_parameters', pd.DataFrame())
+    if mutants_df.empty or enzymes_df.empty:
+        return "突变体或酶信息表未加载。"
+    # 合并酶名
+    merged_df = pd.merge(mutants_df, enzymes_df, on=['literature_id', 'reaction_id'], how='left')
+    # 条件筛选
+    if enzyme_name:
+        merged_df = merged_df[merged_df['enzyme_name'].str.contains(enzyme_name, case=False, na=False)]
+    if literature_id:
+        merged_df = merged_df[merged_df['literature_id'] == literature_id]
+    if reaction_id:
+        merged_df = merged_df[merged_df['reaction_id'] == reaction_id]
+    if mutation_description:
+        merged_df = merged_df[merged_df['mutation_description'].str.contains(mutation_description, case=False, na=False)]
+    if merged_df.empty:
+        return "未找到匹配的突变体性能数据。"
+    # 限制结果数量
+    result_df = merged_df.head(max_results)
+    # 格式化输出
+    result = f"# 突变体性能表现查询结果\n\n"
+    result += f"**筛选条件**: 酶={enzyme_name if enzyme_name else '全部'}, 文献={literature_id if literature_id else '全部'}, 反应={reaction_id if reaction_id else '全部'}\n"
+    result += f"**输出记录数**: {len(result_df)} (共找到记录数{len(merged_df)}个)\n\n"
+    for _, row in result_df.iterrows():
+        result += f"## {row['literature_id']}:{row['reaction_id']} | 酶: {row.get('enzyme_name', 'N/A')} | 突变: {row['mutation_description']}\n"
+        result += f"- **定性活性**: {row.get('activity_qualitative', 'N/A')}\n"
+        result += f"- **转化率**: {row.get('conversion_rate', 'N/A')} %\n"
+        result += f"- **产率**: {row.get('product_yield', 'N/A')} {row.get('product_yield_unit', '')}\n"
+        result += f"- **区域选择性**: {row.get('selectivity_regio', 'N/A')}\n"
+        result += f"- **立体选择性**: {row.get('selectivity_stereo', 'N/A')}\n"
+        result += f"- **对映体过量**: {row.get('enantiomeric_excess', 'N/A')} %\n"
+        # # 动力学参数联查
+        # if enzyme_name and not kinetic_df.empty:
+        #     kin_rows = kinetic_df[(kinetic_df['literature_id'] == row['literature_id']) & (kinetic_df['reaction_id'] == row['reaction_id'])]
+        #     if not kin_rows.empty:
+        #         result += f"- **动力学参数**:\n"
+        #         for _, kin in kin_rows.iterrows():
+        #             param = kin.get('parameter_type', 'N/A')
+        #             value = kin.get('value', 'N/A')
+        #             unit = kin.get('unit', '')
+        #             error = kin.get('error_margin', '')
+        #             details = kin.get('details', '')
+        #             result += f"    - {param}: {value} {unit} {(f'(误差: {error})' if error else '')} {(f'| 说明: {details}' if details else '')}\n"
+        result += "\n"
+    return result
+
+# --- FunctionTool实例导出 ---
 get_reaction_summary_tool = FunctionTool(func=get_reaction_summary)
 find_reactions_by_enzyme_tool = FunctionTool(func=find_reactions_by_enzyme)
 find_inhibition_data_tool = FunctionTool(func=find_inhibition_data)
@@ -997,4 +1088,5 @@ smart_search_reactions_tool = FunctionTool(func=smart_search_reactions)
 get_database_statistics_tool = FunctionTool(func=get_database_statistics)
 find_similar_reactions_tool = FunctionTool(func=find_similar_reactions)
 analyze_reaction_patterns_tool = FunctionTool(func=analyze_reaction_patterns)
+find_mutant_performance_tool = FunctionTool(func=find_mutant_performance)
 

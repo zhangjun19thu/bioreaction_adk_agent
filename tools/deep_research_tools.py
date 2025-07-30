@@ -10,6 +10,16 @@ from typing import List, Dict, Optional
 import pandas as pd
 from .database_loader import DB
 from ..config import METADATA_BASE_DIR, get_metadata_path, AGENT_CONFIG
+import concurrent.futures
+
+# from utils.text_parser import preprocess_text_for_llm
+
+try:
+    from utils.text_parser import preprocess_text_for_llm
+except ImportError:
+    import sys, os
+    sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    from utils.text_parser import preprocess_text_for_llm
 
 # 使用配置中的元数据目录
 # METADATA_BASE_DIR 已在 config.py 中定义
@@ -85,6 +95,9 @@ async def get_summary_from_literature(
     try:
         with open(metadata_path, 'r', encoding='utf-8') as f:
             content = f.read()
+        # 新增：预处理文献内容
+        if preprocess_text_for_llm:
+            content = preprocess_text_for_llm(content)
     except Exception as e:
         return {"status": "error", "error_message": f"错误：读取文献 '{literature_id}' 的元数据文件失败: {e}"}
     
@@ -105,7 +118,7 @@ async def get_summary_from_literature(
     请仅根据以下提供的文本内容，为接下来的问题提供一个详细、准确的答案。
 
     ---文献内容开始---
-    {content[:15000]} 
+    {content} 
     ---文献内容结束---
 
     问题: {enhanced_question}
@@ -168,7 +181,11 @@ async def analyze_multiple_literature(
         if metadata_path.exists():
             try:
                 with open(metadata_path, 'r', encoding='utf-8') as f:
-                    literature_contents[lit_id] = f.read()[:8000]  # 限制长度
+                    content = f.read()
+                # 新增：预处理文献内容
+                if preprocess_text_for_llm:
+                    content = preprocess_text_for_llm(content)
+                literature_contents[lit_id] = content
             except Exception as e:
                 print(f"警告：无法读取文献 {lit_id}: {e}")
         else:
@@ -224,48 +241,6 @@ async def analyze_multiple_literature(
             }
     
     return {"status": "error", "error_message": "Agent未返回最终响应。"}
-
-def get_literature_context(literature_id: str) -> dict:
-    """
-    获取文献的上下文信息，包括相关的数据库记录。
-    
-    :param literature_id: 文献ID
-    """
-    if not DB: return {"status": "error", "error_message": "数据库未加载。"}
-    
-    context = {
-        "literature_id": literature_id,
-        "reactions": [],
-        "enzymes": [],
-        "conditions": [],
-        "performance": []
-    }
-    
-    # 获取该文献的所有反应
-    core_df = DB.get('1_reactions_core', pd.DataFrame())
-    if not core_df.empty:
-        reactions = core_df[core_df['literature_id'] == literature_id]
-        context["reactions"] = reactions.to_dict('records') if not reactions.empty else []
-    
-    # 获取酶信息
-    enzymes_df = DB.get('2_enzymes', pd.DataFrame())
-    if not enzymes_df.empty:
-        enzymes = enzymes_df[enzymes_df['literature_id'] == literature_id]
-        context["enzymes"] = enzymes.to_dict('records') if not enzymes.empty else []
-    
-    # 获取实验条件
-    conditions_df = DB.get('3_experimental_conditions', pd.DataFrame())
-    if not conditions_df.empty:
-        conditions = conditions_df[conditions_df['literature_id'] == literature_id]
-        context["conditions"] = conditions.to_dict('records') if not conditions.empty else []
-    
-    # 获取性能数据
-    performance_df = DB.get('4_activity_performance', pd.DataFrame())
-    if not performance_df.empty:
-        performance = performance_df[performance_df['literature_id'] == literature_id]
-        context["performance"] = performance.to_dict('records') if not performance.empty else []
-    
-    return {"status": "success", "context": context}
 
 def find_related_literature(
     target_literature_id: str,
@@ -332,8 +307,57 @@ def find_related_literature(
         "count": len(related_literature)
     }
 
+# # --- 异步转同步包装 ---
+# def get_summary_from_literature_sync(*args, **kwargs):
+#     import asyncio
+#     return asyncio.run(get_summary_from_literature(*args, **kwargs))
+
+# def analyze_multiple_literature_sync(*args, **kwargs):
+#     import asyncio
+#     return asyncio.run(analyze_multiple_literature(*args, **kwargs))
+
 # --- 将函数包装成 FunctionTool 实例 ---
-get_summary_from_literature_tool = FunctionTool(func=get_summary_from_literature)
-analyze_multiple_literature_tool = FunctionTool(func=analyze_multiple_literature)
-get_literature_context_tool = FunctionTool(func=get_literature_context)
+def get_summary_from_literature_sync(
+    literature_id: str,
+    question: str,
+    analysis_type: str
+) -> dict:
+    import asyncio
+    def runner():
+        return asyncio.run(get_summary_from_literature(
+            literature_id, question, analysis_type
+        ))
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        future = executor.submit(runner)
+        result = future.result()
+        # 只返回主要内容
+        # ADK/FunctionTool/前端通常只会显示字符串或简单结构，如果你返回的是 dict，而不是直接的字符串，前端可能不会自动渲染出来。
+        # 如果 FunctionTool 期望返回字符串，但你返回了字典，ADK主Agent不会自动把字典内容渲染到前端。
+        if isinstance(result, dict) and 'comparison' in result:
+            return result['comparison']
+        elif isinstance(result, dict) and 'summary' in result:
+            return result['summary']
+        else:
+            return str(result)
+
+def analyze_multiple_literature_sync(
+    literature_ids: List[str],
+    comparison_question: str,
+    comparison_focus: str
+) -> dict:
+    import asyncio
+    def runner():
+        return asyncio.run(analyze_multiple_literature(
+            literature_ids, comparison_question, comparison_focus
+        ))
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        future = executor.submit(runner)
+        result = future.result()
+        if isinstance(result, dict) and 'summary' in result:
+            return result['summary']
+        else:
+            return str(result)
+
+get_summary_from_literature_tool = FunctionTool(func=get_summary_from_literature_sync)
+analyze_multiple_literature_tool = FunctionTool(func=analyze_multiple_literature_sync)
 find_related_literature_tool = FunctionTool(func=find_related_literature)

@@ -1,55 +1,61 @@
-from google.adk.tools import FunctionTool
+from google.adk.agents import LlmAgent
 from .database_query_tools import (
-    find_reactions_by_enzyme,
-    find_enzymes_by_participant,
-    smart_search_reactions,
-    find_reactions_by_organism,
-    get_reaction_summary,
-    get_database_statistics,
+    get_reaction_summary_tool,
+    find_reactions_by_enzyme_tool,
+    find_inhibition_data_tool,
+    find_reactions_by_organism_tool,
+    find_reactions_by_condition_tool,
+    find_reactions_with_pdb_id_tool,
+    find_top_reactions_by_performance_tool,
+    find_kinetic_parameters_tool,
+    find_conditions_by_enzyme_tool,
+    find_enzymes_by_participant_tool,
+    smart_search_reactions_tool,
+    get_database_statistics_tool,
+    find_similar_reactions_tool,
+    analyze_reaction_patterns_tool
 )
-import re
+from google.adk.tools.agent_tool import AgentTool
+# 导入配置
+from ..config import AGENT_CONFIG, validate_config
 
-def universal_query_agent(user_query: str, max_results: int) -> str:
-    """
-    统一智能数据库查询入口。
-    :param user_query: 用户自然语言问题
-    :param max_results: 返回最大结果数
-    """
-    # 1. 酶名意图
-    enzyme_match = re.search(r'(?:酶|enzyme)[^\u4e00-\u9fa5a-zA-Z0-9]*([\u4e00-\u9fa5a-zA-Z0-9\-\'\s]+)', user_query)
-    if enzyme_match:
-        enzyme_name = enzyme_match.group(1).strip()
-        organism_match = re.search(r'(?:物种|organism|来源)[^\u4e00-\u9fa5a-zA-Z0-9]*([\u4e00-\u9fa5a-zA-Z0-9\-\'\s]+)', user_query)
-        organism = organism_match.group(1).strip() if organism_match else None
-        return find_reactions_by_enzyme(enzyme_name=enzyme_name, organism=organism, max_results=max_results)
-    # 2. 反应式意图
-    if '->' in user_query or '→' in user_query:
-        return smart_search_reactions(search_query=user_query, search_fields=['reaction_equation'], max_results=max_results)
-    # 3. 底物/产物意图
-    if '底物' in user_query or '产物' in user_query or 'substrate' in user_query.lower() or 'product' in user_query.lower():
-        # 尝试提取分子名
-        mol_match = re.search(r'(?:底物|产物|substrate|product)[^\u4e00-\u9fa5a-zA-Z0-9]*([\u4e00-\u9fa5a-zA-Z0-9\-\'\s]+)', user_query)
-        participant_name = mol_match.group(1).strip() if mol_match else user_query
-        return find_enzymes_by_participant(participant_name=participant_name, max_results=max_results)
-    # 4. 物种+EC号意图
-    if '物种' in user_query or 'organism' in user_query.lower() or 'EC' in user_query or 'ec_number' in user_query:
-        org_match = re.search(r'(?:物种|organism)[^\u4e00-\u9fa5a-zA-Z0-9]*([\u4e00-\u9fa5a-zA-Z0-9\-\'\s]+)', user_query)
-        ec_match = re.search(r'(?:EC|ec_number)[^\d]*(\d+\.\d+\.\d+\.\d+)', user_query)
-        organism = org_match.group(1).strip() if org_match else None
-        ec_number = ec_match.group(1).strip() if ec_match else None
-        return find_reactions_by_organism(organism=organism, ec_number=ec_number, max_results=max_results)
-    # 5. 反应摘要
-    if '摘要' in user_query or 'summary' in user_query.lower():
-        # 尝试提取文献和反应编号
-        lit_match = re.search(r'(PMID\d+)', user_query)
-        rid_match = re.search(r'(reaction_\d+)', user_query)
-        if lit_match and rid_match:
-            return get_reaction_summary(literature_id=lit_match.group(1), reaction_id=rid_match.group(1))
-    # 6. fallback: 智能模糊检索
-    return smart_search_reactions(search_query=user_query, search_fields=[], max_results=max_results)
+# 强prompt，指导大模型如何意图映射和参数推理
+universal_query_agent_prompt = """
+你是一个生物化学数据库智能检索Agent。你的任务是：
+1. 解析用户输入，推断其真实意图（如：按酶、物种、底物、产物、抑制剂、实验条件、PDB、性能、动力学参数、模式分析、统计等）。
+2. 自动将自然语言问题映射为数据库字段和参数，字段包括：
+   - reaction_equation, reaction_type_reversible, notes, enzyme_name, enzyme_synonyms, gene_name, organism, ec_number, participant_name, role, literature_id, reaction_id 等。
+3. 你必须严格校验参数与数据库字段一致性，缺失时自动补全为"全部"，模糊意图时优先召回更多结果。
+4. 你只能调用下方提供的数据库检索工具（FunctionTool），并根据推理结果选择最合适的工具和参数。
+5. 工具调用结果要结构化、准确、可追溯。
+6. 如参数不合法或无结果，需给出详细报错或友好提示。
+7. 你不能直接返回原始用户输入，必须经过意图映射和参数推理。
+"""
 
-universal_query_agent_tool = FunctionTool(
-    func=universal_query_agent,
+universal_query_agent = LlmAgent(
     name="universal_query_agent",
-    description="统一数据库智能查询入口，自动解析用户意图并调度最优检索函数。参数：user_query: str, max_results: int（必填）"
-) 
+    model=AGENT_CONFIG["model"],
+    instruction=universal_query_agent_prompt,
+    tools=[
+        get_reaction_summary_tool,
+        find_reactions_by_enzyme_tool,
+        find_inhibition_data_tool,
+        find_reactions_by_organism_tool,
+        find_reactions_by_condition_tool,
+        find_reactions_with_pdb_id_tool,
+        find_top_reactions_by_performance_tool,
+        find_kinetic_parameters_tool,
+        find_conditions_by_enzyme_tool,
+        find_enzymes_by_participant_tool,
+        smart_search_reactions_tool,
+        get_database_statistics_tool,
+        find_similar_reactions_tool,
+        analyze_reaction_patterns_tool
+    ]
+)
+
+# 保留底层函数实现，供LlmAgent工具调用
+from .database_query_tools import *
+
+# 导出LlmAgent工具
+universal_query_agent_tool = AgentTool(universal_query_agent)
