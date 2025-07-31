@@ -111,7 +111,7 @@ def analyze_reaction_trends(
             }
     
     # 3. 物种间性能对比
-    if organism is None and 'organism' in merged_df.columns:
+    if not organism and 'organism' in merged_df.columns:
         org_perf = merged_df.groupby('organism')[metric].agg(['mean', 'count']).reset_index()
         org_perf = org_perf[org_perf['count'] >= 2].sort_values('mean', ascending=False)
         if len(org_perf) >= 2:

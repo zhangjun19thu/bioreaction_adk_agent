@@ -7,10 +7,12 @@
 import os
 from pathlib import Path
 
-# 项目根目录
-PROJECT_ROOT = Path(__file__).parent
+# # 项目根目录
+# PROJECT_ROOT = Path(__file__).parent
+PROJECT_ROOT = Path(__file__).resolve().parent  # 仅计算，不切换
 
 # 数据库配置
+# DATABASE_DIR = "/personal/paper_label/bioreaction_adk_agent/data/papers1000_database"
 DATABASE_DIR = PROJECT_ROOT / "data" / "papers1000_database"
 DATABASE_CSV_FILES = [
     "1_reactions_core.csv",

@@ -1,2 +1,7 @@
 .env
 run.ipynb
+config.json
+dpdispatcher.log
+websocket.log
+.agent_sessions
+agent1.py
