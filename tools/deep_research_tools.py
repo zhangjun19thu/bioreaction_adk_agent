@@ -10,7 +10,7 @@ from typing import List, Dict, Optional
 import pandas as pd
 from .database_loader import DB
 # from utils.config import METADATA_BASE_DIR, get_metadata_path, AGENT_CONFIG
-from ..config import METADATA_BASE_DIR, get_metadata_path, AGENT_CONFIG
+from ..CONFIG import METADATA_BASE_DIR, get_metadata_path, AGENT_CONFIG
 import concurrent.futures
 
 from ..utils.text_parser import preprocess_text_for_llm

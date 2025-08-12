@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from typing import List, Dict, Optional, Tuple
 from .database_loader import DB
-from ..config import ANALYSIS_CONFIG, QUERY_CONFIG
+from ..CONFIG import ANALYSIS_CONFIG, QUERY_CONFIG
 import json
 
 def _safe_numeric_conversion(series: pd.Series) -> pd.Series:

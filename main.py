@@ -25,7 +25,7 @@ def main():
     
     # 验证配置
     try:
-        from bioreaction_adk_agent.config import validate_config
+        from bioreaction_adk_agent.CONFIG import validate_config
         config_errors = validate_config()
         if config_errors:
             print("❌ 配置错误:")

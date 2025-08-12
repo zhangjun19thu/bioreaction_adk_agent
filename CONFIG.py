@@ -12,7 +12,8 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent  # 仅计算，不切换
 
 # 数据库配置
-# DATABASE_DIR = "/personal/paper_label/bioreaction_adk_agent/data/papers1000_database"
+# DATABASE_DIR = Path("/personal/paper_label/bioreaction_adk_agent/data/papers1000_database")
+# DATABASE_DIR = Path("/share/6_19batch_label/papers1000_database/")
 DATABASE_DIR = PROJECT_ROOT / "data" / "papers1000_database"
 DATABASE_CSV_FILES = [
     "1_reactions_core.csv",
@@ -87,16 +88,13 @@ def validate_config():
     errors = []
     
     # 检查数据库目录
+    # if not os.path.exists(DATABASE_DIR):
     if not DATABASE_DIR.exists():
         errors.append(f"数据库目录不存在: {DATABASE_DIR}")
     
     # 检查文献元数据目录
     if not os.path.exists(METADATA_BASE_DIR):
         errors.append(f"文献元数据目录不存在: {METADATA_BASE_DIR}")
-    
-    # 检查必要的环境变量
-    if not os.getenv("GEMINI_API_KEY"):
-        errors.append("未设置GEMINI_API_KEY环境变量")
     
     return errors
 

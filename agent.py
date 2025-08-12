@@ -38,7 +38,13 @@ from .tools.advanced_tools import (
 )
 
 # 导入配置
-from .config import AGENT_CONFIG, validate_config
+from .CONFIG import AGENT_CONFIG, validate_config
+
+# 1. 首先导入加载器模块
+from .tools import database_loader
+
+# 2. 立即执行数据库加载！
+database_loader.load_database()
 
 # 建议通过环境变量设置您的API密钥
 # os.environ['GEMINI_API_KEY'] = "YOUR_API_KEY" 

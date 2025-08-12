@@ -4,7 +4,7 @@ import numpy as np
 from typing import List, Dict, Optional, Any
 from .database_loader import DB
 
-from ..config import QUERY_CONFIG, ANALYSIS_CONFIG
+from ..CONFIG import QUERY_CONFIG, ANALYSIS_CONFIG
 import re
 import logging
 logging.basicConfig(filename="test.log", filemode="w", format="%(asctime)s %(name)s:%(levelname)s:%(message)s", datefmt="%d-%M-%Y %H:%M:%S", level=logging.DEBUG)

@@ -1,0 +1,17 @@
+{
+  "agent": {
+    "module": "./agent1.py",
+    "name": "Bioreaction Research Assistant",
+    "welcomeMessage": "I am a Bioreaction Research Assistant"
+  },
+  "ui": {
+    "title": "Bioreaction Research Assistant"
+  },
+  "server": {
+    "port": 50002,
+    "host": ["localhost", "127.0.0.1", "*"]
+  },
+  "files": {
+    "watchDirectories": []
+  }
+}

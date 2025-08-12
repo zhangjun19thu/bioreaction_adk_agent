@@ -5,3 +5,4 @@ dpdispatcher.log
 websocket.log
 .agent_sessions
 agent1.py
+.__pycache__

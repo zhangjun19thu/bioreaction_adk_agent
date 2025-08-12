@@ -29,7 +29,7 @@ def check_project_structure():
     
     project_root = Path(__file__).parent
     required_files = [
-        "config.py",
+        "agent_config.py",
         "agent.py", 
         "main.py",
         "test_system.py",
@@ -94,7 +94,7 @@ def check_config_file():
         project_root = Path(__file__).parent
         sys.path.insert(0, str(project_root))
         
-        from bioreaction_adk_agent.config import (
+        from bioreaction_adk_agent.CONFIG import (
             DATABASE_DIR, 
             METADATA_BASE_DIR,
             AGENT_CONFIG,
@@ -128,7 +128,7 @@ def check_database():
     print("\n=== 数据库检查 ===")
     
     try:
-        from bioreaction_adk_agent.config import DATABASE_DIR, DATABASE_CSV_FILES
+        from bioreaction_adk_agent.CONFIG import DATABASE_DIR, DATABASE_CSV_FILES
         
         if not DATABASE_DIR.exists():
             print(f"❌ 数据库目录不存在: {DATABASE_DIR}")
